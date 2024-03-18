@@ -1,0 +1,31 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account {
+  @extend .flex-center;
+}
+
+.circleContainer {
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
+}
+
+.language {
+  @extend .flex-center;
+  @extend .circleContainer;
+  background-color: #262626;
+  margin-right: 1rem;
+}
+
+.studentPortal {
+  @extend .flex-center;
+  @extend .circleContainer;
+  background-color: #ffc32c;
+  color: #0f0f0f;
+}
+
+.lang {
+  margin-right: 0.5rem;
+}

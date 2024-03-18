@@ -1,0 +1,83 @@
+.container {
+  background-color: #0f0f0f;
+  color: #fff;
+  background-image: url("../../assets/images/mesh.svg");
+  background-size: 100%;
+  width: 100%;
+  padding: 8.4rem 15rem 6.4rem 15rem;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  width: 461px;
+  height: 285px;
+}
+
+.intro {
+  padding: 0.5rem 1.5rem;
+  background-color: #332F27;
+  color: #d4c095;
+  border-radius: 4rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.description {
+  color: #DBDBDB;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.button {
+  padding: 0.8rem 2.7rem;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+}
+
+.apply {
+  @extend .button;
+  background-color: #ffc32c;
+  color: #0f0f0f;
+  margin-right: 2rem;
+}
+
+.learnMore {
+  @extend .button;
+  background-color: transparent;
+  border: 1px solid #ffc32c;
+  color: #ffc32c;
+}
+
+.courses {
+  background-color: #0f0f0f;
+  border: 0.5px solid #1d1d1d;
+  display: flex;
+  align-items: center;
+  color: #4B4B4B;
+  font-size: 2.4rem;
+  padding: 1.3rem 0;
+}
+
+.point {
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #4B4B4B;
+  rotate: 45deg;
+  margin: 0 1.5rem;
+}
+
+
+

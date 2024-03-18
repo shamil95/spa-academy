@@ -1,0 +1,55 @@
+.container {
+  background-color: #EFEEEB;
+  color: #000000;
+  padding: 8rem 15rem 5rem 15rem;
+}
+
+.header {
+  font-size: 2.6rem;
+  font-weight: 700;
+  max-width: 54.3rem;
+  margin-bottom: 2rem;
+}
+
+.headerExtra {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  max-width: 57rem;
+}
+
+.feedbacks {
+  display: flex;
+  align-items: center;
+}
+
+.feedback {
+  max-width: 36rem;
+  padding: 3rem;
+  background-color: #ffffff;
+  margin: 3rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.personalInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  margin-left: 1.2rem;
+}

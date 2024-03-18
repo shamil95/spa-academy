@@ -1,0 +1,43 @@
+.container {
+  background-color: #EFEEEB;
+  color: #000000;
+  padding: 8rem 15rem 5rem 15rem;
+}
+
+.header {
+  font-size: 2.6rem;
+  font-weight: 700;
+  max-width: 54.3rem;
+  margin-bottom: 2rem;
+}
+
+.headerExtra {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  max-width: 57rem;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+
+}
+
+.benefit {
+  max-width: 36rem;
+  padding: 3rem;
+  color: #1C1C1C;
+  border-radius: 1rem;
+
+  &.active {
+    background-color: #0F0F0F;
+    color: #B7B7B7;
+  }
+}
+
+.title {
+  margin: 4rem 0 2rem;
+  font-weight: 600;
+}
+
