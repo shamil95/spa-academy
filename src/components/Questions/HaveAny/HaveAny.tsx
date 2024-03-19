@@ -5,7 +5,7 @@ export default function HaveAny() {
     return (
         <div className={styles.container}>
             <div className={styles.title}>
-                <h2>Have any questions abour our course? We got you</h2>
+               Have any questions abour our course? We got you
             </div>
             <div className={styles.text}>
                 <p>
@@ -14,10 +14,7 @@ export default function HaveAny() {
                     lovers pan lot steak melted mushrooms.
                 </p>
             </div>
-
-            <div>
-                <button className={styles.button}>Get in touch</button>
-            </div>
+            <button className={styles.getInTouch}>Get in touch</button>
         </div>
     );
 }

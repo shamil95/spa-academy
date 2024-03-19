@@ -1,12 +1,13 @@
 import React from 'react';
 import Card from '../Card/Card';
-import styles from "./Cards.module.scss"
+import styles from './Cards.module.scss';
 
 const cards = [
     {
         id: 1,
         title: 'Are there any additional fee?',
-        details: 'test',
+        details:
+            'It is better to see one than hear a hundred. Our free trial lesson helps you decide. You can attend classes and find answers to your questions with the help of our experts.',
     },
     {
         id: 2,

@@ -11,6 +11,7 @@ export default function Card({ title, details }) {
                 <Image src={plusIcon.src} alt='plus' width={30} height={30} />
             </button>
             <h3>{title}</h3>
+            {true ? <div>{details}</div> : null}
         </div>
     );
 }
