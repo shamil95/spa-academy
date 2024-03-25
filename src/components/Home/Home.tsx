@@ -10,6 +10,7 @@ import WhyWe from '@/components/WhyWe/WhyWe';
 import Benefits from '@/components/Benefits/Benefits';
 import BlogPosts from '@/components/BlogPosts/BlogPosts';
 import Questions from '../Questions/Questions';
+import OurBenefits from '../OurBenefits/OurBenefits';
 
 const courses = [
     'IT Fundamentals',
@@ -56,6 +57,7 @@ const Home = () => {
             <Benefits />
             <BlogPosts />
             <Questions />
+            <OurBenefits />
         </>
     );
 };

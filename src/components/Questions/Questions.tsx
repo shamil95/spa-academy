@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from './Questions.module.scss';
 import HaveAny from './HaveAny/HaveAny';
-import HowThisWork from './HowThisWork/HowThisWork';
+import Cards from './Cards/Cards';
 
-export default function Questions() {
+const Questions = () => {
     return (
         <div className={styles.container}>
             <HaveAny />
-            <HowThisWork/>
+            <Cards />
         </div>
     );
-}
+};
+export default Questions;

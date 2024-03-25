@@ -7,6 +7,7 @@ import benefit from './benefit.svg';
 import benefit2 from './benefit2.svg';
 import plus from './plus.svg';
 import minus from './minus.svg';
+import star from './star.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -18,4 +19,5 @@ export const ICONS = {
     benefitIcon2: benefit2,
     plusIcon: plus,
     minusIcon: minus,
+    starIcon: star,
 };
