@@ -1,13 +1,12 @@
 .container {
     display: flex;
     flex-direction: row;
-    height: 40px;
+    height: 4rem;
     align-items: center;
-    gap: 15px;
-
-    font-size: 14px;
+    gap: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    line-height: 16.8px;
+    line-height: 1.7rem;
     text-align: left;
     color: #4b4b4b;
 }

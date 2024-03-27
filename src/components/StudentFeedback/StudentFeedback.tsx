@@ -5,6 +5,7 @@ import feedback3 from '../../assets/images/feedback3.png';
 import upComma from '../../assets/icons/upComma.svg';
 import Image from 'next/image';
 import styles from './StudentFeedback.module.scss';
+import FeedBack from './Feedback/FeedBack';
 
 const feedBacks = [
     {
@@ -40,19 +41,7 @@ const StudentFeedback = () => {
             </div>
             <div className={styles.feedbacks}>
                 {feedBacks.map(course => (
-                    <div key={course.fullName} className={styles.feedback}>
-                        <div className={styles.profile}>
-                            <div className={styles.personalInfo}>
-                                {course.image}
-                                <div className={styles.name}>
-                                    <div>{course.fullName}</div>
-                                    <div>{course.profession}</div>
-                                </div>
-                            </div>
-                            <Image src={upComma.src} alt={'comma'} width={40} height={29} />
-                        </div>
-                        <div>{course.feedbackBody}</div>
-                    </div>
+                    <FeedBack key={course.fullName} course={course} />
                 ))}
             </div>
         </div>

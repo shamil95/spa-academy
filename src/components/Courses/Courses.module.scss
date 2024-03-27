@@ -1,70 +1,29 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.course {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e3e2df;
-  min-width: 555px;
-  margin: 30px;
-  padding: 3rem 4rem 0 3rem;
-
-  &:nth-child(odd) {
-    margin-left: 0;
-  }
-
-  &:nth-child(even) {
-    margin-right: 0;
-  }
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .allCourses {
-  background-color: #EFEEEB;
-  color: #000000;
-  padding: 8rem 15rem 5rem 15rem;
+    background-color: #efeeeb;
+    color: #000000;
+    padding: 8rem 15rem 5rem 15rem;
 }
 
 .header {
-  font-size: 2.6rem;
-  font-weight: 700;
-  max-width: 54.3rem;
-  margin-bottom: 2rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    max-width: 54.3rem;
+    margin-bottom: 2rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    text-align: left;
+    color: #0f0f0f;
 }
 
 .headerExtra {
-  font-size: 1.6rem;
-  margin-bottom: 5rem;
-}
-
-.info {
-  font-size: 1.6rem;
-}
-
-.name {
-  font-size: 2.2rem;
-  margin: 0.6rem 0 6.9rem 0;
-}
-
-.duration {
-  font-size: 1.4rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #D4D3D0;
-  border-radius: 1rem;
-  display: inline-block;
-}
-
-.beginner {
-  color: #598D6C;
-}
-.middle {
-  color: #8D60C5;
-}
-.professional {
-  color: #D5732B;
-}
-.advanced {
-  color: #387FD2;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    color: #4b4b4b;
 }

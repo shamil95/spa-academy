@@ -1,0 +1,25 @@
+.col {
+    width: 20rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.col h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    text-align: left;
+    color: #dbdbdb;
+}
+
+.col ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.9rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    text-align: left;
+    color: #b7b7b7;
+}

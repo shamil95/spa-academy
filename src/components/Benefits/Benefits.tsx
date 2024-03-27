@@ -1,9 +1,7 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import styles from './Benefits.module.scss';
-import Image from 'next/image';
-import upComma from '@/assets/icons/upComma.svg';
-import { ICONS } from '@/assets/icons';
-import classNames from 'classnames';
+import Benefit from './Benefit/Benefit';
 
 const benefits = [
     {
@@ -38,9 +36,13 @@ const benefits = [
     },
 ];
 
-const { benefitIcon, benefitIcon2 } = ICONS;
-
 const Benefits = () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const handleBenefitClick = index => {
+        setActiveIndex(index === activeIndex ? null : index);
+    };
+
     return (
         <div className={styles.container}>
             <div className={styles.header}>We promise our students a future beyond just educating them</div>
@@ -49,20 +51,13 @@ const Benefits = () => {
                 and prepare them for the market
             </div>
             <div className={styles.benefits}>
-                {benefits.map(benefit => (
-                    <div
+                {benefits.map((benefit, index) => (
+                    <Benefit
                         key={benefit.title}
-                        className={classNames(styles.benefit, { [styles.active]: benefit.active })}
-                    >
-                        {benefit.active ? (
-                            <Image src={benefitIcon.src} alt={'benefit'} width={40} height={40} />
-                        ) : (
-                            <Image src={benefitIcon2.src} alt={'benefit'} width={40} height={40} />
-                        )}
-
-                        <div className={styles.title}>{benefit.title}</div>
-                        <div>{benefit.body}</div>
-                    </div>
+                        benefit={benefit}
+                        isActive={index === activeIndex}
+                        onClick={() => handleBenefitClick(index)}
+                    />
                 ))}
             </div>
         </div>

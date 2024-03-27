@@ -7,6 +7,7 @@ import DataScience from '../../assets/images/DataScience.png';
 import CyberSecurity from '../../assets/images/Cybersecurity.png';
 import CloudComputing from '../../assets/images/CloudComputing.png';
 import styles from './Courses.module.scss';
+import Course from './Course/Course';
 
 const courses = [
     {
@@ -74,14 +75,7 @@ const Courses = () => {
             </div>
             <div className={styles.container}>
                 {courses.map(course => (
-                    <div key={course.name} className={styles.course}>
-                        <div className={styles.info}>
-                            <div className={styles[course.level.value]}>{course.level.label}</div>
-                            <div className={styles.name}>{course.name}</div>
-                            <div className={styles.duration}>{course.duration}</div>
-                        </div>
-                        {course.image}
-                    </div>
+                    <Course key={course.name} course={course}/>
                 ))}
             </div>
         </div>
