@@ -1,70 +1,63 @@
 .container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8rem 15rem 5rem 15rem;
-  background-color: #EFEEEB;
-  color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8rem 15rem 5rem 15rem;
+    background-color: #efeeeb;
+    color: #000000;
 }
 
 .info {
-  width: 461px;
-  height: 285px;
+    width: 46.1rem;
+    height: 28.5rem;
 }
 
-
 .title {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    text-align: left;
+    color: #0f0f0f;
 }
 
 .description {
-  font-size: 1.8rem;
-  margin-bottom: 4rem;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    text-align: left;
+    color: #4B4B4B;
+
 }
 
 .button {
-  padding: 0.8rem 2.7rem;
-  border-radius: 4rem;
-  font-size: 1.5rem;
-  border: none;
+    padding: 0.8rem 2.7rem;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    border: none;
 }
 
 .apply {
-  @extend .button;
-  background-color: #ffc32c;
-  color: #0f0f0f;
-  margin-right: 2rem;
+    @extend .button;
+    background-color: #ffc32c;
+    color: #0f0f0f;
+    margin-right: 2rem;
 }
 
 .learnMore {
-  @extend .button;
-  background-color: transparent;
-  border: 1px solid #ffc32c;
-  color: #ffc32c;
+    @extend .button;
+    background-color: transparent;
+    border: 1px solid #ffc32c;
+    color: #ffc32c;
 }
 
 .statistics {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 65rem;
-}
-
-.statistic {
-  width: 263px;
-  background-color: #E3E2DF;
-  margin: 3rem;
-  padding: 2.5rem;
-
-  &:nth-child(odd) {
-    margin-left: 0;
-  }
-}
-
-.count {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 5.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 65rem;
 }

@@ -1,0 +1,114 @@
+.footer {
+    height: 75rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.footerHeader {
+    height: 12rem;
+    background: #161616;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 15rem 2rem 15rem;
+}
+.buttons {
+    width: 33rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn1 {
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5rem;
+    border: none;
+    opacity: 0px;
+    background: #f9f9f91a;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    cursor: pointer;
+}
+.btn2 {
+    width: 21rem;
+    height: 4rem;
+    border: none;
+    background: #ffc32c;
+    color: black;
+    border-radius: 5rem;
+    opacity: 0px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: -0.02em;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.body {
+    height: 63rem;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    width: 144.4rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerF {
+    background: black;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    text-align: right;
+    color: #7b7b7b;
+}
+.footerF ul {
+    font-size: 1.4rem;
+    gap: 20px;
+    font-weight: 400;
+    line-height: 1.7rem;
+    text-align: left;
+    color: #7b7b7b;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.images {
+    width: 22rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.image {
+    width: 4.2rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,17 @@
+.benefit {
+    max-width: 36rem;
+    padding: 3rem;
+    color: #1c1c1c;
+    border-radius: 1rem;
+
+    &.active {
+        background-color: #0f0f0f;
+        color: #b7b7b7;
+    }
+}
+
+.title {
+    margin: 4rem 0 2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+}

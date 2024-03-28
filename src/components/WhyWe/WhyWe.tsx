@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WhyWe.module.scss';
+import Statistic from "./Statistic/Statistic"
 
 const statistics = [
     {
@@ -25,10 +26,7 @@ const WhyWe = () => {
         <div className={styles.container}>
             <div className={styles.statistics}>
                 {statistics.map(statistic => (
-                    <div key={statistic.label} className={styles.statistic}>
-                        <div className={styles.count}>{statistic.statistic}</div>
-                        <div>{statistic.label}</div>
-                    </div>
+                    <Statistic key={statistic.statistic} statistic={statistic}/>
                 ))}
             </div>
             <div className={styles.info}>
