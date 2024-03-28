@@ -64,11 +64,12 @@
     align-items: center;
 }
 .row {
-    width: 144.4rem;
+    //width: 144.4rem;
     height: 26rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 5rem;
 }
 
 .footerF {

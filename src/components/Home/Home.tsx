@@ -40,7 +40,7 @@ const Home = () => {
                         <button className={styles.apply}>Apply now</button>
                         <button className={styles.learnMore}>Learn More</button>
                     </div>
-                    <Image src={HomeImage.src} alt={'homeImage'} width={575} height={520} />
+                    <Image  className={styles.image} src={HomeImage.src} alt={'homeImage'} width={575} height={520} />
                 </div>
             </div>
             <div className={styles.courses}>
