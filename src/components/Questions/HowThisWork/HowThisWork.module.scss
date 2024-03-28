@@ -1,0 +1,73 @@
+.container {
+    width: 555px;
+    height: 612px;
+    // border: 1px solid black;
+}
+
+.blackdiv {
+    width: 555px;
+    height: 162px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #0f0f0f;
+    position: relative;
+}
+.round {
+    width: 30px;
+    height: 30px;
+    top: 28px;
+    left: 20px;
+    gap: 0px;
+    position: absolute;
+    opacity: 0px;
+    border-radius: 50%;
+    background: #ffc32c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    border: px solid white;
+}
+
+.text {
+    width: 445px;
+    height: 119px;
+    position: relative;
+    top: 20px;
+    left: 70px;
+    gap: 0;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.title {
+    width: 300px;
+    height: 27px;
+    gap: 0px;
+    opacity: 0px;
+    text-align: left;
+    padding: 0;
+}
+.header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    padding: 0;
+    color: #dbdbdb;
+}
+
+.description {
+    width: 445px;
+    height: 82px;
+    gap: 0px;
+    opacity: 0px;
+}
+.content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #b7b7b7;
+}

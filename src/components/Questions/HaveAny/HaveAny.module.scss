@@ -1,0 +1,44 @@
+.container {
+    width: 455px;
+    height: 307px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    width: 455px;
+    height: 72px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    color: #0f0f0f;
+}
+
+.text {
+    width: 455px;
+    height: 121px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #4b4b4b;
+}
+
+.getInTouch {
+    width: 144px;
+    height: 44px;
+    padding: 8px 30px 8px 30px;
+    gap: 6px;
+    border-radius: 40px;
+    border: none;
+    background: #ffc32c;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #0f0f0f;
+}
