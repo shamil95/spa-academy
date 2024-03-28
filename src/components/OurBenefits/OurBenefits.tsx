@@ -35,7 +35,11 @@ const OurBenefits = () => {
                     <div className={styles.line}>
                         <button className={styles.button}>APPLY NOW</button>
                         <div className={styles.imgContainer}>
-                            <Image src={Item.src}  alt='student' width={30} height={30} />
+                            <Image className={styles.ring1} src={Item.src} alt='student' width={30} height={30} />
+                            <Image className={styles.ring2} src={Item.src} alt='student' width={30} height={30} />
+                            <Image src={Item.src} alt='student' width={30} height={30} />
+                            <Image src={Item.src} alt='student' width={30} height={30} />
+                            <Image src={Item.src} alt='student' width={30} height={30} />
                             <p>Over 200 students join us monthly</p>{' '}
                         </div>{' '}
                     </div>
@@ -44,7 +48,6 @@ const OurBenefits = () => {
                 <Image src={Poster.src} className={styles.image} alt='poster' width={790} height={400} />
                 <div className={styles.rectangle}></div>
             </div>
-            
         </div>
     );
 };
