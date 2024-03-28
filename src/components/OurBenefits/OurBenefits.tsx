@@ -20,6 +20,8 @@ const contents = [
     },
 ];
 
+const images = [Item, Item, Item, Item, Item];
+
 const OurBenefits = () => {
     return (
         <div className={styles.container}>
@@ -35,16 +37,21 @@ const OurBenefits = () => {
                     <div className={styles.line}>
                         <button className={styles.button}>APPLY NOW</button>
                         <div className={styles.imgContainer}>
-                            <Image className={styles.ring1} src={Item.src} alt='student' width={30} height={30} />
-                            <Image className={styles.ring2} src={Item.src} alt='student' width={30} height={30} />
-                            <Image src={Item.src} alt='student' width={30} height={30} />
-                            <Image src={Item.src} alt='student' width={30} height={30} />
-                            <Image src={Item.src} alt='student' width={30} height={30} />
-                            <p>Over 200 students join us monthly</p>{' '}
-                        </div>{' '}
+                            {images.map((image, index) => (
+                                <Image
+                                    key={index}
+                                    className={styles.studentImages}
+                                    style={{ left: `${index * 15}px` }}
+                                    src={image.src}
+                                    alt='student'
+                                    width={30}
+                                    height={30}
+                                />
+                            ))}
+                        </div>
+                        <p>Over 200 students join us monthly</p>
                     </div>
                 </div>
-
                 <Image src={Poster.src} className={styles.image} alt='poster' width={790} height={400} />
                 <div className={styles.rectangle}></div>
             </div>

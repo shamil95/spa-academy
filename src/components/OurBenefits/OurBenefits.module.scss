@@ -55,6 +55,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
 }
 .image {
     height: 42rem;
@@ -76,4 +77,10 @@
     margin-bottom: -2px;
     opacity: 0px;
     background: linear-gradient(89.67deg, #ffc32c 49.95%, rgba(255, 195, 44, 0) 93.38%);
+}
+
+.studentImages {
+    position: absolute;
+    top:0;
+    left: 0;
 }
