@@ -4,8 +4,8 @@
     background-image: url('../../assets/images/mesh.svg');
     background-size: 100%;
     width: 100%;
+    height: 80rem;
     padding: 8.4rem 15rem 6.4rem 15rem;
-    // border: 1px solid gray;
 }
 
 .banner {
@@ -13,13 +13,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // border: 1px solid yellow;
+    margin-top: 10rem;
 }
 
 .info {
     max-width: 461px;
     height: 285px;
-    // border: 1px solid blue;
 }
 
 .intro {
@@ -68,29 +67,25 @@
     border: 0.5px solid #1d1d1d;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
     color: #4b4b4b;
     font-size: 2.4rem;
     padding: 1.3rem 0;
+    width: 100%;
+    //  border: 1px solid white;
+}
+.courses li:hover {
+    color: rgb(188, 146, 146);
+    transition: color 0.8s;
+    list-style: none;
 }
 
-.point {
-    width: 6px;
-    height: 6px;
-    border-radius: 2px;
-    background-color: #4b4b4b;
-    rotate: 45deg;
-    margin: 0 1.5rem;
-}
-// @media screen and (max-width: 1450px) {
-//     .container {
-//         background-color: #0f0f0f;
-//         background-image: url('../../assets/images/mesh.svg');
-//         background-size: 100%;
-//         width: 50%;
-//         // padding: 8.4rem 15rem 6.4rem 15rem;
-//     }
-//     .image {
-//         width: 300px;
-//         height: 300px;
-//     }
+// .point {
+//     width: 6px;
+//     height: 6px;
+//     border-radius: 2px;
+//     background-color: #4b4b4b;
+//     rotate: 45deg;
+//     margin: 0 1.5rem;
 // }

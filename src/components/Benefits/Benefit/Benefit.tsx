@@ -6,19 +6,10 @@ import { ICONS } from '@/assets/icons';
 
 const { benefitIcon, benefitIcon2 } = ICONS;
 
-const Benefit = ({ benefit, isActive, onClick }) => {
+const Benefit = ({ benefit, isFirst }) => {
     return (
-        <div
-            key={benefit.title}
-            className={classNames(styles.benefit, { [styles.active]: isActive })}
-            onClick={onClick}
-        >
-            {isActive ? (
-                <Image src={benefitIcon.src} alt={'benefit'} width={40} height={40} />
-            ) : (
-                <Image src={benefitIcon2.src} alt={'benefit'} width={40} height={40} />
-            )}
-
+        <div key={benefit.title} className={`${styles.benefit} ${isFirst ? styles.active : ''}`}>
+            <Image src={isFirst ? benefitIcon.src : benefitIcon2.src} alt={'benefit'} width={40} height={40} />
             <div className={styles.title}>{benefit.title}</div>
             <div>{benefit.body}</div>
         </div>

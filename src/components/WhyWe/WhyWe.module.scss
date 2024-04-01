@@ -2,37 +2,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 8rem 15rem 5rem 15rem;
     background-color: #efeeeb;
     color: #000000;
-}
-
-.info {
-    width: 46.1rem;
-    height: 28.5rem;
-}
-
-.title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-    font-size: 2.6rem;
-    font-weight: 700;
-    line-height: 3.6rem;
-    text-align: left;
-    color: #0f0f0f;
-}
-
-.description {
-    font-size: 1.8rem;
-    margin-bottom: 4rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.7rem;
-    text-align: left;
-    color: #4B4B4B;
-
 }
 
 .button {
@@ -40,12 +13,13 @@
     border-radius: 4rem;
     font-size: 1.5rem;
     border: none;
+    width: 14rem;
+    height: 5rem;
 }
 
 .apply {
     @extend .button;
     background-color: #ffc32c;
-    color: #0f0f0f;
     margin-right: 2rem;
 }
 
@@ -53,7 +27,7 @@
     @extend .button;
     background-color: transparent;
     border: 1px solid #ffc32c;
-    color: #ffc32c;
+    color: #0f0f0f;
 }
 
 .statistics {

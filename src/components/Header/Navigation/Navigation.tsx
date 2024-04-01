@@ -4,7 +4,7 @@ import styles from './Navigation.module.scss';
 import Image from 'next/image';
 import { ICONS } from '@/assets/icons';
 
-const { LogoIcon } = ICONS;
+const { LogoIcon, arrowDownIcon } = ICONS;
 
 const navigationData = [
     {
@@ -30,7 +30,10 @@ const Navigation = () => {
         <div className={styles.navigation}>
             <div className={styles.navigationLinks}>
                 <Image src={LogoIcon.src} alt={'logo'} width={162} height={40} />
-                <div className={styles.allCourses}>All courses</div>
+                <div className={styles.allCourses}>
+                    All courses
+                    <Image className={styles.icon} src={arrowDownIcon.src} alt='arrow down' width={20} height={15} />
+                </div>
                 <ul className={styles.links}>
                     {navigationData.map(data => (
                         <li className={styles.link} key={data.id}>

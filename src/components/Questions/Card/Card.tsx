@@ -5,7 +5,7 @@ import styles from './Card.module.scss';
 import Image from 'next/image';
 
 const { plusIcon, minusIcon } = ICONS;
-const Card = ({ title, details }) => {
+const Card = ({ title, details, isFirst }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () => {
