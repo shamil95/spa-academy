@@ -16,31 +16,6 @@
     margin-top: 10rem;
 }
 
-.info {
-    max-width: 461px;
-    height: 285px;
-}
-
-.intro {
-    padding: 0.5rem 1.5rem;
-    background-color: #332f27;
-    color: #d4c095;
-    border-radius: 4rem;
-    display: inline-block;
-    margin-bottom: 3rem;
-}
-
-.title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-}
-
-.description {
-    color: #dbdbdb;
-    font-size: 1.8rem;
-    margin-bottom: 4rem;
-}
 
 .button {
     padding: 0.8rem 2.7rem;
@@ -72,8 +47,7 @@
     color: #4b4b4b;
     font-size: 2.4rem;
     padding: 1.3rem 0;
-    width: 100%;
-    //  border: 1px solid white;
+    width: 100%;    
 }
 .courses li:hover {
     color: rgb(188, 146, 146);
@@ -81,11 +55,7 @@
     list-style: none;
 }
 
-// .point {
-//     width: 6px;
-//     height: 6px;
-//     border-radius: 2px;
-//     background-color: #4b4b4b;
-//     rotate: 45deg;
-//     margin: 0 1.5rem;
-// }
+.buttons {
+    display: flex;
+    flex-direction: row;
+}

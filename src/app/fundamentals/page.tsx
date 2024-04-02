@@ -1,9 +1,12 @@
-import React from 'react'
+import SecondPage from '@/components/SecondPage/SecondPage';
+import React from 'react';
 
 const page = () => {
-  return (
-    <div>Fundamentals</div>
-  )
-}
+    return (
+        <div>
+            <SecondPage />
+        </div>
+    );
+};
 
-export default page
+export default page;

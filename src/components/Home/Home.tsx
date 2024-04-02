@@ -13,6 +13,7 @@ import Questions from '../Questions/Questions';
 import OurBenefits from '../OurBenefits/OurBenefits';
 import Footer from '../Footer/Footer';
 import HeaderText from '../HeaderText/HeaderText';
+import Infromation from '../Information/Infromation';
 
 const courses = [
     'IT Fundamentals',
@@ -29,18 +30,17 @@ const Home = () => {
             <Header />
             <div className={styles.container}>
                 <div className={styles.banner}>
-                    <div className={styles.info}>
-                        <div className={styles.intro}>Yourtech career starts here</div>
-                        <div className={styles.title}>
-                            Take the next step toward your personal and professional goals with us.
+                    <Infromation
+                        intro='Yourtech career starts here'
+                        title='Take the next step toward your personal and professional goals with us'
+                        description='  We’re a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.'
+                    >
+                        <div className={styles.buttons}>
+                            <button className={styles.apply}>Apply now</button>
+                            <button className={styles.learnMore}>Learn More</button>
                         </div>
-                        <div className={styles.description}>
-                            We’re a nonprofit with the mission to provide a free, world-class education for anyone,
-                            anywhere.
-                        </div>
-                        <button className={styles.apply}>Apply now</button>
-                        <button className={styles.learnMore}>Learn More</button>
-                    </div>
+                    </Infromation>
+
                     <Image className={styles.image} src={HomeImage.src} alt={'homeImage'} width={575} height={520} />
                 </div>
             </div>
