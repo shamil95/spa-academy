@@ -1,0 +1,42 @@
+.main {
+    width: 144rem;
+    height: 63rem;
+    width: 100%;
+    top: 85rem;
+    padding: 15rem 15rem 12rem 15rem;
+    opacity: 0px;
+    background: #efeeeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 148rem;
+    height: 43rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.text {
+    width: 90rem;
+}
+.header {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    text-align: left;
+    color: #0f0f0f;
+}
+.description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    text-align: left;
+    color: #4b4b4b;
+}
+.students {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
