@@ -16,6 +16,8 @@ import linkedin from './Linkedin.svg';
 import arrowDown from './arrrowDown.svg';
 import arrowUp from './arrowUp.svg';
 import arrDown from './arrDown.svg';
+import downArrow from './down.svg';
+import upArrow from './up.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -36,4 +38,6 @@ export const ICONS = {
     arrowDownIcon: arrowDown,
     arrrowUpIcon: arrowUp,
     arrowDown2Icon: arrDown,
+    downArrowIcon: downArrow,
+    upArrowIcon: upArrow,
 };
