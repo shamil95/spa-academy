@@ -14,6 +14,8 @@ import instgram from './Instagram.svg';
 import x from './X.svg';
 import linkedin from './Linkedin.svg';
 import arrowDown from './arrrowDown.svg';
+import arrowUp from './arrowUp.svg';
+import arrDown from './arrDown.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -32,4 +34,6 @@ export const ICONS = {
     instaIcon: instgram,
     linkedinIcon: linkedin,
     arrowDownIcon: arrowDown,
+    arrrowUpIcon: arrowUp,
+    arrowDown2Icon: arrDown,
 };

@@ -5,6 +5,7 @@ import Infromation from '../Information/Infromation';
 import Image from 'next/image';
 import ITFundamentals from '../../assets/images/ITFundamentals.png';
 import Students from '../WhichStudents/Students';
+import Training from '../Training/Training';
 
 const informations = [
     {
@@ -69,6 +70,7 @@ const SecondPage = () => {
                 </div>
             </div>
             <Students />
+            <Training />
         </>
     );
 };
