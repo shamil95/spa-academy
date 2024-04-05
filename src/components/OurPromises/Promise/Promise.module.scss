@@ -10,11 +10,10 @@
     transition: background-color 0.5s, height 0.5s, border-width 0.5s;
 }
 .card:hover {
-    border: 1px solid ;
+    border: 1px solid;
     box-sizing: border-box;
 }
-.card h3{
-
+.card h3 {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.2rem;
@@ -32,6 +31,7 @@
     border: 1px solid #0f0f0f;
     background: #0f0f0f;
     box-sizing: border-box;
+    transition: background-color 0.5s, height 0.5s, border-width 0.5s;
 }
 .card2 h3 {
     font-size: 1.8rem;
@@ -65,8 +65,8 @@
     background-color: inherit;
     cursor: pointer;
     margin: 0;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 5rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;

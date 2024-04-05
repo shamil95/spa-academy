@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './OurPromise.module.scss';
-import clickImage from '../../assets/images/click.png';
+import menImage from '../../assets/images/men.png';
+import whiteClick from '../../assets/images/whiteClcik.png';
+import computerImage from '../../assets/images/computer.png';
+import blackLogoImage from '../../assets/images/blackLogo.png';
+import playIcon from '../../assets/images/PlayIcon.png';
 import { ICONS } from '@/assets/icons';
 import Image from 'next/image';
 import Promise from './Promise/Promise';
@@ -70,7 +74,26 @@ const OurPromise = () => {
                         <Promise key={question.id} question={question} isFirst={index === 0} />
                     ))}
                 </div>
-                <div className={styles.images}></div>
+                <div className={styles.images}>
+                    <div className={styles.midle}>
+                        <Image className={styles.click} src={whiteClick.src} alt='whiteClic' width={100} height={100} />
+                        <div className={styles.academy}>
+                            <div className={styles.imgComp}>
+                                <Image src={playIcon.src} alt='playIcon' width={27} height={27} />
+                            </div>
+                            <p className={styles.academyText}>What do I need for study in Science Park Academy?</p>
+                            <div className={styles.rec1}></div>
+                            <div className={styles.rec2}></div>
+                        </div>
+                    </div>
+                    <Image className={styles.image} src={menImage.src} alt='menImage' width={440} height={480} />
+                    <div className={styles.academyCard}>
+                        <Image src={blackLogoImage.src} alt='black image' width={50} height={50} />
+                        <h1 className={styles.cardHeader}>IT Fundamentals</h1>
+                        <p className={styles.cardDes}>Science Park Academy</p>
+                        <button className={styles.cardBtn}>Enroll now</button>
+                    </div>
+                </div>
             </div>
         </div>
     );
