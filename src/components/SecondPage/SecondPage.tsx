@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Infromation from '../Information/Infromation';
 import Image from 'next/image';
 import ITFundamentals from '../../assets/images/ITFundamentals.png';
+import Students from '../WhichStudents/Students';
 
 const informations = [
     {
@@ -67,6 +68,7 @@ const SecondPage = () => {
                     ))}
                 </div>
             </div>
+            <Students />
         </>
     );
 };
