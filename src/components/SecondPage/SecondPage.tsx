@@ -9,6 +9,8 @@ import Training from '../Training/Training';
 import OurBenefits from '../OurBenefits/OurBenefits';
 import OurPromise from '../OurPromises/OurPromise';
 import WhyFundamentals from '../WhyFundamentals/WhyFundamentals';
+import AnyQuestions from '../AnyQuestions/AnyQuestions';
+import Footer from '../Footer/Footer';
 
 const informations = [
     {
@@ -76,6 +78,9 @@ const SecondPage = () => {
             <Training />
             <OurPromise />
             <WhyFundamentals />
+            <AnyQuestions />
+            <OurBenefits />
+            <Footer />
         </>
     );
 };
