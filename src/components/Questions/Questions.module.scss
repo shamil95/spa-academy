@@ -2,6 +2,21 @@
     width: 100%;
     background-color: #efeeeb;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 8rem 15rem 5rem 15rem;
+}
+.getInTouch {
+    width: 14.4rem;
+    height: 4.4rem;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    gap: 6px;
+    border-radius: 4rem;
+    border: none;
+    background: #ffc32c;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #0f0f0f;
 }

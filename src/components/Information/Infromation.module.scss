@@ -1,0 +1,32 @@
+.info {
+    max-width: 48rem;
+    height: 30rem;
+}
+
+.intro {
+    padding: 0.5rem 1.5rem;
+    background-color: #332f27;
+    color: #d4c095;
+    border-radius: 4rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.description {
+    color: #dbdbdb;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+.children {
+    display: flex;
+    gap: 1rem;
+    width: 60rem;
+    flex-direction: column;
+}
+

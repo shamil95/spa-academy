@@ -6,6 +6,8 @@
     min-width: 555px;
     margin: 30px;
     padding: 3rem 4rem 0 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
 
     &:nth-child(odd) {
         margin-left: 0;
@@ -14,7 +16,20 @@
     &:nth-child(even) {
         margin-right: 0;
     }
+
+    transition: background-color 1s, border 0.9s;
 }
+
+.course:hover {
+    border: 1px solid black;
+    background-color: #ffd873;
+}
+
+.hover {
+    border: 1px solid black;
+    background-color: #ffd873;
+}
+
 .name {
     font-size: 2.2rem;
     margin: 0.6rem 0 6.9rem 0;

@@ -13,6 +13,7 @@ import fb from './Facebook.svg';
 import instgram from './Instagram.svg';
 import x from './X.svg';
 import linkedin from './Linkedin.svg';
+import arrowDown from './arrrowDown.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -30,4 +31,5 @@ export const ICONS = {
     xIcon: x,
     instaIcon: instgram,
     linkedinIcon: linkedin,
+    arrowDownIcon: arrowDown,
 };

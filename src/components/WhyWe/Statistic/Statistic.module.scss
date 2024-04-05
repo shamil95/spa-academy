@@ -3,10 +3,16 @@
     background-color: #e3e2df;
     margin: 3rem;
     padding: 2.5rem;
+    border-radius: 1rem;
 
     &:nth-child(odd) {
         margin-left: 0;
     }
+    transition: box-shadow 0.9s;
+}
+.statistic:hover {
+    box-shadow: -15px 15px 0px 0px #ffc32c;
+    opacity: 10;
 }
 
 .count {
@@ -15,7 +21,7 @@
     margin-bottom: 5.3rem;
     color: #0f0f0f;
 }
-.label{
+.label {
     font-size: 1.4rem;
     font-weight: 400;
     color: #4b4b4b;

@@ -56,6 +56,7 @@
     flex-direction: row;
     align-items: center;
     position: relative;
+    border: 1px solid blue;
 }
 .image {
     height: 42rem;
@@ -81,6 +82,6 @@
 
 .studentImages {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
 }

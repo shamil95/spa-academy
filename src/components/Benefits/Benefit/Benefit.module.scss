@@ -1,13 +1,18 @@
 .benefit {
     max-width: 36rem;
-    padding: 3rem;
+    padding: 4rem;
     color: #1c1c1c;
     border-radius: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-    &.active {
-        background-color: #0f0f0f;
-        color: #b7b7b7;
-    }
+.benefit:hover {
+    background-color: #0f0f0f;
+    color: #b7b7b7;
+}
+.active {
+    background-color: #0f0f0f;
+    color: #b7b7b7;
 }
 
 .title {

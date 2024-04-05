@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import ITFundamentals from '../../assets/images/ITFundamentals.png';
 import Programming from '../../assets/images/Programming.png';
@@ -69,13 +69,15 @@ const courses = [
 const Courses = () => {
     return (
         <div className={styles.allCourses}>
-            <div className={styles.header}>Get to know our courses, choose one of them and join</div>
-            <div className={styles.headerExtra}>
-                Join our live online classes with industry experts. At an affordable price.
+            <div className={styles.main}>
+                <div className={styles.header}>Get to know our courses, choose one of them and join</div>
+                <div className={styles.headerExtra}>
+                    Join our live online classes with industry experts. At an affordable price.
+                </div>
             </div>
             <div className={styles.container}>
-                {courses.map(course => (
-                    <Course key={course.name} course={course}/>
+                {courses.map((course, index) => (
+                    <Course key={course.name} course={course} isFirst={index === 0} />
                 ))}
             </div>
         </div>

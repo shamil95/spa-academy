@@ -50,8 +50,8 @@ const cards = [
 const Cards = () => {
     return (
         <div className={styles.cards}>
-            {cards.map(card => (
-                <Card key={card.id} title={card.title} details={card.details} />
+            {cards.map((card, index) => (
+                <Card key={card.id} title={card.title} details={card.details} isFirst={index === 0} />
             ))}
         </div>
     );

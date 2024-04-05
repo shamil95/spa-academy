@@ -1,5 +1,4 @@
-'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Benefits.module.scss';
 import Benefit from './Benefit/Benefit';
 
@@ -37,27 +36,18 @@ const benefits = [
 ];
 
 const Benefits = () => {
-    const [activeIndex, setActiveIndex] = useState(null);
-
-    const handleBenefitClick = index => {
-        setActiveIndex(index === activeIndex ? null : index);
-    };
-
     return (
         <div className={styles.container}>
-            <div className={styles.header}>We promise our students a future beyond just educating them</div>
-            <div className={styles.headerExtra}>
-                One of the main features of our course is that after training the students, we give them real projects
-                and prepare them for the market
+            <div className={styles.main}>
+                <div className={styles.header}>We promise our students a future beyond just educating them</div>
+                <div className={styles.headerExtra}>
+                    One of the main features of our course is that after training the students, we give them real
+                    projects and prepare them for the market
+                </div>
             </div>
             <div className={styles.benefits}>
                 {benefits.map((benefit, index) => (
-                    <Benefit
-                        key={benefit.title}
-                        benefit={benefit}
-                        isActive={index === activeIndex}
-                        onClick={() => handleBenefitClick(index)}
-                    />
+                    <Benefit key={benefit.title} benefit={benefit} isFirst={index === 0} />
                 ))}
             </div>
         </div>

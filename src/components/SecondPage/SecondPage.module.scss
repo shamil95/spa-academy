@@ -1,0 +1,84 @@
+.container {
+    background-color: #0f0f0f;
+    color: #fff;
+    background-image: url('../../assets/images/mesh.svg');
+    background-size: cover;
+    width: 100vw;
+    height: 90rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+    gap: 6rem;
+    padding-top: 10rem;
+}
+
+.banner {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+.start {
+    width: 28rem;
+    height: 4.4rem;
+    top: 49rem;
+    left: 15rem;
+    padding: 8px 16px 8px 16px;
+    gap: 6px;
+    border-radius: 4rem;
+    opacity: 0px;
+    background: #ffc32c;
+    color: #0f0f0f;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    border: none;
+    margin-right: 1rem;
+}
+.see {
+    width: 22rem;
+    height: 4.4rem;
+    top: 49rem;
+    left: 48rem;
+    padding: 8px 30px 8px 30px;
+    gap: 6px;
+    border-radius: 4rem;
+    opacity: 0px;
+    background-color: #0f0f0f;
+    color: #ffc32c;
+    border: 1px solid #ffc32c;
+}
+.text {
+    color: #dbdbdb;
+}
+.info {
+    width: 80%;
+    height: 60rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #b7b7b7;
+}
+.information {
+    width: 25rem;
+}
+.information h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    color: #f9f9f9;
+}
+.title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+    text-align: left;
+    color: #b7b7b7;
+}

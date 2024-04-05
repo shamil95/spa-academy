@@ -3,6 +3,10 @@ import styles from './OurBenefits.module.scss';
 import Content from './Content/Content';
 import Image from 'next/image';
 import Item from '../../assets/images/students/Item.png';
+import Item1 from '../../assets/images/students/Item1.png';
+import Item2 from '../../assets/images/students/Item2.png';
+import Item3 from '../../assets/images/students/Item3.png';
+import Item4 from '../../assets/images/students/Item4.png';
 import Poster from '../../assets/images/Poster.png';
 
 const contents = [
@@ -20,7 +24,7 @@ const contents = [
     },
 ];
 
-const images = [Item, Item, Item, Item, Item];
+const images = [Item, Item1, Item2, Item3, Item4];
 
 const OurBenefits = () => {
     return (
