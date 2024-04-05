@@ -1,23 +1,15 @@
-.main {
-    height: 63rem;
+.container {
     width: 100%;
-    top: 85rem;
-    padding: 15rem 15rem 12rem 15rem;
+    padding: 8rem 11.5rem 10rem 15rem;
+    padding-left: 20rem;
+    gap: 72px;
     opacity: 0px;
     background: #efeeeb;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container {
-    width: 148rem;
-    height: 43rem;
-    display: flex;
     flex-direction: column;
-    gap: 3rem;
 }
 .text {
-    width: 90rem;
+    width: 86rem;
 }
 .header {
     font-size: 2.6rem;
@@ -33,9 +25,15 @@
     text-align: left;
     color: #4b4b4b;
 }
-.students {
+.rectangle {
+    width: 140rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 3rem;
+}
+.cards {
+    //height: 100rem;
+    width: 56rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
