@@ -8,6 +8,7 @@ import Students from '../WhichStudents/Students';
 import Training from '../Training/Training';
 import OurBenefits from '../OurBenefits/OurBenefits';
 import OurPromise from '../OurPromises/OurPromise';
+import WhyFundamentals from '../WhyFundamentals/WhyFundamentals';
 
 const informations = [
     {
@@ -74,6 +75,7 @@ const SecondPage = () => {
             <Students />
             <Training />
             <OurPromise />
+            <WhyFundamentals />
         </>
     );
 };
