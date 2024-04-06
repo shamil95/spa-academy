@@ -2,7 +2,8 @@
     background-color: #efeeeb;
     color: #000000;
     padding: 15rem 15rem 10rem 33rem;
-    // border: 5px solid red;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -23,4 +24,11 @@
 .feedbacks {
     display: flex;
     align-items: center;
+    gap: 3rem;
+}
+@media screen and (max-width: 1440px) {
+    .feedbacks {
+        flex-direction: column;
+        gap: 2rem; /* İstediğiniz boşluk miktarını ayarlayabilirsiniz */
+    }
 }

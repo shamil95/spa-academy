@@ -2,6 +2,7 @@
     background-color: #000000;
     color: #ffffff;
     padding: 8rem 15rem 5rem 15rem;
+    // border: 5px solid white;
 }
 
 .header {
@@ -9,6 +10,7 @@
     font-weight: 700;
     max-width: 54.3rem;
     margin-bottom: 2rem;
+    margin-left: 14rem;
 }
 
 .rating {
@@ -22,13 +24,23 @@
     font-weight: 500;
     line-height: 2.7rem;
     text-align: left;
-    color: #7B7B7B;
-
+    color: #7b7b7b;
+    margin-left: 14rem;
 }
 
 .universities {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+}
+.imgContainer {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image {

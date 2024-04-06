@@ -16,7 +16,6 @@
     margin-top: 10rem;
 }
 
-
 .button {
     padding: 0.8rem 2.7rem;
     border-radius: 4rem;
@@ -26,15 +25,33 @@
 .apply {
     @extend .button;
     background-color: #ffc32c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #0f0f0f;
     margin-right: 2rem;
+    height: 4.4rem;
+    border-radius: 4rem;
+    border: 1px solid;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+    text-align: left;
 }
 
 .learnMore {
     @extend .button;
-    background-color: transparent;
+    background: #f9f9f903;
     border: 1px solid #ffc32c;
     color: #ffc32c;
+    border-radius: 4rem;
+    border: 1px solid;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+    text-align: left;
 }
 
 .courses {
@@ -47,7 +64,7 @@
     color: #4b4b4b;
     font-size: 2.4rem;
     padding: 1.3rem 0;
-    width: 100%;    
+    width: 100%;
 }
 .courses li:hover {
     color: rgb(188, 146, 146);

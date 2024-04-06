@@ -60,18 +60,20 @@ const BlogPosts = () => {
                 posts.
             </div>
             <div className={styles.blogPosts}>
-                {blogPosts.slice(0, 2).map(blogPost => (
-                    <div key={blogPost.date} className={styles.blogPost}>
-                        {blogPost.image}
-                        <div className={styles.dateAndCategory}>
-                            <div> {blogPost.date}</div>
-                            <div className={styles.category}> {blogPost.category}</div>
+                <div className={styles.leftContainer}>
+                    {blogPosts.slice(0, 2).map(blogPost => (
+                        <div key={blogPost.date} className={styles.blogPost}>
+                            {blogPost.image}
+                            <div className={styles.dateAndCategory}>
+                                <div> {blogPost.date}</div>
+                                <div className={styles.category}> {blogPost.category}</div>
+                            </div>
+                            <div className={styles.title}>{blogPost.title}</div>
+                            <div className={styles.largeBody}>{blogPost.body}</div>
                         </div>
-                        <div className={styles.title}>{blogPost.title}</div>
-                        <div>{blogPost.body}</div>
-                    </div>
-                ))}
-                <div>
+                    ))}
+                </div>
+                <div className={styles.rightContainer}>
                     {blogPosts.slice(2).map(blogPost => (
                         <div key={blogPost.date} className={styles.miniblogPost}>
                             {blogPost.image}
