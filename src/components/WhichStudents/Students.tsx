@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Students.module.scss';
- import Student from './Student/Student';
+import Student from './Student/Student';
 
 const studentTypes = [
     {
@@ -35,11 +35,11 @@ const Students = () => {
                         and have enough time to learn and improve the acquired knowledge.
                     </p>
                 </div>
-                <div className={styles.students}>
-                    {studentTypes.map(student => (
-                        <Student key={student.id} student={student} />
-                    ))}
-                </div>
+            </div>
+            <div className={styles.students}>
+                {studentTypes.map(student => (
+                    <Student key={student.id} student={student} />
+                ))}
             </div>
         </div>
     );

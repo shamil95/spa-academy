@@ -152,7 +152,7 @@ const Training = () => {
                 </div>
                 <div className={styles.lessons}>
                     {lessons.map((lesson, index) => (
-                        <Technology key={lesson.id} lesson={lesson} />
+                        <Technology key={lesson.id} lesson={lesson} isFirst={index === 0} />
                     ))}
                 </div>
             </div>

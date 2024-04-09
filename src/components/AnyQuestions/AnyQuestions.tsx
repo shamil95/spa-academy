@@ -29,7 +29,7 @@ const cards = [
     },
     {
         id: 5,
-        title: 'When do classes start and is it possible to reschedule the start date of the course?',
+        title: ' It possible to reschedule the start date of the course?',
         details:
             'All classes on our website take place online and involve self-study without teacher intervention (although you can always ask a tutor a question via chat). You just need to go to the lesson and complete the tasks that are assigned to you. Because of this, we expect you to exercise self-discipline and take control of your learning process. To do this, we try to provide you with all possible assistance; for example, you can set up email reminders in your personal account in the “Reminders” section.',
     },

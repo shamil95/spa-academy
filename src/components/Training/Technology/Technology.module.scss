@@ -5,11 +5,16 @@
     padding: 2rem 3.5rem 2rem 3.5rem;
     display: flex;
     border-radius: 1rem;
-    transition: background-color 0.5s, height 0.5s, border-width 0.5s;
+    transition: background-color 0.5s, height 0.2s, border-width 0.5s;
     border-width: 0;
     border-style: solid;
-    //     top: 6rem;
-    //    position: relative;
+    cursor: pointer;
+    pointer-events: auto;
+}
+@media screen and (max-width: 1700px) {
+    .lesson {
+        width: 90rem;
+    }
 }
 
 .lesson:hover {
@@ -20,13 +25,13 @@
 .lessonRectangle {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .lessonTitle {
-    // border: 1px solid yellow;
-    width: 137rem;
+    width: 98%;
 }
+
 .lessonTitle2 {
-    // border: 1px solid yellow;
     width: 137rem;
     display: flex;
     flex-direction: column;
@@ -34,7 +39,7 @@
 .lessonInfo {
     margin-top: 1rem;
     padding-top: 1.2rem;
-    width: 137rem;
+    width: 100%;
     border-top: 1px solid #4b4b4b;
     height: 8rem;
     padding-left: 2rem;
@@ -87,7 +92,15 @@
     display: flex;
     color: #efeeeb;
     border-radius: 1rem;
-    // transition: background-color 0.5s, height 0.5s;
+    cursor: pointer;
+    transition: background-color 0.5s, height 0.2s, border-width 0.5s;
+    // pointer-events: auto;
+    cursor: pointer;
+}
+@media screen and (max-width: 1700px) {
+    .lessonDetails {
+        width: 90rem;
+    }
 }
 .lessonDetails h3 {
     font-size: 2rem;

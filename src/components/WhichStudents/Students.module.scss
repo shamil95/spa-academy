@@ -1,20 +1,21 @@
 .main {
-    height: 63rem;
     width: 100%;
     top: 85rem;
-    padding: 15rem 15rem 12rem 15rem;
+     padding: 15rem 15rem 12rem 20rem;
     opacity: 0px;
     background: #efeeeb;
+   
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 .container {
-    width: 148rem;
-    height: 43rem;
+    // width: 148rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+   
+
 }
 .text {
     width: 90rem;
@@ -38,4 +39,12 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 3rem;
+   
+
+}
+@media screen and (max-width: 1400px) {
+    .students {
+        flex-direction: column;
+        align-items: center;
+    }
 }

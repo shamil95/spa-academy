@@ -1,18 +1,18 @@
 .main {
     width: 100%;
-    padding: 10rem 15rem 10rem 15rem;
+    padding: 10rem 15rem 10rem 20rem;
+   // padding-left: 20rem;
     background: #efeeeb;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .container {
-    width: 148rem;
-    height: 30rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    width: 100%;
 }
 .text {
     font-size: 16px;
@@ -48,7 +48,7 @@
     color: #0f0f0f;
 }
 .cards {
-    width: 148rem;
+    width: 100%;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
