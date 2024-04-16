@@ -35,14 +35,14 @@ const WhyFundamentals = () => {
                     can safely say that today there is no company that has its own website without a front-end
                     developer. Such a specialist is equally demanded in any country of the world.
                 </p>
-                <div className={styles.boxes}>
-                    {boxes.map(box => (
-                        <div key={box.id} className={styles.box}>
-                            {box.image}
-                            <p>{box.content}</p>
-                        </div>
-                    ))}
-                </div>
+            </div>
+            <div className={styles.boxes}>
+                {boxes.map(box => (
+                    <div key={box.id} className={styles.box}>
+                        {box.image}
+                        <p>{box.content}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );

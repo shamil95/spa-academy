@@ -3,7 +3,7 @@ import styles from './SecondPage.module.scss';
 import Header from '../Header/Header';
 import Infromation from '../Information/Infromation';
 import Image from 'next/image';
-import ITFundamentals from '../../assets/images/ITFundamentals.png';
+import ITFundamentals from '../../assets/images/ITfundamentals2.png';
 import Students from '../WhichStudents/Students';
 import Training from '../Training/Training';
 import OurBenefits from '../OurBenefits/OurBenefits';
@@ -44,6 +44,9 @@ const SecondPage = () => {
         <>
             <Header />
             <div className={styles.container}>
+                <div className={styles.rectangle}>
+                </div>
+                <div className={styles.rectangle2}><h1>Messi</h1></div>
                 <div className={styles.banner}>
                     <Infromation
                         intro='Beginner'

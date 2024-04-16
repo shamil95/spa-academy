@@ -21,7 +21,7 @@
 }
 
 .seeAllButton {
-    // background-color: transparent;
+    
     border: 1px solid #ffc32c;
     color: #ffc32c;
     padding: 0.8rem 3rem;
@@ -37,7 +37,7 @@
     flex-direction: row;
     gap: 10rem;
     justify-content: space-between;
-    //border: 2px solid white;
+   
 }
 @media screen and (max-width: 1440px) {
     .blogPosts {

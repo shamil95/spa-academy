@@ -15,11 +15,11 @@ const Card = ({ title, details, isFirst }) => {
     return (
         <>
             {isFirst ? (
-                <div className={styles.card2} onClick={handleClick}>
+                <div className={!isOpen ? styles.card2 : styles.card} onClick={handleClick}>
                     <div className={styles.cardText}>
                         <button className={styles.btn}>
                             <Image
-                                src={isFirst ? minusIcon.src : plusIcon.src}
+                                src={!isOpen ? minusIcon.src : plusIcon.src}
                                 alt={isOpen ? 'minus' : 'plus'}
                                 width={30}
                                 height={30}
@@ -27,7 +27,7 @@ const Card = ({ title, details, isFirst }) => {
                         </button>
                         <h1>{title}</h1>
                     </div>
-                    {isFirst ? (
+                    {!isOpen ? (
                         <div className={styles.details}>
                             <p>{details}</p>
                         </div>
