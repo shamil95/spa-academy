@@ -26,14 +26,15 @@ const Universities = () => {
             </div>
             <div className={styles.universities}>
                 {universities.map((university, index) => (
-                    <Image
-                        className={styles.image}
-                        key={index}
-                        src={university.src}
-                        alt={'university'}
-                        width={university.width}
-                        height={university.height}
-                    />
+                    <div key={index} className={styles.imgContainer}>
+                        <Image
+                            className={styles.image}
+                            src={university.src}
+                            alt={'university'}
+                            width={university.width}
+                            height={university.height}
+                        />
+                    </div>
                 ))}
             </div>
         </div>

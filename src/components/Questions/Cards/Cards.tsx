@@ -5,7 +5,7 @@ import styles from './Cards.module.scss';
 const cards = [
     {
         id: 1,
-        title: 'How thiw work?',
+        title: 'How this work?',
         details:
             'It is better to see one than hear a hundred. Our free trial lesson helps you decide. You can attend classes and find answers to your questions with the help of our experts.',
     },

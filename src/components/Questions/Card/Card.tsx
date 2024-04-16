@@ -13,24 +13,51 @@ const Card = ({ title, details, isFirst }) => {
     };
 
     return (
-        <div className={isOpen ? styles.details : styles.card}>
-            <button className={isOpen ? styles.btn2 : styles.btn1} onClick={handleClick}>
-                <Image
-                    src={isOpen ? minusIcon.src : plusIcon.src}
-                    alt={isOpen ? 'minus' : 'plus'}
-                    width={30}
-                    height={30}
-                />
-            </button>
-            {isOpen ? (
-                <div className={styles.text}>
-                    <h1 className={styles.header}>{title}</h1>
-                    <p>{details}</p>
+        <>
+            {isFirst ? (
+                <div className={styles.card2} onClick={handleClick}>
+                    <div className={styles.cardText}>
+                        <button className={styles.btn}>
+                            <Image
+                                src={isFirst ? minusIcon.src : plusIcon.src}
+                                alt={isOpen ? 'minus' : 'plus'}
+                                width={30}
+                                height={30}
+                            />
+                        </button>
+                        <h1>{title}</h1>
+                    </div>
+                    {isFirst ? (
+                        <div className={styles.details}>
+                            <p>{details}</p>
+                        </div>
+                    ) : (
+                        ''
+                    )}
                 </div>
             ) : (
-                <h3>{title}</h3>
+                <div className={isOpen ? styles.card2 : styles.card} onClick={handleClick}>
+                    <div className={styles.cardText}>
+                        <button className={styles.btn}>
+                            <Image
+                                src={isOpen ? minusIcon.src : plusIcon.src}
+                                alt={isOpen ? 'minus' : 'plus'}
+                                width={30}
+                                height={30}
+                            />
+                        </button>
+                        <h1>{title}</h1>
+                    </div>
+                    {isOpen ? (
+                        <div className={styles.details}>
+                            <p>{details}</p>
+                        </div>
+                    ) : (
+                        ''
+                    )}
+                </div>
             )}
-        </div>
+        </>
     );
 };
 

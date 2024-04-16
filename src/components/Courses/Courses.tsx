@@ -8,6 +8,7 @@ import CyberSecurity from '../../assets/images/Cybersecurity.png';
 import CloudComputing from '../../assets/images/CloudComputing.png';
 import styles from './Courses.module.scss';
 import Course from './Course/Course';
+import Link from 'next/link';
 
 const courses = [
     {
@@ -77,7 +78,27 @@ const Courses = () => {
             </div>
             <div className={styles.container}>
                 {courses.map((course, index) => (
-                    <Course key={course.name} course={course} isFirst={index === 0} />
+                    <React.Fragment key={course.name}>
+                        {index === 0 ? (
+                            <Link href='/fundamentals' key={course.name} className={styles.hover}>
+                                <div className={styles.info}>
+                                    <div className={styles[course.level.value]}>{course.level.label}</div>
+                                    <div className={styles.name}>{course.name}</div>
+                                    <div className={styles.duration}>{course.duration}</div>
+                                </div>
+                                {course.image}
+                            </Link>
+                        ) : (
+                            <div key={course.name} className={styles.course}>
+                                <div className={styles.info}>
+                                    <div className={styles[course.level.value]}>{course.level.label}</div>
+                                    <div className={styles.name}>{course.name}</div>
+                                    <div className={styles.duration}>{course.duration}</div>
+                                </div>
+                                {course.image}
+                            </div>
+                        )}
+                    </React.Fragment>
                 ))}
             </div>
         </div>

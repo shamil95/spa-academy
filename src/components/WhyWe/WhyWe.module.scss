@@ -32,6 +32,9 @@
 
 .statistics {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     max-width: 65rem;
+    gap: 3rem;
+    padding: 2rem;
 }
