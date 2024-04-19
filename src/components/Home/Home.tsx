@@ -14,6 +14,9 @@ import OurBenefits from '../OurBenefits/OurBenefits';
 import Footer from '../Footer/Footer';
 import HeaderText from '../HeaderText/HeaderText';
 import Infromation from '../Information/Infromation';
+// import Slider, { Settings } from 'react-slick';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
 
 const courses = [
     'IT Fundamentals',
@@ -25,6 +28,13 @@ const courses = [
 ];
 
 const Home = () => {
+    // const settings: Settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    // };
     return (
         <>
             <Header />
@@ -44,11 +54,15 @@ const Home = () => {
                     <Image className={styles.image} src={HomeImage.src} alt={'homeImage'} width={575} height={520} />
                 </div>
             </div>
-            <ul className={styles.courses}>
+
+            <div className={styles.courses}>
                 {courses.map(course => (
-                    <li key={course}>{course}</li>
+                    <div className={styles.course} key={course}>
+                        <div className={styles.point}>.</div>
+                        <div className={styles.courseText}>{course}</div>
+                    </div>
                 ))}
-            </ul>
+            </div>
 
             <Courses />
             <StudentFeedback />

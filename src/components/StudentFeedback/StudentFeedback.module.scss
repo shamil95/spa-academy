@@ -29,6 +29,12 @@
 @media screen and (max-width: 1440px) {
     .feedbacks {
         flex-direction: column;
-        gap: 2rem; /* İstediğiniz boşluk miktarını ayarlayabilirsiniz */
+        align-items: center;
+        gap: 2rem;
+        margin: 0;
+    }
+    .container {
+        align-items: center;
+        padding: 5rem 0 0 0;
     }
 }

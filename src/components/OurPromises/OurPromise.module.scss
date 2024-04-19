@@ -7,9 +7,11 @@
     background: #efeeeb;
     display: flex;
     flex-direction: column;
+   
 }
 .text {
     width: 86rem;
+   
 }
 .header {
     font-size: 2.6rem;
@@ -31,14 +33,18 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 10rem;
-   
 }
-@media screen and (max-width:1700px) {
-     .rectangle{
+@media screen and (max-width: 1700px) {
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 8rem 11.5rem 10rem 15;
+    }
+    .rectangle {
         flex-direction: column;
         width: 100%;
         align-items: center;
-     }
+    }
 }
 .cards {
     //height: 100rem;
@@ -66,8 +72,7 @@
     position: absolute;
 }
 .image {
-    // border: 1px solid black;
-    // z-index: 1;
+  
     position: absolute;
 }
 .click {

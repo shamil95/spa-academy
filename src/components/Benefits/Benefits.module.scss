@@ -1,11 +1,11 @@
 .container {
     background-color: #efeeeb;
     color: #000000;
-    padding: 10rem 15rem 5rem 15rem;
+    padding: 10rem 15rem 5rem 25rem;
+    display: flex;
+    flex-direction: column;
 }
-.main {
-    margin-left: 12rem;
-}
+
 .header {
     font-size: 2.6rem;
     font-weight: 700;
@@ -24,8 +24,22 @@
 .benefits {
     display: flex;
     flex-wrap: wrap;
-    max-width: 114rem;
+    
     margin-top: 5rem;
     gap: 2rem;
-    margin-left: 12rem;
+   
+    
+}
+@media screen and (max-width: 1440px) {
+    .container{
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .benefits{
+          justify-content: center;
+       
+        padding: 0;
+    }
+    
 }
