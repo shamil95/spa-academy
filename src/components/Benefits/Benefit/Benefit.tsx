@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './Benefit.module.scss';
-import classNames from 'classnames';
 import { ICONS } from '@/assets/icons';
-
 const { benefitIcon, benefitIcon2 } = ICONS;
 
 const Benefit = ({ benefit, isFirst }) => {

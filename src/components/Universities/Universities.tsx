@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 const universities = [bandudu, harvard, stanford, google, tokopedia, cambridge, oxford, microsoft, amazon, samsung];
 
-const Universities = () => {
+const Universities: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.header}>

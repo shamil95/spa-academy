@@ -8,9 +8,10 @@ import playIcon from '../../assets/images/PlayIcon.png';
 import { ICONS } from '@/assets/icons';
 import Image from 'next/image';
 import Promise from './Promise/Promise';
-
+import { QuestionsType } from './QuestionsType';
 const { downArrowIcon, upArrowIcon } = ICONS;
-const questions = [
+
+const questions: QuestionsType[] = [
     {
         id: 1,
         title: 'Why should you choose this course?',
@@ -57,7 +58,7 @@ const questions = [
     },
 ];
 
-const OurPromise = () => {
+const OurPromise: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.text}>

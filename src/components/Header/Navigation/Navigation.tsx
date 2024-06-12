@@ -6,7 +6,12 @@ import { ICONS } from '@/assets/icons';
 
 const { LogoIcon, arrowDownIcon } = ICONS;
 
-const navigationData = [
+type NavigationData = {
+    id: number;
+    title: string;
+};
+
+const navigationData: NavigationData[] = [
     {
         id: 1,
         title: 'Academy',
@@ -25,7 +30,7 @@ const navigationData = [
     },
 ];
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
     return (
         <div className={styles.navigation}>
             <div className={styles.navigationLinks}>

@@ -12,7 +12,14 @@ import WhyFundamentals from '../WhyFundamentals/WhyFundamentals';
 import AnyQuestions from '../AnyQuestions/AnyQuestions';
 import Footer from '../Footer/Footer';
 
-const informations = [
+type InformationType = {
+    id: number;
+    title: string;
+    info: string;
+    count: string;
+};
+
+const informations: InformationType[] = [
     {
         id: 1,
         title: 'Duration',
@@ -39,14 +46,15 @@ const informations = [
     },
 ];
 
-const SecondPage = () => {
+const SecondPage: React.FC = () => {
     return (
         <>
             <Header />
             <div className={styles.container}>
-                <div className={styles.rectangle}>
+                <div className={styles.rectangle}></div>
+                <div className={styles.rectangle2}>
+                    <h1>Messi</h1>
                 </div>
-                <div className={styles.rectangle2}><h1>Messi</h1></div>
                 <div className={styles.banner}>
                     <Infromation
                         intro='Beginner'

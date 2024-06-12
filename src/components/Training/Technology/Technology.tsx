@@ -3,11 +3,17 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './Technology.module.scss';
 import { ICONS } from '@/assets/icons';
+import { GneneralTypes } from '../GeneralTypes';
 
 const { arrowDown2Icon, arrrowUpIcon } = ICONS;
 
-const Technology = ({ lesson, isFirst }) => {
-    const [isOpen, setIsOpen] = useState(false);
+type TechnologyProps = {
+    lesson: GneneralTypes;
+    isFirst: boolean;
+};
+
+const Technology: React.FC<TechnologyProps> = ({ lesson, isFirst }) => {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const handleClick = () => {
         setIsOpen(!isOpen);

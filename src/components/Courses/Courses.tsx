@@ -7,7 +7,7 @@ import DataScience from '../../assets/images/DataScience.png';
 import CyberSecurity from '../../assets/images/Cybersecurity.png';
 import CloudComputing from '../../assets/images/CloudComputing.png';
 import styles from './Courses.module.scss';
-import Course from './Course/Course';
+
 import Link from 'next/link';
 
 const courses = [
@@ -67,7 +67,7 @@ const courses = [
     },
 ];
 
-const Courses = () => {
+const Courses:React.FC = () => {
     return (
         <div className={styles.allCourses}>
             <div className={styles.main}>
@@ -80,7 +80,7 @@ const Courses = () => {
                 {courses.map((course, index) => (
                     <React.Fragment key={course.name}>
                         {index === 0 ? (
-                            <Link href='/fundamentals' key={course.name} className={styles.hover}>
+                            <Link href='/fundamentals'  className={styles.hover}>
                                 <div className={styles.info}>
                                     <div className={styles[course.level.value]}>{course.level.label}</div>
                                     <div className={styles.name}>{course.name}</div>

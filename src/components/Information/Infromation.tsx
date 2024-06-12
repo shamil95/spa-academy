@@ -1,7 +1,14 @@
 import React from 'react';
 import styles from './Infromation.module.scss';
 
-const Infromation = ({ intro, title, description, children }) => {
+type InformationProps = {
+    intro: string;
+    title: string;
+    description: string;
+    children: React.ReactNode;
+};
+
+const Information: React.FC<InformationProps> = ({ intro, title, description, children }) => {
     return (
         <div className={styles.info}>
             <div className={styles.intro}>{intro}</div>
@@ -14,5 +21,4 @@ const Infromation = ({ intro, title, description, children }) => {
     );
 };
 
-export default Infromation;
-
+export default Information;

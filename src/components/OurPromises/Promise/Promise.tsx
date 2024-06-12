@@ -4,10 +4,15 @@ import clickImage from '../../../assets/images/click.png';
 import { ICONS } from '@/assets/icons';
 import Image from 'next/image';
 import styles from './Promise.module.scss';
-
+import { QuestionsType } from '../QuestionsType';
 const { downArrowIcon, upArrowIcon } = ICONS;
 
-const Promise = ({ question, isFirst }) => {
+type PromiseComponentProps = {
+    question: QuestionsType;
+    isFirst: boolean;
+};
+
+const Promise: React.FC<PromiseComponentProps> = ({ question, isFirst }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () => {

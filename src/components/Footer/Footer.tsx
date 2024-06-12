@@ -7,7 +7,12 @@ import FooterColumn from './Column/FooterColumn';
 
 const { LogoIcon, arrowIcon, fbIcon, linkedinIcon, instaIcon, xIcon } = ICONS;
 
-const footerColumns = [
+type FooterColumnsProps = {
+    title: string;
+    items: string | {}[];
+};
+
+const footerColumns: FooterColumnsProps[] = [
     {
         title: 'Course Catalogue',
         items: [
@@ -41,10 +46,10 @@ const footerColumns = [
     },
 ];
 
-const footerLinks = ['Terms of Service', 'Privacy Policy', 'Cookie Notice'];
+const footerLinks: string[] = ['Terms of Service', 'Privacy Policy', 'Cookie Notice'];
 const footerIcons = [fbIcon, xIcon, instaIcon, linkedinIcon];
 
-const Footer = () => (
+const Footer: React.FC = () => (
     <div className={styles.footer}>
         <div className={styles.footerHeader}>
             <Image src={LogoIcon.src} alt={'logo'} width={162} height={40} />

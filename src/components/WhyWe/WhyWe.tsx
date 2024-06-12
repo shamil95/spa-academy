@@ -2,8 +2,9 @@ import React from 'react';
 import styles from './WhyWe.module.scss';
 import Statistic from './Statistic/Statistic';
 import HeaderText from '../HeaderText/HeaderText';
+import { StaticProps } from './Statistic/StaticProps';
 
-const statistics = [
+const statistics: StaticProps[] = [
     {
         statistic: '250+',
         label: 'studying student',
@@ -22,12 +23,12 @@ const statistics = [
     },
 ];
 
-const WhyWe = () => {
+const WhyWe: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.statistics}>
-                {statistics.map(statistic => (
-                    <Statistic key={statistic.statistic} statistic={statistic} />
+                {statistics.map(stat => (
+                    <Statistic key={stat.label} statistic={stat} />
                 ))}
             </div>
 
@@ -44,3 +45,4 @@ const WhyWe = () => {
 };
 
 export default WhyWe;
+
