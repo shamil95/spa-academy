@@ -1,73 +1,66 @@
+'use client';
 import React, { useState } from 'react';
-import Image from 'next/image';
-import ITFundamentals from '../../assets/images/ITFundamentals.png';
-import Programming from '../../assets/images/Programming.png';
-import WebDevelopment from '../../assets/images/Webdevelopment.png';
-import DataScience from '../../assets/images/DataScience.png';
-import CyberSecurity from '../../assets/images/Cybersecurity.png';
-import CloudComputing from '../../assets/images/CloudComputing.png';
 import styles from './Courses.module.scss';
-
 import Link from 'next/link';
 
-const courses = [
+type CourseType = {
+    courseType: string;
+    name: string;
+    duration: string;
+    startDate: string;
+};
+
+const courses: CourseType[] = [
     {
-        level: {
-            label: 'Beginner',
-            value: 'beginner',
-        },
-        name: 'IT Fundamentals',
-        duration: '4 month',
-        image: <Image src={ITFundamentals.src} alt={'course'} width={225} height={225} />,
+        courseType: 'For Teenagers',
+        name: 'Mathematics for Programming',
+        duration: '4 months',
+        startDate: 'Start: June 2024',
     },
     {
-        level: {
-            label: 'Advanced',
-            value: 'advanced',
-        },
-        name: 'Programming',
-        duration: '4 month',
-        image: <Image src={Programming.src} alt={'course'} width={225} height={225} />,
+        courseType: 'For Teenagers',
+        name: 'Programming Fundamentals',
+        duration: '4 months',
+        startDate: 'Start: June 2024',
     },
     {
-        level: {
-            label: 'Professional',
-            value: 'professional',
-        },
-        name: 'Web Development',
-        duration: '4 month',
-        image: <Image src={WebDevelopment.src} alt={'course'} width={225} height={225} />,
+        courseType: 'For Teenagers',
+        name: 'Computer Architecture and Systems',
+        duration: '4 months',
+        startDate: 'Start: June 2024',
     },
     {
-        level: {
-            label: 'Middle',
-            value: 'middle',
-        },
-        name: 'Data Science',
-        duration: '4 month',
-        image: <Image src={DataScience.src} alt={'course'} width={225} height={225} />,
+        courseType: 'For Teenagers',
+        name: 'Graphic Design Fundamentals',
+        duration: '4 months',
+        startDate: 'Start: June 2024',
     },
     {
-        level: {
-            label: 'Advanced',
-            value: 'advanced',
-        },
-        name: 'Cyber Security',
-        duration: '4 month',
-        image: <Image src={CyberSecurity.src} alt={'course'} width={225} height={225} />,
-    },
-    {
-        level: {
-            label: 'Beginner',
-            value: 'beginner',
-        },
-        name: 'Cloud Computing',
-        duration: '4 month',
-        image: <Image src={CloudComputing.src} alt={'course'} width={225} height={225} />,
+        courseType: 'For Teenagers',
+        name: 'Web Development Fundamentals',
+        duration: '4 months',
+        startDate: 'Start: June 2024',
     },
 ];
 
-const Courses:React.FC = () => {
+const coursesTitle: string[] = [
+    'Popular Courses',
+    'For Teenagers',
+    'Mathematics',
+    'Data Science',
+    'Digital Marketing',
+    'Design',
+    'Software Development',
+    'BootCamps',
+];
+
+const Courses: React.FC = () => {
+    const [isColored, setIsColored] = useState<boolean[]>(courses.map((_, index) => index === 1));
+    const handleClick = (index: number) => {
+        const newIsColored = [...isColored];
+        newIsColored[index] = !newIsColored[index];
+        setIsColored(newIsColored);
+    };
     return (
         <div className={styles.allCourses}>
             <div className={styles.main}>
@@ -76,26 +69,41 @@ const Courses:React.FC = () => {
                     Join our live online classes with industry experts. At an affordable price.
                 </div>
             </div>
+            <div className={styles.boxes}>
+                {coursesTitle.map((courseT, index) => (
+                    <div
+                        key={index}
+                        className={isColored[index] ? styles.box2 : styles.box}
+                        onClick={() => handleClick(index)}
+                    >
+                        <span>{courseT}</span>
+                    </div>
+                ))}
+            </div>
             <div className={styles.container}>
                 {courses.map((course, index) => (
                     <React.Fragment key={course.name}>
                         {index === 0 ? (
-                            <Link href='/fundamentals'  className={styles.hover}>
+                            <Link href='/fundamentals' className={styles.course}>
                                 <div className={styles.info}>
-                                    <div className={styles[course.level.value]}>{course.level.label}</div>
+                                    <div className={styles.courseType}>{course.courseType}</div>
                                     <div className={styles.name}>{course.name}</div>
-                                    <div className={styles.duration}>{course.duration}</div>
+                                    <div className={styles.blacks}>
+                                        <div className={styles.duration}>{course.duration}</div>
+                                        <div className={styles.startDate}>{course.startDate}</div>
+                                    </div>
                                 </div>
-                                {course.image}
                             </Link>
                         ) : (
                             <div key={course.name} className={styles.course}>
                                 <div className={styles.info}>
-                                    <div className={styles[course.level.value]}>{course.level.label}</div>
+                                    <div className={styles.courseType}>{course.courseType}</div>
                                     <div className={styles.name}>{course.name}</div>
-                                    <div className={styles.duration}>{course.duration}</div>
+                                    <div className={styles.blacks}>
+                                        <div className={styles.duration}>{course.duration}</div>
+                                        <div className={styles.startDate}>{course.startDate}</div>
+                                    </div>
                                 </div>
-                                {course.image}
                             </div>
                         )}
                     </React.Fragment>
