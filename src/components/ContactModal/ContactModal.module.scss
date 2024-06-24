@@ -1,0 +1,110 @@
+.background {
+    background: rgba(13, 7, 7, 0.4);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.container {
+    width: 44rem;
+    height: 51rem;
+    border-radius: 1rem;
+    padding: 4rem;
+    background-color: #efeeeb;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+}
+.closeBtn {
+    width: 34px;
+    height: 34px;
+    background-color: #e3e2df;
+    border: 0;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    top: 2.5rem;
+    right: 2.5rem;
+}
+.contact {
+    width: 36rem;
+    height: 30.4rem;
+    background-color: #ffff;
+    position: relative;
+}
+.text {
+    width: 30.7rem;
+    height: 8.2rem;
+}
+.header {
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    color: #0f0f0f;
+}
+.text > p {
+    line-height: 2.1rem;
+    font-size: 1.4rem;
+    color: #4b4b4b;
+}
+.form {
+    width: 36rem;
+    height: 17.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.formDiv > label {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #4b4b4b;
+    text-align: left;
+}
+.formDiv > input {
+    height: 4.8rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    background-color: #efeeeb;
+    color: #0f0f0f;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 1.2rem 2rem;
+}
+.footer {
+    width: 100%;
+    height: 9.5rem;
+}
+.btnSend {
+    width: 9.6rem;
+    height: 4.4rem;
+    border-radius: 4rem;
+    background-color: #ffc32c;
+    color: #0f0f0f;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    letter-spacing: 0.02em;
+}
+.footer > p {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #7b7b7b;
+}

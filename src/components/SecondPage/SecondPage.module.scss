@@ -1,9 +1,13 @@
 .container {
-    background-color: #0f0f0f;
+//     background-color: rgba(13, 7, 7, 0.8);
+//     background-color: red;
+//   //  backdrop-filter: blur(5px);
+    opacity: 80;
     color: #fff;
     background-size: cover;
+    background-image: url('../../assets/images/CourseImage.png');
     width: 100%;
-    height: 90rem;
+    height: 85.2rem;
     overflow: hidden;
     gap: 3rem;
     display: flex;
@@ -16,28 +20,28 @@
     box-sizing: border-box;
 }
 
-.rectangle {
-    width: 47.2rem;
-    height: 47.2rem;
-    background-color: #ffc32c;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 5rem;
-    background: rgba(255, 195, 44, 0.4);
-    filter: blur(100px);
-}
-.rectangle2 {
-    width: 47.2rem;
-    height: 47.2rem;
-    background-color: #ffc32c;
-    position: absolute;
-    top: 30rem;
-    left: -30rem;
-    border: 5rem;
-    background: rgba(255, 195, 44, 0.4);
-    filter: blur(100px);
-}
+// .rectangle {
+//     width: 47.2rem;
+//     height: 47.2rem;
+//     background-color: #ffc32c;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     border: 5rem;
+//     background: rgba(255, 195, 44, 0.4);
+//     filter: blur(100px);
+// }
+// .rectangle2 {
+//     width: 47.2rem;
+//     height: 47.2rem;
+//     background-color: #ffc32c;
+//     position: absolute;
+//     top: 30rem;
+//     left: -30rem;
+//     border: 5rem;
+//     background: rgba(255, 195, 44, 0.4);
+//     filter: blur(100px);
+// }
 
 .banner {
     width: 80%;
