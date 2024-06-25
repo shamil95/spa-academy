@@ -85,23 +85,27 @@ const Courses: React.FC = () => {
                     <React.Fragment key={course.name}>
                         {index === 0 ? (
                             <Link href='/fundamentals' className={styles.course}>
-                                <div className={styles.info}>
-                                    <div className={styles.courseType}>{course.courseType}</div>
-                                    <div className={styles.name}>{course.name}</div>
-                                    <div className={styles.blacks}>
-                                        <div className={styles.duration}>{course.duration}</div>
-                                        <div className={styles.startDate}>{course.startDate}</div>
+                                <div className={styles.content}>
+                                    <div className={styles.info}>
+                                        <div className={styles.courseType}>{course.courseType}</div>
+                                        <div className={styles.name}>{course.name}</div>
+                                        <div className={styles.blacks}>
+                                            <div className={styles.duration}>{course.duration}</div>
+                                            <div className={styles.startDate}>{course.startDate}</div>
+                                        </div>
                                     </div>
                                 </div>
                             </Link>
                         ) : (
                             <div key={course.name} className={styles.course}>
-                                <div className={styles.info}>
-                                    <div className={styles.courseType}>{course.courseType}</div>
-                                    <div className={styles.name}>{course.name}</div>
-                                    <div className={styles.blacks}>
-                                        <div className={styles.duration}>{course.duration}</div>
-                                        <div className={styles.startDate}>{course.startDate}</div>
+                                <div className={styles.content}>
+                                    <div className={styles.info}>
+                                        <div className={styles.courseType}>{course.courseType}</div>
+                                        <div className={styles.name}>{course.name}</div>
+                                        <div className={styles.blacks}>
+                                            <div className={styles.duration}>{course.duration}</div>
+                                            <div className={styles.startDate}>{course.startDate}</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
