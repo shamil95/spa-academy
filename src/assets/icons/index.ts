@@ -21,6 +21,11 @@ import upArrow from './up.svg';
 import incomingCall from './incoming-call.svg';
 import closeIcon from './Xicon.svg';
 import vectoriIcon from './Vector.svg';
+import arrowLeft from './arrow-left.svg';
+import loginGroup from './loginGroup.svg';
+import appleIcon from './aple.svg';
+import googleIcon from './google.svg';
+import testIcon from './testIcon.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -46,4 +51,9 @@ export const ICONS = {
     callIcon: incomingCall,
     closeIcon: closeIcon,
     vectorIcon: vectoriIcon,
+    arrowLeft: arrowLeft,
+    loginGroup: loginGroup,
+    appleIcon: appleIcon,
+    googleIcon: googleIcon,
+    testIcon: testIcon,
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Account.module.scss';
 import { ICONS } from '@/assets/icons';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Props {}
 
@@ -12,10 +13,10 @@ const Account: React.FC<Props> = () => {
                 <Image src={ICONS.LanguageIcon.src} alt={'language'} width={16} height={16} className={styles.lang} />
                 <span>Eng</span>
             </div>
-            <div className={styles.studentPortal}>
+            <Link href='/login' className={styles.studentPortal}>
                 <Image src={ICONS.AccountIcon.src} alt={'account'} width={16} height={16} />
                 <span>Student portal</span>
-            </div>
+            </Link>
         </div>
     );
 };
