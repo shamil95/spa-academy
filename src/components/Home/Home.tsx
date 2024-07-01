@@ -18,6 +18,7 @@ import ContactModal from '../ContactModal/ContactModal';
 import Login from '../Login/Login';
 import { PagesDropdown } from '../Dropdowns';
 import AboutPage from '../AboutPage/AboutPage';
+import TextComponent from '../Text/TextComponent';
 
 const courses: string[] = [
     'IT Fundamentals',

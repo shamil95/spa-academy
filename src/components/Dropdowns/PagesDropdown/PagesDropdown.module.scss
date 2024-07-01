@@ -17,16 +17,18 @@
         0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 .links {
+    height: 23.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
     cursor: pointer;
+    box-sizing: border-box;
     
 }
 .link {
-    padding: 1.5rem 2rem;
-    height: 5.2rem;
+    padding: .5rem 2rem;
+    height: 5rem;
     text-align: left;
     color: #0f0f0f;
     line-height: 2.2rem;

@@ -26,13 +26,15 @@ const pagesData: PagesDataType[] = [
     },
 ];
 
+const pagesHref: string[] = ['about', 'careers', 'instructors', 'contact'];
+
 const PagesDropdown: React.FC = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.links}>
-                {pagesData.map(data => (
+                {pagesData.map((data, index) => (
                     <li className={styles.link} key={data.id}>
-                        <Link href=''>{data.title}</Link>
+                        <Link href={`/${pagesHref[index]}`}>{data.title}</Link>
                     </li>
                 ))}
             </ul>
