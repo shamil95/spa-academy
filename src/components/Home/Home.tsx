@@ -16,6 +16,8 @@ import HeaderText from '../HeaderText/HeaderText';
 import Information from '../Information/Infromation';
 import ContactModal from '../ContactModal/ContactModal';
 import Login from '../Login/Login';
+import { PagesDropdown } from '../Dropdowns';
+import AboutPage from '../AboutPage/AboutPage';
 
 const courses: string[] = [
     'IT Fundamentals',
@@ -64,7 +66,6 @@ const Home: React.FC = () => {
             <BlogPosts />
             <Questions />
             <Footer />
-            {/* <Login/> */}
         </>
     );
 };

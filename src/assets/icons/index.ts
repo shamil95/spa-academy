@@ -26,6 +26,7 @@ import loginGroup from './loginGroup.svg';
 import appleIcon from './aple.svg';
 import googleIcon from './google.svg';
 import testIcon from './testIcon.svg';
+import arrowDown1 from './arrowDown1.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -56,4 +57,5 @@ export const ICONS = {
     appleIcon: appleIcon,
     googleIcon: googleIcon,
     testIcon: testIcon,
+    arrowDown1: arrowDown1,
 };

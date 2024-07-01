@@ -23,7 +23,7 @@
 }
 
 .allCourses:hover + .icon {
-    filter: brightness(0.8); /* Change the brightness to make the image darker on hover */
+    filter: brightness(0.8);
 }
 
 .navigationLinks {
@@ -43,6 +43,11 @@
 
 .link {
     margin-right: 0.5rem;
+    color: #e3e2df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
 
     &:last-child {
         margin-right: 0;
