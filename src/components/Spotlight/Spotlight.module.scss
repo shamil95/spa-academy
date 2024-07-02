@@ -1,0 +1,67 @@
+.conatiner {
+    width: 100%;
+    height: 54rem;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    width: 114rem;
+    height: 30rem;
+    display: flex;
+    gap: 6rem;
+}
+.imageContainer {
+    background-color: #ebc460;
+    border-radius: 1rem;
+}
+.midle {
+    width: 78rem;
+    padding: 4.2rem 0;
+}
+.text {
+    width: 100%;
+    height: 21.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.title {
+    height: 4rem;
+    color: #ffc32c;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.border {
+    width: 18.5rem;
+    border: 0.1rem solid #4b4b4b;
+    margin-left: 2.7rem;
+}
+.description {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: #f9f9f9;
+}
+.footer {
+    margin-top: 2rem;
+}
+.instructor {
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 2.1rem;
+    color: #cccccc;
+}
+.colorText {
+    color: #b59850;
+    line-height: 2.1rem;
+    text-align: left;
+    font-size: 1.4rem;
+    font-style: italic;
+}
