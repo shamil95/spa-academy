@@ -34,6 +34,14 @@ import beetrootIcon4 from './beetrootIcon4.svg';
 import beetrootIcon5 from './beetrootIcon5.svg';
 import beetrootIcon6 from './beetrootIcon6.svg';
 import buttonDownIcon from './buttonDownIcon.svg';
+import instructorImg from './instructorImage.svg';
+import faceBookImage from './FacebookImg.svg';
+import instaImage from './InstaImage.svg';
+import linkedinImage from './LinkedinIamge.svg';
+import XImage from './XImage.svg';
+import phoneNotebook from './contact-phonebook.svg';
+import inboxFavorite from './inbox-favorite.svg';
+import loactionGps from './loaction-gps.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -72,4 +80,12 @@ export const ICONS = {
     beetrootIcon5: beetrootIcon5,
     beetrootIcon6: beetrootIcon6,
     buttonDownIcon: buttonDownIcon,
+    instructorImg: instructorImg,
+    faceBookImage: faceBookImage,
+    instaImage: instaImage,
+    linkedinImage: linkedinImage,
+    XImage: XImage,
+    phoneNotebook: phoneNotebook,
+    inboxFavorite: inboxFavorite,
+    loactionGps: loactionGps,
 };

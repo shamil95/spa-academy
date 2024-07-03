@@ -1,0 +1,25 @@
+.topButton {
+    background-color: rgba(255, 195, 44, 0.1);
+    height: 3rem;
+    border-radius: 4rem;
+    color: #ffc32c;
+    border: none;
+    padding: 0.6rem 1.7rem;
+}
+.images {
+    width: 22rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.image {
+    width: 4.2rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
