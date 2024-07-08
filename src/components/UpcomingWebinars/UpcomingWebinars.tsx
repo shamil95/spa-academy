@@ -3,7 +3,7 @@ import styles from './UpcomingWebinars.module.scss';
 import Image from 'next/image';
 import webinarPng from '../../assets/images/webinar1.png';
 import { ICONS } from '@/assets/icons';
-import LargeWebinar from '../LargeWebinar/LargeWebinar';
+import LargeWebinar from '../Large/LargeWebinar'
 
 const { calendarStar, alarmOclock, loactionIcon } = ICONS;
 
