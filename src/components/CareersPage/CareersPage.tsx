@@ -22,9 +22,9 @@ const CareersPage: React.FC = () => {
         }
     };
 
-    const upButton = <button className={styles.topButton}>About us</button>;
+    const upButton = <button className={styles.upButton}>About us</button>;
     const downButton = (
-        <button className={styles.upButton} onClick={scrollToPositions}>
+        <button className={styles.downButton} onClick={scrollToPositions}>
             See Vacancies <Image src={buttonDownIcon} alt='Button Down' />
         </button>
     );

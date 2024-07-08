@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    height: 56.5rem;
+    background-color: rgba(239, 238, 235, 0.5);
+    padding-top: 6rem;
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 31rem;
+}
+.contact {
+    width: 75rem;
+    height: 8.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.header {
+    text-align: left;
+    color: #0f0f0f;
+    line-height: 3.6rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.address {
+    text-align: left;
+    line-height: 2.7rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.address > span {
+    color: #4b4b4b;
+}
