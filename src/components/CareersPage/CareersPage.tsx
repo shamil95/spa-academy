@@ -1,4 +1,4 @@
- "use client";
+'use client';
 import React, { useRef } from 'react';
 import styles from './CareersPage.module.scss';
 import Header from '../Header/Header';
@@ -10,6 +10,7 @@ import Positions from '../Positions/Positions';
 import Footer from '../Footer/Footer';
 import Image from 'next/image';
 import { ICONS } from '@/assets/icons';
+import girlsPng from '../../assets/images/2girlsMeeting.png';
 
 const { buttonDownIcon } = ICONS;
 
@@ -29,6 +30,7 @@ const CareersPage: React.FC = () => {
         </button>
     );
 
+    const componentImage = <Image src={girlsPng.src} alt='2 girls meeting' width={555} height={382} />;
     return (
         <>
             <Header />
@@ -38,7 +40,14 @@ const CareersPage: React.FC = () => {
                 text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ad aspernatur in. Non fugiat molestiae laboriosam.'
                 downButton={downButton}
             />
-            <WorkTogether />
+            <WorkTogether
+                title=' Work together and help us shape the future of digital learning'
+                description='We are on the quest to build a world-class education company that offers life-changing
+                            opportunities to people across the globe. We help people start and improve careers in tech
+                            by offering courses and a community that gives them the knowledge and network needed to
+                            succeed.'
+                image={componentImage}
+            />
             <Beetroot />
             <Spotlight />
             <div ref={positionsRef}>

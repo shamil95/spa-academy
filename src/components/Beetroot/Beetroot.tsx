@@ -52,7 +52,7 @@ const boxData: boxDataType[] = [
     },
 ];
 
-const Beetroot = () => {
+const Beetroot:React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.main}>

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, {FormEvent, useState } from 'react';
 import styles from './CourseForm.module.scss';
 import InformationModal from '../InformationModal/InformationModal';
 
@@ -32,13 +32,18 @@ const CourseForm: React.FC = () => {
             type: 'tel',
         },
     ];
+    
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    };
+
 
     return (
         <div className={styles.container}>
             {openModal && <InformationModal closeModal={setOpenModal} />}
             <div className={styles.header}>I Want To Learn This Course</div>
 
-            <form className={styles.form}>
+            <form className={styles.form} onSubmit={handleSubmit}>
                 <div className={styles.learn}>
                     <div>I want to learn</div>
                     <select className={styles.select} required>

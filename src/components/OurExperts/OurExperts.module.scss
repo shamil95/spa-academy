@@ -1,0 +1,97 @@
+.container {
+    width: 100%;
+    height: 45.8rem;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.title {
+    height: 7.2rem;
+    line-height: 3.6rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-align: left;
+    color: #f9f9f9;
+}
+.boxes {
+    width: 100%;
+    height: 17.2rem;
+    display: flex;
+    gap: 3rem;
+}
+.box {
+    width: 36rem;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #1b1b1b;
+    display: flex;
+    gap: 2.7rem;
+    padding: 3rem 5.2rem 3.4rem 3rem;
+    border: 1px solid #7b7b7b;
+}
+.imageContainer {
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 5rem;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.image {
+    filter: grayscale(100%);
+}
+.text {
+    width: 16.6rem;
+    height: 10.8rem;
+}
+.name {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    text-align: left;
+    color: #f9f9f9;
+}
+.profession {
+    font-style: italic;
+    line-height: 2.1rem;
+    font-size: 1.4rem;
+    color: #7b7b7b;
+}
+.icons {
+    width: 16.6rem;
+    height: 3.6rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+.socialIcon {
+    width: 3.8rem;
+    height: 3.6rem;
+    background-color: #191818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    position: relative;
+}
+.socialIcon:hover .effects {
+    background: rgba(255, 195, 44, 0.4);
+    filter: blur(10px);
+}
+
+.effects {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 3rem;
+}
