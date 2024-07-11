@@ -59,41 +59,45 @@ const blogPosts: BlogPost[] = [
 const BlogPosts: React.FC = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                <div>Our Latest Blog Posts</div>
-                <button className={styles.seeAllButton}>See All Blog Posts</button>
-            </div>
-            <div className={styles.headerExtra}>
-                Stay up-to-date on our regular course activities and new job openings from our actively shared blog
-                posts.
-            </div>
-            <div className={styles.blogPosts}>
-                <div className={styles.leftContainer}>
-                    {blogPosts.slice(0, 2).map(blogPost => (
-                        <div key={blogPost.date} className={styles.blogPost}>
-                            {blogPost.image}
-                            <div className={styles.dateAndCategory}>
-                                <div> {blogPost.date}</div>
-                                <div className={styles.category}> {blogPost.category}</div>
-                            </div>
-                            <div className={styles.title}>{blogPost.title}</div>
-                            <div className={styles.largeBody}>{blogPost.body}</div>
-                        </div>
-                    ))}
+            <div className={styles.main}>
+                <div className={styles.upDiv}>
+                    <div className={styles.header}>
+                        <div>Our Latest Blog Posts</div>
+                        <button className={styles.seeAllButton}>See All Blog Posts</button>
+                    </div>
+                    <div className={styles.headerExtra}>
+                        Stay up-to-date on our regular course activities and new job openings from our actively shared
+                        blog posts.
+                    </div>
                 </div>
-                <div className={styles.rightContainer}>
-                    {blogPosts.slice(2).map(blogPost => (
-                        <div key={blogPost.date} className={styles.miniblogPost}>
-                            {blogPost.image}
-                            <div className={styles.info}>
-                                <div className={styles.miniDate}>
+                <div className={styles.blogPosts}>
+                    <div className={styles.leftContainer}>
+                        {blogPosts.slice(0, 2).map(blogPost => (
+                            <div key={blogPost.date} className={styles.blogPost}>
+                                {blogPost.image}
+                                <div className={styles.dateAndCategory}>
                                     <div> {blogPost.date}</div>
                                     <div className={styles.category}> {blogPost.category}</div>
                                 </div>
-                                <div className={styles.body}>{blogPost.body}</div>
+                                <div className={styles.title}>{blogPost.title}</div>
+                                <div className={styles.largeBody}>{blogPost.body}</div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
+                    <div className={styles.rightContainer}>
+                        {blogPosts.slice(2).map(blogPost => (
+                            <div key={blogPost.date} className={styles.miniblogPost}>
+                                {blogPost.image}
+                                <div className={styles.info}>
+                                    <div className={styles.miniDate}>
+                                        <div> {blogPost.date}</div>
+                                        <div className={styles.category}> {blogPost.category}</div>
+                                    </div>
+                                    <div className={styles.body}>{blogPost.body}</div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

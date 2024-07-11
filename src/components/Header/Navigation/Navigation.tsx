@@ -4,6 +4,7 @@ import styles from './Navigation.module.scss';
 import Image from 'next/image';
 import { ICONS } from '@/assets/icons';
 import { CoursesDopdown, PagesDropdown, ServicesDropdown, ResourcesDropdown, LanguageDropdown } from '../../Dropdowns';
+import Link from 'next/link';
 
 const { LogoIcon, arrowDownIcon, arrowDown1 } = ICONS;
 
@@ -56,7 +57,7 @@ const Navigation: React.FC = () => {
             {dropdownState.resources && <ResourcesDropdown />}
 
             <div className={styles.navigationLinks}>
-                <Image src={LogoIcon.src} alt={'logo'} width={162} height={40} />
+               <Link href="/"> <Image src={LogoIcon.src} alt={'logo'} width={162} height={40} /></Link>
                 <div className={styles.allCourses} onClick={() => toggleDropdown('courses')}>
                     All courses
                     <Image className={styles.icon} src={arrowDownIcon.src} alt='arrow down' width={20} height={15} />

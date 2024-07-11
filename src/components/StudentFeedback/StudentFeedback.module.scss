@@ -1,30 +1,32 @@
 .container {
     background-color: #efeeeb;
     color: #000000;
-    padding: 15rem 15rem 10rem 33rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 68.4rem;
+   
+}
+.main{
+    width: 114rem;
+  
     display: flex;
     flex-direction: column;
+    gap: 5rem;
+}
+.titleComponent{
+   
+    width: 57rem;
 }
 
-.header {
-    font-size: 2.6rem;
-    font-weight: 700;
-    max-width: 54.3rem;
-    margin-bottom: 2rem;
-}
 
-.headerExtra {
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    max-width: 57rem;
-    color: #4b4b4b;
-}
 
 .feedbacks {
     display: flex;
     align-items: center;
     gap: 3rem;
+    width: 100%;
+  
 }
 @media screen and (max-width: 1440px) {
     .feedbacks {

@@ -7,8 +7,9 @@ import Image from 'next/image';
 import styles from './StudentFeedback.module.scss';
 import FeedBack from './Feedback/FeedBack';
 import { FeedbackProps } from './Feedback/FeedbackProps';
+import Title from '../Title/Title';
 
-const feedBacks :FeedbackProps[] = [
+const feedBacks: FeedbackProps[] = [
     {
         fullName: 'Maria Philips',
         profession: 'Web developer',
@@ -35,15 +36,19 @@ const feedBacks :FeedbackProps[] = [
 const StudentFeedback: React.FC = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>Student Feedback</div>
-            <div className={styles.headerExtra}>
-                Our students tell you about the knowledge they gained at the academy and the style of conducting
-                lessons...
-            </div>
-            <div className={styles.feedbacks}>
-                {feedBacks.map(course => (
-                    <FeedBack key={course.fullName} course={course} />
-                ))}
+            <div className={styles.main}>
+               
+                <Title
+                className={styles.titleComponent}
+                    title='Student Feedback'
+                    description=' Our students tell you about the knowledge they gained at the academy and the style of conducting
+                lessons...'
+                />
+                <div className={styles.feedbacks}>
+                    {feedBacks.map(course => (
+                        <FeedBack key={course.fullName} course={course} />
+                    ))}
+                </div>
             </div>
         </div>
     );

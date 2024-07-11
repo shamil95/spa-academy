@@ -9,6 +9,7 @@ import { ICONS } from '@/assets/icons';
 import Image from 'next/image';
 import Promise from './Promise/Promise';
 import { QuestionsType } from './QuestionsType';
+import Title from '../Title/Title';
 const { downArrowIcon, upArrowIcon } = ICONS;
 
 const questions: QuestionsType[] = [
@@ -61,14 +62,10 @@ const questions: QuestionsType[] = [
 const OurPromise: React.FC = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.text}>
-                <h1 className={styles.header}>What do we promise you?</h1>
-                <p className={styles.description}>
-                    There are several types of courses operating in our course. Choosing Java in the IT field is a very
+           <div className={styles.main}>
+            <Title  className={styles.titleComponent} title='What do we promise you?' description=' There are several types of courses operating in our course. Choosing Java in the IT field is a very
                     powerful choice. It is useful for you to get extensive information about what you will get during
-                    the course and what you will achieve after this course.
-                </p>
-            </div>
+                    the course and what you will achieve after this course.'/>
             <div className={styles.rectangle}>
                 <div className={styles.cards}>
                     {questions.map((question, index) => (
@@ -95,6 +92,7 @@ const OurPromise: React.FC = () => {
                         <button className={styles.cardBtn}>Enroll now</button>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );

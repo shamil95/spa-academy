@@ -57,16 +57,18 @@ const Footer: React.FC = () => {
         <div className={styles.footer}>
             {openModal && <ContactModal closeModal={setOpenModal} />}
             <div className={styles.footerHeader}>
-                <Image src={LogoIcon.src} alt={'logo'} width={162} height={40} />
-                <div className={styles.buttons}>
-                    <button className={styles.btn1}>
-                        <Image src={callIcon.src} alt='Incoming call' width={16} height={16} />
-                        Call Our Academy
-                    </button>
-                    <button className={styles.btn2} onClick={() => setOpenModal(true)}>
-                        Get to know our courses
-                        <Image src={arrowIcon.src} alt='Arrow' width={16} height={16} />
-                    </button>
+                <div className={styles.main}>
+                    <Image src={LogoIcon.src} alt={'logo'} width={162} height={40} />
+                    <div className={styles.buttons}>
+                        <button className={styles.btn1}>
+                            <Image src={callIcon.src} alt='Incoming call' width={16} height={16} />
+                            Call Our Academy
+                        </button>
+                        <button className={styles.btn2} onClick={() => setOpenModal(true)}>
+                            Get to know our courses
+                            <Image src={arrowIcon.src} alt='Arrow' width={16} height={16} />
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className={styles.body}>
@@ -77,19 +79,22 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <div className={styles.footerF}>
-                <ul>
-                    {footerLinks.map((link, index) => (
-                        <li key={index}>{link}</li>
-                    ))}
-                </ul>
-                <div className={styles.images}>
-                    {footerIcons.map((icon, index) => (
-                        <div key={index} className={styles.image}>
-                            <Image src={icon.src} alt={icon.alt} width={20} height={20} />
-                        </div>
-                    ))}
+                <div className={styles.main}>
+                    <ul>
+                        {footerLinks.map((link, index) => (
+                            <li key={index}>{link}</li>
+                        ))}
+                    </ul>
+                    <div className={styles.images}>
+                        {footerIcons.map((icon, index) => (
+                            <div key={index} className={styles.socialIcon}>
+                                <div className={styles.effects}></div>
+                                <Image src={icon.src} alt={icon.alt} width={20} height={20} />
+                            </div>
+                        ))}
+                    </div>
+                    <p>Copyright © 2024. Science Park Academy</p>
                 </div>
-                <p>Copyright © 2024. Science Park Academy</p>
             </div>
         </div>
     );

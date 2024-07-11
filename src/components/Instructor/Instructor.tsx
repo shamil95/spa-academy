@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from './Instructor.module.scss';
+import React from 'react';  
 import Header from '../Header/Header';
 import InstructorHeader from '../InstructorHeader/InstructorHeader';
 import InstructorAbout from '../InstructorAbout/InstructorAbout';

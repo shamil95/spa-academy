@@ -1,9 +1,21 @@
 .container {
     background-color: #efeeeb;
     color: #000000;
-    padding: 10rem 15rem 5rem 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 104rem;
+}
+.main{
+    width: 114rem;
     display: flex;
     flex-direction: column;
+    gap: 5rem;
+}
+.titleComponent{
+    width: 62.2rem;
+    height: 14.6rem;
+
 }
 
 .header {
@@ -24,9 +36,8 @@
 .benefits {
     display: flex;
     flex-wrap: wrap;
-    
-    margin-top: 5rem;
     gap: 2rem;
+    height: 62.6rem;
    
     
 }

@@ -29,7 +29,9 @@ const WhyWe: React.FC = () => {
     const [openModal, setOpenModal] = useState<boolean>(false);
     return (
         <div className={styles.container}>
+
             {openModal && <ContactModal closeModal={setOpenModal} />}
+            <div className={styles.main}>
             <div className={styles.statistics}>
                 {statistics.map(stat => (
                     <Statistic key={stat.label} statistic={stat} />
@@ -46,6 +48,7 @@ const WhyWe: React.FC = () => {
                 </button>
                 <button className={styles.learnMore}>Contact us</button>
             </HeaderText>
+            </div>
         </div>
     );
 };

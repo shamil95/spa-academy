@@ -45,6 +45,7 @@ const LargeWebinar: React.FC<LargeWebinarComponentProps> = ({
     return (
         <div className={styles.webinar}>
             <div className={styles.webinaContainer}>
+                <div className={styles.content}></div>
                 {webinarImage}
                 <div className={styles.webinarInfo}>
                     <div className={styles.icons}>

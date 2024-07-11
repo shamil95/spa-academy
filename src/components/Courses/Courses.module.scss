@@ -1,23 +1,39 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-}
-
 .allCourses {
     background-color: #efeeeb;
     color: #000000;
-    padding: 8rem 15rem 5rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 114rem;
+}
+
+.container {
+    width: 114rem;
+    height: 71.7rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  
+    
+    gap: 2rem;
+}
+.main {
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.titleComponent {
+    width: 55rem;
+    height: 11.9rem;
 }
 
 .boxes {
+    width: 114rem;
     height: 4.4rem;
     display: flex;
     align-items: center;
-    gap: 1.8rem;
-    border: 3px solid red;
+    justify-content: space-between;
 }
 .box {
     height: 4.4rem;
@@ -26,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 16px;
+    padding: 0 1rem;
     color: #0f0f0f;
     font-size: 1.5rem;
     line-height: 2.8rem;
@@ -44,39 +60,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 16px;
+    padding: 0 1rem;
     background-color: #ffc32c;
     color: #0f0f0f;
     font-size: 1.5rem;
     line-height: 2.8rem;
     font-weight: 600;
 }
-.main {
-    padding-left: 21rem;
-}
-.header {
-    font-size: 2.6rem;
-    font-weight: 700;
-    max-width: 54.3rem;
-    margin-bottom: 2rem;
-    font-size: 2.6rem;
-    font-weight: 700;
-    line-height: 3.6rem;
-    text-align: left;
-    color: #0f0f0f;
-}
 
-.headerExtra {
-    font-size: 1.6rem;
-    margin-bottom: 5rem;
-    text-align: left;
-    color: #4b4b4b;
-}
+
 
 .course {
     min-width: 55.5rem;
     height: 21.9rem;
-    margin: 3rem;
     box-sizing: border-box;
     border-radius: 1rem;
     box-sizing: border-box;

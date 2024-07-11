@@ -17,25 +17,29 @@ const universities = [bandudu, harvard, stanford, google, tokopedia, cambridge, 
 const Universities: React.FC = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
-                Collaborate with <span className={styles.rating}>100+</span> leading universities and companies
-            </div>
-            <div className={styles.headerExtra}>
-                WOC has contributed to students so that they can work in their dream company, we will continue to stick
-                to our commitment to create an advanced generation,
-            </div>
-            <div className={styles.universities}>
-                {universities.map((university, index) => (
-                    <div key={index} className={styles.imgContainer}>
-                        <Image
-                            className={styles.image}
-                            src={university.src}
-                            alt={'university'}
-                            width={university.width}
-                            height={university.height}
-                        />
+            <div className={styles.main}>
+                <div className={styles.headerContainer}>
+                    <div className={styles.header}>
+                        Collaborate with <span className={styles.rating}>100+</span> leading universities and companies
                     </div>
-                ))}
+                    <div className={styles.headerExtra}>
+                        WOC has contributed to students so that they can work in their dream company, we will continue
+                        to stick to our commitment to create an advanced generation,
+                    </div>
+                </div>
+                <div className={styles.universities}>
+                    {universities.map((university, index) => (
+                        <div key={index} className={styles.imgContainer}>
+                            <Image
+                                className={styles.image}
+                                src={university.src}
+                                alt={'university'}
+                                width={university.width}
+                                height={university.height}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

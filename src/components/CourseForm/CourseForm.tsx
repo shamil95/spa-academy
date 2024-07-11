@@ -40,6 +40,7 @@ const CourseForm: React.FC = () => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.main}>
             {openModal && <InformationModal closeModal={setOpenModal} />}
             <div className={styles.header}>I Want To Learn This Course</div>
 
@@ -74,6 +75,7 @@ const CourseForm: React.FC = () => {
                     Send request
                 </button>
             </form>
+            </div>
         </div>
     );
 };

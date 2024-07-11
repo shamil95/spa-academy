@@ -32,6 +32,7 @@ const boxes: BoxesType[] = [
 const WhyFundamentals: React.FC = () => {
     return (
         <div className={styles.main}>
+            <div className={styles.bigContainer}>
             <div className={styles.container}>
                 <h1 className={styles.title}>Why should you study IT Fundamentals?</h1>
                 <p className={styles.text}>
@@ -48,6 +49,7 @@ const WhyFundamentals: React.FC = () => {
                         <p>{box.content}</p>
                     </div>
                 ))}
+            </div>
             </div>
         </div>
     );

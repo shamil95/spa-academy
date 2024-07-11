@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styles from './Courses.module.scss';
 import Link from 'next/link';
+import Title from '../Title/Title';
 
 type CourseType = {
     courseType: string;
@@ -64,54 +65,56 @@ const Courses: React.FC = () => {
     return (
         <div className={styles.allCourses}>
             <div className={styles.main}>
-                <div className={styles.header}>Get to know our courses, choose one of them and join</div>
-                <div className={styles.headerExtra}>
-                    Join our live online classes with industry experts. At an affordable price.
+                <Title
+                    title='Get to know our courses, choose one of them and join'
+                    description=' Join our live online classes with industry experts. At an affordable price.'
+                    className={styles.titleComponent}
+                />
+
+                <div className={styles.boxes}>
+                    {coursesTitle.map((courseT, index) => (
+                        <div
+                            key={index}
+                            className={isColored[index] ? styles.box2 : styles.box}
+                            onClick={() => handleClick(index)}
+                        >
+                            {courseT}
+                        </div>
+                    ))}
                 </div>
-            </div>
-            <div className={styles.boxes}>
-                {coursesTitle.map((courseT, index) => (
-                    <div
-                        key={index}
-                        className={isColored[index] ? styles.box2 : styles.box}
-                        onClick={() => handleClick(index)}
-                    >
-                        {courseT}
-                    </div>
-                ))}
-            </div>
-            <div className={styles.container}>
-                {courses.map((course, index) => (
-                    <React.Fragment key={course.name}>
-                        {index === 0 ? (
-                            <Link href='/fundamentals' className={styles.course}>
-                                <div className={styles.content}>
-                                    <div className={styles.info}>
-                                        <div className={styles.courseType}>{course.courseType}</div>
-                                        <div className={styles.name}>{course.name}</div>
-                                        <div className={styles.blacks}>
-                                            <div className={styles.duration}>{course.duration}</div>
-                                            <div className={styles.startDate}>{course.startDate}</div>
+                <div className={styles.container}>
+                    {courses.map((course, index) => (
+                        <React.Fragment key={course.name}>
+                            {index === 0 ? (
+                                <Link href='/fundamentals' className={styles.course}>
+                                    <div className={styles.content}>
+                                        <div className={styles.info}>
+                                            <div className={styles.courseType}>{course.courseType}</div>
+                                            <div className={styles.name}>{course.name}</div>
+                                            <div className={styles.blacks}>
+                                                <div className={styles.duration}>{course.duration}</div>
+                                                <div className={styles.startDate}>{course.startDate}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ) : (
+                                <div key={course.name} className={styles.course}>
+                                    <div className={styles.content}>
+                                        <div className={styles.info}>
+                                            <div className={styles.courseType}>{course.courseType}</div>
+                                            <div className={styles.name}>{course.name}</div>
+                                            <div className={styles.blacks}>
+                                                <div className={styles.duration}>{course.duration}</div>
+                                                <div className={styles.startDate}>{course.startDate}</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </Link>
-                        ) : (
-                            <div key={course.name} className={styles.course}>
-                                <div className={styles.content}>
-                                    <div className={styles.info}>
-                                        <div className={styles.courseType}>{course.courseType}</div>
-                                        <div className={styles.name}>{course.name}</div>
-                                        <div className={styles.blacks}>
-                                            <div className={styles.duration}>{course.duration}</div>
-                                            <div className={styles.startDate}>{course.startDate}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </React.Fragment>
-                ))}
+                            )}
+                        </React.Fragment>
+                    ))}
+                </div>
             </div>
         </div>
     );

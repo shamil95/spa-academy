@@ -1,13 +1,24 @@
 .main {
     width: 100%;
-    padding: 10rem 15rem 10rem 15rem;
+   display: flex;
+   justify-content: center;
     background: #efeeeb;
+    padding: 10rem 0;
 }
 .container {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-   
+    justify-content: space-between;
+     width: 100%;
+}
+.bigContainer{
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+}
+.titleComponent{
+    width: 94.6rem;
 }
 @media screen and (max-width: 1700px) {
     .container {
@@ -25,18 +36,10 @@
     text-align: left;
     color: #0f0f0f;
 }
-.content {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.7rem;
-    text-align: left;
-    color: #4b4b4b;
-    width: 85rem;
-}
+
 .btn {
     width: 14.4rem;
     height: 4.4rem;
-
     gap: 6px;
     border-radius: 4rem;
     border: none;
@@ -45,9 +48,7 @@
     font-weight: 500;
     line-height: 2.8rem;
     letter-spacing: -0.02em;
-    text-align: center;
     color: #0f0f0f;
-    margin-left: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +56,5 @@
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding-top: 1rem;
-    margin-top: 2rem;
+    gap: 1.5rem;   
  }
