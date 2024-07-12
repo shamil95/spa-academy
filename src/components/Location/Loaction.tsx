@@ -61,7 +61,7 @@ const Loaction: React.FC = () => {
                                     id={field.id}
                                     name={field.id}
                                     placeholder={field.placeholder}
-                                    className={styles.textarea} // Updated class
+                                    className={styles.textarea} 
                                     required
                                 />
                             ) : (
@@ -70,7 +70,7 @@ const Loaction: React.FC = () => {
                                     id={field.id}
                                     name={field.id}
                                     placeholder={field.placeholder}
-                                    className={styles.input} // Updated class for input
+                                    className={styles.input} 
                                     required
                                 />
                             )}

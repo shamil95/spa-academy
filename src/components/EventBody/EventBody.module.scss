@@ -1,0 +1,45 @@
+.container{
+        width: 100%;
+        padding: 8rem 0 10rem 0;
+        display: flex;
+        justify-content: center;
+        background-color: #F9F9F9;
+
+}
+.main{
+    width: 75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.text{
+    width: 75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.text2{
+    width: 75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.title{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.6rem;
+    color: #0F0F0F;
+}
+.text >ul{
+    list-style: none;
+    line-height: 2.7rem;
+    font-size: 1.6rem;
+    color: #4B4B4B;
+}
+.text2 >ul{
+
+    line-height: 2.7rem;
+    font-size: 1.6rem;
+    color: #4B4B4B;
+    margin-left: 2rem;
+}
