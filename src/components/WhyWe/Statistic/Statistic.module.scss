@@ -1,19 +1,37 @@
 .statistic {
-    width: 263px;
+    width: 26.3rem;
     background-color: #e3e2df;
-    
+    height: 17.2rem;
     padding: 2.5rem;
     border-radius: 1rem;
+    position: relative;
+    background-color: #ffc32c;
 
     &:nth-child(odd) {
         margin-left: 0;
     }
     transition: box-shadow 0.9s;
 }
-.statistic:hover {
-    box-shadow: -15px 15px 0px 0px #ffc32c;
-    opacity: 10;
+
+.statistic:hover .overlay {
+    top: -1rem;
+    left: 1rem;
+    background-color: rgba(227, 226, 223, 0.9); 
+    transition: top 0.5s, left 0.5s, background-color 0.5s; 
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26.3rem;
+    background-color: #e3e2df;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    height: 17.2rem;
+    transition: top 0.5s, left 0.5s, background-color 0.5s; 
+}
+
 
 .count {
     font-size: 3rem;

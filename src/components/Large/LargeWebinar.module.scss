@@ -5,15 +5,23 @@
     flex-direction: column;
     gap: 4rem;
     cursor: pointer;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: border-width 0.3s ease;
 }
-.webinar:hover .border {
-    border: 1px solid #7b7b7b;
+.webinar::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
 }
-.border {
-    width: 114rem;
-    border: 1px solid #000000;
+.webinar:hover::after {
+    background-color: #7b7b7b;
+    height: 0.5px;
 }
-
 .webinaContainer {
     width: 114rem;
     display: flex;
@@ -22,12 +30,56 @@
 }
 .webinarInfo {
     width: 61.2rem;
-    height: 21.2rem;
-    margin-top: 4rem;
+    height: 26.2rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
+    transition: margin-top 0.5s;
 }
+
+.apply {
+    background-color: #ffc32c;
+    color: #0f0f0f;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    width: 13.4rem;
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 2.8rem;
+    letter-spacing: -0.02em;
+    text-align: left;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: visibility 0s, bottom 0.5s;
+}
+
+.webinar:hover .webinarInfo {
+    margin-top: 2rem;
+}
+
+.webinar:hover .apply {
+    visibility: visible;
+    bottom: 2rem;
+    opacity: 1;
+    transition: visibility 0s 0.5s, bottom 0.5s;
+}
+
+.webinar:hover .description {
+    height: 8.8rem;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
 .icons {
     width: 36.3rem;
     height: 3.7rem;
@@ -61,16 +113,23 @@
     text-align: left;
     color: #0f0f0f;
     position: relative;
+    width: 51rem;
 }
+
 .webinarTitle::after {
     content: '';
     position: absolute;
-    width: 0;
+    width: 100%;
     height: 1px;
     background-color: #0f0f0f;
     bottom: -2px;
     left: 0;
-    transition: width 0.3s ease;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.webinar:hover .webinarTitle::after {
+    opacity: 1; 
 }
 .webinar:hover .webinarTitle::after {
     width: 100%;
@@ -94,3 +153,7 @@
     background-color: rgba(15, 15, 15, 0.4);
     transition: background-color 0.5s ease;
 }
+
+// .webinar:hover .apply{
+//     display: block;
+// }
