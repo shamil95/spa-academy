@@ -5,8 +5,7 @@ import Image from 'next/image';
 import { ICONS } from '@/assets/icons';
 import Link from 'next/link';
 
-const { calendarStar, alarmOclock, loactionIcon, arrowRight, usingLaptop, blackFbIcon, blackXIcon, blackLnIcon } =
-    ICONS;
+const { calendarStar, alarmOclock, loactionIcon, arrowRight, blackFbIcon, blackXIcon, blackLnIcon } = ICONS;
 
 const footerIcons = [blackFbIcon, blackXIcon, blackLnIcon];
 
@@ -14,6 +13,15 @@ type LargeWebinarDataType = {
     id: number;
     image: React.ReactNode;
     text: string;
+};
+type EventHeaderProps = {
+    link1: string;
+    link2: string;
+    link3: string;
+    content: React.ReactNode;
+    image?: React.ReactNode;
+    className?: string;
+    mainClassName?: string;
 };
 
 const webinarData: LargeWebinarDataType[] = [
@@ -33,37 +41,33 @@ const webinarData: LargeWebinarDataType[] = [
         text: 'Online',
     },
 ];
-const EventHeader: React.FC = () => {
-
+const EventHeader: React.FC<EventHeaderProps> = ({ link1, link2, link3, content, image, className,mainClassName }) => {
     const scrollToRegister = () => {
         const element = document.getElementById('eventRegister');
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+            element.scrollIntoView({ behavior: 'smooth' });
         }
-      };
+    };
 
     return (
-        <div className={styles.container}>
-            <div className={styles.main}>
+        <div className={`${styles.container} ${className}`}>
+            <div className={`${styles.main} ${mainClassName}`}>
                 <div className={styles.left}>
                     <div className={styles.links}>
                         <div className={styles.link}>
-                            <Link href='/'>Home</Link>
+                            <Link href='/'> {link1}</Link>
                             <Image src={arrowRight} alt='Arrow right' />
                         </div>
                         <div className={styles.link}>
-                            <Link href='/events'>Events</Link>
+                            <Link href='/events'> {link2}</Link>
                             <Image src={arrowRight} alt='Arrow right' />
                         </div>
                         <div className={styles.link}>
-                            <Link href='/'>Tech Career</Link>
+                            <Link href='/'> {link3}</Link>
                         </div>
                     </div>
-                    <Title
-                        className={styles.componentTitle}
-                        title='Tech Career Compass: Find Your Path in QA Testing'
-                        description='Making informed career choices is essential for being content in life, and we re here to guide you every step of the way. Join us for an exclusive webinar featuring Nadiia Perehinska, a designer with over six years of industry expertise who is set to lead our upcoming UX/UI group.'
-                    />
+
+                    {content}
 
                     <div className={styles.icons}>
                         {webinarData.map(webinar => (
@@ -73,12 +77,12 @@ const EventHeader: React.FC = () => {
                             </div>
                         ))}
                     </div>
-                    <button className={styles.btn} onClick={scrollToRegister}>Registration</button>
+                    <button className={styles.btn} onClick={scrollToRegister}>
+                        Registration
+                    </button>
                 </div>
                 <div className={styles.right}>
-                    <div className={styles.imageContainer}>
-                        <Image src={usingLaptop} alt='Usinf laptop' width={360} height={230} className={styles.image} />
-                    </div>
+                    {image}
                     <div className={styles.iconsContainer}>
                         <div className={styles.text}>Share on:</div>
                         <div className={styles.smallIcons}>

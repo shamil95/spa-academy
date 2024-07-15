@@ -13,7 +13,7 @@ const Subscribe: React.FC<SubscribeProps> = ({ title, description }) => {
     };
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='eventRegister'>
             <div className={styles.subscribeContainer}>
                 <div className={styles.text}>
                     <div className={styles.title}>{title}</div>
