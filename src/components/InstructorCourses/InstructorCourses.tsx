@@ -28,42 +28,45 @@ const courses: CourseType[] = [
 const InstructorCourses: React.FC = () => {
     return (
         <div className={styles.container}>
-            <Title
-                title='Instructor courses'
-                description='Lorem ipsum dolor sit amet consectetur. Fermentum bibendum sem sit fames. Tortor elementum vel amet elementum eu commodo'
-            />
-            <div className={styles.courses}>
-                {courses.map((course, index) => (
-                    <React.Fragment key={course.name}>
-                        {index === 0 ? (
-                            <Link href='/fundamentals' className={styles.course}>
-                                <div className={styles.content}>
-                                    <div className={styles.info}>
-                                        <div className={styles.courseType}>{course.courseType}</div>
-                                        <div className={styles.name}>{course.name}</div>
-                                        <div className={styles.blacks}>
-                                            <div className={styles.duration}>{course.duration}</div>
-                                            <div className={styles.startDate}>{course.startDate}</div>
+            <div className={styles.main}>
+                <Title
+                className={styles.titleComponent}
+                    title='Instructor courses'
+                    description='Lorem ipsum dolor sit amet consectetur. Fermentum bibendum sem sit fames. Tortor elementum vel amet elementum eu commodo'
+                />
+                <div className={styles.courses}>
+                    {courses.map((course, index) => (
+                        <React.Fragment key={course.name}>
+                            {index === 0 ? (
+                                <Link href='/fundamentals' className={styles.course}>
+                                    <div className={styles.content}>
+                                        <div className={styles.info}>
+                                            <div className={styles.courseType}>{course.courseType}</div>
+                                            <div className={styles.name}>{course.name}</div>
+                                            <div className={styles.blacks}>
+                                                <div className={styles.duration}>{course.duration}</div>
+                                                <div className={styles.startDate}>{course.startDate}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ) : (
+                                <div key={course.name} className={styles.course}>
+                                    <div className={styles.content}>
+                                        <div className={styles.info}>
+                                            <div className={styles.courseType}>{course.courseType}</div>
+                                            <div className={styles.name}>{course.name}</div>
+                                            <div className={styles.blacks}>
+                                                <div className={styles.duration}>{course.duration}</div>
+                                                <div className={styles.startDate}>{course.startDate}</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </Link>
-                        ) : (
-                            <div key={course.name} className={styles.course}>
-                                <div className={styles.content}>
-                                    <div className={styles.info}>
-                                        <div className={styles.courseType}>{course.courseType}</div>
-                                        <div className={styles.name}>{course.name}</div>
-                                        <div className={styles.blacks}>
-                                            <div className={styles.duration}>{course.duration}</div>
-                                            <div className={styles.startDate}>{course.startDate}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </React.Fragment>
-                ))}
+                            )}
+                        </React.Fragment>
+                    ))}
+                </div>
             </div>
         </div>
     );

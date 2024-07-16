@@ -1,4 +1,5 @@
 .container {
+    padding: 1.2rem;
     width: 22.9rem;
     display: flex;
     flex-direction: column;
@@ -16,9 +17,6 @@
         0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     list-style: none;
     cursor: pointer;
 }
@@ -30,7 +28,6 @@
     line-height: 2.2rem;
     font-size: 1.4rem;
     font-weight: 500;
-    margin: 1rem 1.5rem;
 }
 
 .link:hover {

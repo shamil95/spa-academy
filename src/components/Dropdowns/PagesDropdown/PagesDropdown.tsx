@@ -34,7 +34,7 @@ const PagesDropdown: React.FC = () => {
             <ul className={styles.links}>
                 {pagesData.map((data, index) => (
                     <li className={styles.link} key={data.id}>
-                        <Link href={`/${pagesHref[index]}`}>{data.title}</Link>
+                        <Link href={`/${pagesHref[index]}`} className={styles.link2}>{data.title}</Link>
                     </li>
                 ))}
             </ul>
