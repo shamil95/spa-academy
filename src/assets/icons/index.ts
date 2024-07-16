@@ -57,6 +57,9 @@ import vectorRight from './vectorRight.svg';
 import blackFbIcon from './blackFb.svg';
 import blackXIcon from './blackX.svg';
 import blackLnIcon from './blackLn.svg';
+import designLayer from './designLayer.svg';
+import eyeVisible from './eyeVisible.svg';
+import userCircle from './userCircle.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -118,4 +121,7 @@ export const ICONS = {
     blackFbIcon: blackFbIcon,
     blackXIcon: blackXIcon,
     blackLnIcon: blackLnIcon,
+    designLayer: designLayer,
+    eyeVisible: eyeVisible,
+    userCircle: userCircle,
 };
