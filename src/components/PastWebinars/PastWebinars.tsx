@@ -9,6 +9,7 @@ import webinarOnlineMeeting from '../../assets/images/webinars/webinarOnlineMeet
 import webinarStuding from '../../assets/images/webinars/webinarStuding.png';
 import { ICONS } from '@/assets/icons';
 import Webinar from '../WebinarComponent/Webinar';
+import Link from 'next/link';
 
 const { calendarStar, alarmOclock, loactionIcon } = ICONS;
 
@@ -87,13 +88,23 @@ const PastWebinars: React.FC = () => {
             <div className={styles.main}>
                 <div className={styles.title}>Past Webinars</div>
                 <div className={styles.boxes}>
-                    {webinarComponentData.map(data => (
+                    {webinarComponentData.map((data, index) => (
                         <>
-                            <Webinar
-                                webinarImage={data.webinarImage}
-                                webinarTitle={data.webinarTitle}
-                                webinarDescription={data.webinarDescription}
-                            />
+                            {index === 0 ? (
+                                <Link href='webinars/pastwebinar'>
+                                    <Webinar
+                                        webinarImage={data.webinarImage}
+                                        webinarTitle={data.webinarTitle}
+                                        webinarDescription={data.webinarDescription}
+                                    />
+                                </Link>
+                            ) : (
+                                <Webinar
+                                    webinarImage={data.webinarImage}
+                                    webinarTitle={data.webinarTitle}
+                                    webinarDescription={data.webinarDescription}
+                                />
+                            )}
                         </>
                     ))}
                 </div>

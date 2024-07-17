@@ -1,10 +1,11 @@
-import SingleBlog from '@/components/SingleBlog/SingleBlog';
+'use client';
+import PastWebinar from '@/components/PastWebinar/PastWebinar';
 import React from 'react';
 
 const page = () => {
     return (
         <>
-            <SingleBlog />
+            <PastWebinar />
         </>
     );
 };

@@ -2,31 +2,35 @@ import React from 'react';
 import styles from './EventBody.module.scss';
 import Title from '../Title/Title';
 
-const EventBody: React.FC = () => {
+interface EventBodyProps {
+    title: string;
+    description: string;
+    mainPoints: string[];
+    targetAudience: string[];
+    text1: string;
+    text2: string;
+}
+
+const EventBody: React.FC<EventBodyProps> = ({ title, description, mainPoints, targetAudience, text1, text2 }) => {
     return (
         <div className={styles.container}>
             <div className={styles.main}>
-                <Title
-                    title='About Event'
-                    description="During this free webinar, Nadiia, a Senior Product Designer, will provide an insider's perspective on UX/UI design and showcase real-world UI/UX design tasks in action. Discover the essence of UI/UX design as we uncover typical tasks, objectives, and the daily routines of professionals in this dynamic field. Additionally, we'll conduct a Q&A session at the end so you can ask any questions and seek advice from an experienced designer and Beetroot Academy’s teacher. "
-                />
+                <Title title={title} description={description} />
                 <div className={styles.text}>
-                    <div className={styles.title}>Here’s what you are going to discover during the event:</div>
+                    <div className={styles.title}>{text1}</div>
                     <ul>
-                        <li>🔸What is UI/UX design?</li>
-                        <li>🔸UI/UX designers’ typical tasks and goals</li>
-                        <li>🔸A day in the life of a UI/UX designer</li>
-                        <li>🔸How to tell if design is your cup of tea?</li>
+                        {mainPoints.map((point, index) => (
+                            <li key={index}>🔸{point}</li>
+                        ))}
                     </ul>
                 </div>
 
                 <div className={styles.text2}>
-                    <div className={styles.title}>This event is for those who</div>
+                    <div className={styles.title}>{text2}</div>
                     <ul className={styles.styleList}>
-                        <li>Are UI/UX newcomers ready to dive into learning;</li>
-                        <li>Contemplate UI/UX and want hands-on practice before deciding;</li>
-                        <li>Seek real insights from a working design professional;</li>
-                        <li>Plan to join our UI/UX course and crave a preview.</li>
+                        {targetAudience.map((audience, index) => (
+                            <li key={index}>{audience}</li>
+                        ))}
                     </ul>
                 </div>
             </div>

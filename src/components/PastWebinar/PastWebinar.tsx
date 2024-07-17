@@ -1,24 +1,22 @@
 import React from 'react';
+import styles from './PastWebinar.module.scss';
 import Header from '../Header/Header';
 import EventHeader from '../EventHeader/EventHeader';
 import Title from '../Title/Title';
-import styles from './SingleWebinar.module.scss';
 import webinarPng from '../../assets/images/webinar1.png';
 import Image from 'next/image';
 import EventBody from '../EventBody/EventBody';
+import UpcomingWebinars from '../UpcomingWebinars/UpcomingWebinars';
 import EventRegister from '../EventRegister/EventRegister';
+import Subscribe from '../Subscribe/Subscribe';
 import Footer from '../Footer/Footer';
-
-
- <Image src={webinarPng} alt='Webinar png' className={styles.image} />;
 
 const eventImage = (
     <div className={styles.imageContainer}>
         <Image src={webinarPng.src} alt='webina image' width={360} height={230} className={styles.image} />
     </div>
 );
-
-const SingleWebinar: React.FC = () => {
+const PastWebinar: React.FC = () => {
     const webinarDetails = {
         title: 'About Webinar',
         description:
@@ -43,6 +41,7 @@ const SingleWebinar: React.FC = () => {
         <>
             <Header />
             <EventHeader
+                className={styles.eventHeader}
                 link1='Home'
                 link2='Webinar'
                 link3='Team Talk :What is the IT Man...'
@@ -63,14 +62,14 @@ const SingleWebinar: React.FC = () => {
                 text1={webinarDetails.text1}
                 text2={webinarDetails.text2}
             />
-
-            <EventRegister
-                title='Webinar Registration'
-                description='Please fill out the form below to register for our upcoming webinar.'
+            <UpcomingWebinars />
+            <Subscribe
+                title='Subscribe to our webinars'
+                description='Stay in the know and don’t miss a beet. No spam, no junk, important updates only.'
             />
-            <Footer/>
+            <Footer />
         </>
     );
 };
 
-export default SingleWebinar;
+export default PastWebinar;

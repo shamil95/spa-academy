@@ -18,6 +18,25 @@ const eventImage = (
 );
 
 const SingleEvent: React.FC = () => {
+    const eventDetails = {
+        title: 'About Event',
+        description:
+            "During this free webinar, Nadiia, a Senior Product Designer, will provide an insider's perspective on UX/UI design and showcase real-world UI/UX design tasks in action. Discover the essence of UI/UX design as we uncover typical tasks, objectives, and the daily routines of professionals in this dynamic field. Additionally, we'll conduct a Q&A session at the end so you can ask any questions and seek advice from an experienced designer and Beetroot Academy’s teacher.",
+        mainPoints: [
+            'What is UI/UX design?',
+            'UI/UX designers’ typical tasks and goals',
+            'A day in the life of a UI/UX designer',
+            'How to tell if design is your cup of tea?',
+        ],
+        targetAudience: [
+            'Are UI/UX newcomers ready to dive into learning;',
+            'Contemplate UI/UX and want hands-on practice before deciding;',
+            'Seek real insights from a working design professional;',
+            'Plan to join our UI/UX course and crave a preview.',
+        ],
+        text1: 'Here’s what you are going to discover during the event:',
+        text2: 'This event is for those who',
+    };
     return (
         <>
             <Header />
@@ -34,8 +53,19 @@ const SingleEvent: React.FC = () => {
                     />
                 }
             />
-            <EventBody />
-            <EventRegister />
+
+            <EventBody
+                title={eventDetails.title}
+                description={eventDetails.description}
+                mainPoints={eventDetails.mainPoints}
+                targetAudience={eventDetails.targetAudience}
+                text1={eventDetails.text1}
+                text2={eventDetails.text2}
+            />
+            <EventRegister
+                title='Event Registration'
+                description='Please fill out the form below to register for our upcoming webinar.'
+            />
             <Footer />
         </>
     );

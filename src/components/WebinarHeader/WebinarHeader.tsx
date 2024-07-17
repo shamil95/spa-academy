@@ -13,6 +13,8 @@ type BlogsDataType = {
     text: string;
 };
 
+;
+
 const blogsData: BlogsDataType[] = [
     {
         id: 1,

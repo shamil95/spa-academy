@@ -3,7 +3,8 @@ import styles from './UpcomingWebinars.module.scss';
 import Image from 'next/image';
 import webinarPng from '../../assets/images/webinar1.png';
 import { ICONS } from '@/assets/icons';
-import LargeWebinar from '../Large/LargeWebinar'
+import LargeWebinar from '../Large/LargeWebinar';
+import Link from 'next/link';
 
 const { calendarStar, alarmOclock, loactionIcon } = ICONS;
 
@@ -33,8 +34,9 @@ const webinarData: WebinarDataType[] = [
 
 const UpcomingWebinars: React.FC = () => {
     const webinarImage = <Image src={webinarPng} alt='Webinar png' className={styles.image} />;
+    const webinarHref = '/singlewebinar';
     return (
-        <div className={styles.container}>
+        <Link href={webinarHref} className={styles.container}>
             <div className={styles.main}>
                 <div className={styles.title}>Upcoming Webinars</div>
                 <LargeWebinar
@@ -46,7 +48,7 @@ const UpcomingWebinars: React.FC = () => {
                     webinarImage={webinarImage}
                 />
             </div>
-        </div>
+        </Link>
     );
 };
 
