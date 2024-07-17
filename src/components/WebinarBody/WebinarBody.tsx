@@ -12,20 +12,20 @@ const WebinarBody: React.FC = () => {
         <div className={styles.container}>
             <div className={styles.main}>
                 <div className={styles.text}>
-                    In today's rapidly evolving digital landscape, opt-in email marketing stands out as a cornerstone of
+                    In todays rapidly evolving digital landscape, opt-in email marketing stands out as a cornerstone of
                     effective communication. By prioritizing user consent and personalization, businesses enhance their
-                    brand's credibility and also ensure that their messages reach a genuinely interested audience. Let's
+                    brands credibility and also ensure that their messages reach a genuinely interested audience. Lets
                     delve into the strategic importance of this method and explore how it can be a game-changer for your
-                    brand's outreach efforts
+                    brands outreach efforts
                 </div>
 
                 <Image src={peopleUsingLaptop.src} alt='Blog image' height={310} width={750} />
                 <div className={styles.text}>
-                    In today's rapidly evolving digital landscape, opt-in email marketing stands out as a cornerstone of
+                    In todays rapidly evolving digital landscape, opt-in email marketing stands out as a cornerstone of
                     effective communication. By prioritizing user consent and personalization, businesses enhance their
-                    brand's credibility and also ensure that their messages reach a genuinely interested audience. Let's
+                    brands credibility and also ensure that their messages reach a genuinely interested audience. Lets
                     delve into the strategic importance of this method and explore how it can be a game-changer for your
-                    brand's outreach efforts.
+                    brands outreach efforts.
                 </div>
                 <div className={styles.text2}>
                     <div className={styles.textTitle}>In this post :</div>

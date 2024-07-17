@@ -8,7 +8,7 @@ type SubscribeProps = {
 };
 
 const Subscribe: React.FC<SubscribeProps> = ({ title, description }) => {
-    const handleSubmit = e => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
     };
 

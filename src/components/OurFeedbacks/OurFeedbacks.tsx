@@ -23,8 +23,8 @@ const OurFeedbacks: React.FC = () => {
                         <div className={styles.points}></div>
                     </div>
                     <div className={styles.row2}>
-                        "Studying at WOC is fun, the curriculum is complete, the instructors are competent, and the
-                        assignments given are also relevant to the current scope of work,"
+                        Studying at WOC is fun, the curriculum is complete, the instructors are competent, and the
+                        assignments given are also relevant to the current scope of work,
                     </div>
                     <div className={styles.row3}>
                         <div className={styles.person}>

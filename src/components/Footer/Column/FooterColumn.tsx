@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './FooterColumn.module.scss';
-const FooterColumn = ({ title, items }) => (
+const FooterColumn = ({ title, items }: any) => (
     <div className={styles.col}>
         <h2>{title}</h2>
         <ul>
-            {items.map((item, index) => (
+            {items.map((item: any, index: any) => (
                 <li key={index}>{typeof item === 'object' ? <a href={item.href}>{item.label}</a> : item}</li>
             ))}
         </ul>

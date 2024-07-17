@@ -63,7 +63,7 @@ const Login: React.FC = () => {
                 </div>
                 <div className={styles.text}>
                     <span>
-                        Don't have an account?{' '}
+                        Dont have an account?{' '}
                         <Link href='/'>
                             <span className={styles.linkSpan}>Create a profile</span>{' '}
                         </Link>
