@@ -47,6 +47,7 @@ import calendarStar from './calendarStar.svg';
 import alarmOclock from './alarmOclock.svg';
 import loactionIcon from './loaction.svg';
 import blogImage from './blogImage.svg';
+import usingLaptop from './usingLaptop.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -98,4 +99,5 @@ export const ICONS = {
     alarmOclock: alarmOclock,
     loactionIcon: loactionIcon,
     blogImage: blogImage,
+    usingLaptop: usingLaptop,
 };

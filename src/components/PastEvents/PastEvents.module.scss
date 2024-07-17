@@ -1,0 +1,132 @@
+.container {
+    width: 100%;
+    height: 145.6rem;
+    background-color: #efeeeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 10rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 114rem;
+    gap: 6rem;
+}
+.title {
+    font-weight: bold;
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    color: #0f0f0f;
+    border-bottom: 1px solid #0f0f0f;
+    height: 8rem;
+}
+.boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.8rem;
+    height: 120rem;
+}
+.box {
+    width: 55.5rem;
+    height: 38rem;
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+    cursor: pointer;
+    position: relative;
+  
+   
+}
+
+.box:hover {
+    border-bottom: 1px solid #0f0f0f; 
+}
+
+.box:hover .date {
+    background-color: #0f0f0f;
+}
+.box:hover .number {
+    color: #ffc32c;
+}
+.date {
+    width: 10.8rem;
+    height: 16.2rem;
+    border-radius: 1rem;
+    background-color: rgba(249, 249, 249, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.webinarText {
+    width: 36.7rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.icons {
+    width: 36.3rem;
+    height: 3.7rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.icon {
+    height: 3.7rem;
+    background-color: #e3e2df;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    text-align: left;
+    font-size: 1.4rem;
+    color: #0f0f0f;
+}
+
+.webinarTitle {
+    line-height: 3.2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    color: #0f0f0f;
+    position: relative;
+}
+.webinarTitle::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #0f0f0f;
+    bottom: 5px;
+    left: 0;
+   
+}
+
+.box:hover .webinarTitle::after {
+    width: 100%;
+}
+.description {
+    line-height: 2.7rem;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #7b7b7b;
+}
+.smalText {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #7b7b7b;
+}
+.number {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #0f0f0f;
+}
