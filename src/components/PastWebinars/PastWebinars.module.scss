@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    background-color: #efeeeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 10rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 114rem;
+    gap: 6rem;
+}
+.title {
+    font-weight: bold;
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    color: #0f0f0f;
+}
+.boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.7rem;
+}

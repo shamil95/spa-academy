@@ -1,0 +1,84 @@
+.container {
+    width: 100%;
+    height: 42.6rem;
+    background-color: #efeeeb;
+    padding: 16rem 90.3rem 7rem 15rem;
+}
+.main {
+    width: 38.7rem;
+    height: 19.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.links {
+    height: 1.8rem;
+    display: flex;
+    gap: 0.8rem;
+}
+.link{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #0f0f0f;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+.imageContainer {
+    display: flex;
+    gap: 4rem;
+}
+
+.image {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 7rem;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ffc32c;
+}
+.text {
+    width: 21.7rem;
+    height: 13.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.title {
+    width: 22.8rem;
+    height: 6.7rem;
+}
+.name {
+    color: #0f0f0f;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3.6rem;
+    text-align: left;
+    padding: 0;
+}
+.profession {
+    color: #4b4b4b;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    font-weight: 500;
+}
+.footer {
+    display: flex;
+    width: 18.6rem;
+    height: 4rem;
+    gap: 1rem;
+}
+.socialIcon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e2df;
+    border-radius: 5rem;
+    color: #4b4b4b;
+}
+

@@ -22,13 +22,15 @@ const resourcesData: ResourcesDataType[] = [
     },
 ];
 
+const resourcesHref: string[] = ['blog', 'events', 'webinars'];
+
 const ResourcesDropdown: React.FC = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.links}>
-                {resourcesData.map(data => (
+                {resourcesData.map((data, index) => (
                     <li className={styles.link} key={data.id}>
-                        <Link href=''>{data.title}</Link>
+                        <Link href={`/${resourcesHref[index]}`}>{data.title}</Link>
                     </li>
                 ))}
             </ul>

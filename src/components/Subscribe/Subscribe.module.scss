@@ -1,0 +1,75 @@
+.container {
+    width: 100%;
+    height: 50rem;
+    background-color: #efeeeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribeContainer {
+    width: 114rem;
+    height: 29.5rem;
+    border-radius: 2rem;
+    background-color: #e3e2df;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.text {
+    width: 44.4rem;
+    height: 9.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    line-height: 3.6rem;
+    font-size: 2.6rem;
+    color: #0f0f0f;
+}
+.description{
+    color: #7B7B7B;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+}
+.form{
+    height: 100%;
+    width: 53.4rem;
+    background-color: #EFEEEB;
+    border-radius: 2.9rem;
+    padding: .7rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+   
+}
+
+.input{
+    background-color: #EFEEEB;
+    width: 30rem;
+    height: 4rem;
+    border-radius: 2.9rem;
+    border: none;
+    margin-left: 1.9rem;
+    text-align: left;
+    font-size: 1.6rem;
+}
+.btn{
+    width: 14.4rem;
+    height: 4.4rem;
+    border-radius: 2.9rem;
+    background-color: #FFC32C;
+    color: #0f0f0f;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}

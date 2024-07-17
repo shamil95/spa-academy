@@ -42,6 +42,11 @@ import XImage from './XImage.svg';
 import phoneNotebook from './contact-phonebook.svg';
 import inboxFavorite from './inbox-favorite.svg';
 import loactionGps from './loaction-gps.svg';
+import arrowRight from './arroowRight.svg';
+import calendarStar from './calendarStar.svg';
+import alarmOclock from './alarmOclock.svg';
+import loactionIcon from './loaction.svg';
+import blogImage from './blogImage.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -88,4 +93,9 @@ export const ICONS = {
     phoneNotebook: phoneNotebook,
     inboxFavorite: inboxFavorite,
     loactionGps: loactionGps,
+    arrowRight: arrowRight,
+    calendarStar: calendarStar,
+    alarmOclock: alarmOclock,
+    loactionIcon: loactionIcon,
+    blogImage: blogImage,
 };

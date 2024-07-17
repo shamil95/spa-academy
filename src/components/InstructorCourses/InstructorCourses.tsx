@@ -1,6 +1,6 @@
-'use client';
-import React, { useState } from 'react';
-import styles from './Courses.module.scss';
+import React from 'react';
+import styles from './InstructorCourses.module.scss';
+import Title from '../Title/Title';
 import Link from 'next/link';
 
 type CourseType = {
@@ -23,64 +23,16 @@ const courses: CourseType[] = [
         duration: '4 months',
         startDate: 'Start: June 2024',
     },
-    {
-        courseType: 'For Teenagers',
-        name: 'Computer Architecture and Systems',
-        duration: '4 months',
-        startDate: 'Start: June 2024',
-    },
-    {
-        courseType: 'For Teenagers',
-        name: 'Graphic Design Fundamentals',
-        duration: '4 months',
-        startDate: 'Start: June 2024',
-    },
-    {
-        courseType: 'For Teenagers',
-        name: 'Web Development Fundamentals',
-        duration: '4 months',
-        startDate: 'Start: June 2024',
-    },
 ];
 
-const coursesTitle: string[] = [
-    'Popular Courses',
-    'For Teenagers',
-    'Mathematics',
-    'Data Science',
-    'Digital Marketing',
-    'Design',
-    'Software Development',
-    'BootCamps',
-];
-
-const Courses: React.FC = () => {
-    const [isColored, setIsColored] = useState<boolean[]>(coursesTitle.map((_, index) => index === 1));
-    const handleClick = (index: number) => {
-        const newIsColored = [...isColored];
-        newIsColored[index] = !newIsColored[index];
-        setIsColored(newIsColored);
-    };
+const InstructorCourses: React.FC = () => {
     return (
-        <div className={styles.allCourses}>
-            <div className={styles.main}>
-                <div className={styles.header}>Get to know our courses, choose one of them and join</div>
-                <div className={styles.headerExtra}>
-                    Join our live online classes with industry experts. At an affordable price.
-                </div>
-            </div>
-            <div className={styles.boxes}>
-                {coursesTitle.map((courseT, index) => (
-                    <div
-                        key={index}
-                        className={isColored[index] ? styles.box2 : styles.box}
-                        onClick={() => handleClick(index)}
-                    >
-                        {courseT}
-                    </div>
-                ))}
-            </div>
-            <div className={styles.container}>
+        <div className={styles.container}>
+            <Title
+                title='Instructor courses'
+                description='Lorem ipsum dolor sit amet consectetur. Fermentum bibendum sem sit fames. Tortor elementum vel amet elementum eu commodo'
+            />
+            <div className={styles.courses}>
                 {courses.map((course, index) => (
                     <React.Fragment key={course.name}>
                         {index === 0 ? (
@@ -117,4 +69,4 @@ const Courses: React.FC = () => {
     );
 };
 
-export default Courses;
+export default InstructorCourses;
