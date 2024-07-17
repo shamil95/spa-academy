@@ -1,0 +1,63 @@
+.container {
+    width: 132rem;
+    height: 48.6rem;
+    border-radius: 1rem;
+    background-color: #efeeeb;
+    position: absolute;
+    top: 10rem;
+    left: 5.8rem;
+    padding: 3.5rem 6.1rem 0 3.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.3), 10px 0 10px -5px rgba(0, 0, 0, 0.3),
+        0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    line-height: 2.7rem;
+    text-align: left;
+    color: #0f0f0f;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.title2 {
+    width: 16.4rem;
+    line-height: 2.7rem;
+    text-align: left;
+    color: #0f0f0f;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+}
+.link {
+    padding: 1.5rem 2rem;
+    height: 5.2rem;
+    text-align: left;
+    color: #0f0f0f;
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.link:hover {
+    background-color: #e3e2df;
+    border-radius: 1rem;
+}
+.pagesDropdown {
+    position: absolute;
+    top: 30rem;
+}
