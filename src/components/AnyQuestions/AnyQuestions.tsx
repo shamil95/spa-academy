@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './AnyQuestions.module.scss';
 import Card from './Card/Card';
 import { CardType } from './CardType';
+import Title from '../Title/Title';
 
 const cards: CardType[] = [
     {
@@ -51,21 +52,19 @@ const cards: CardType[] = [
 const AnyQuestions: React.FC = () => {
     return (
         <div className={styles.main}>
+            <div className={styles.bigContainer}> 
             <div className={styles.container}>
-                <div className={styles.text}>
-                    <h1 className={styles.header}>Have any questions about our course? We got you</h1>
-                    <p className={styles.content}>
-                        Pizza ipsum dolor meat lovers buffalo. Tomato wing wing Aussie Bianca. String large pizza sauce
+              
+                <Title className={styles.titleComponent} title='Have any questions about our course? We got you' description=' Pizza ipsum dolor meat lovers buffalo. Tomato wing wing Aussie Bianca. String large pizza sauce
                         Hawaiian. Onions bell Aussie ricotta lot banana tomato personal mouth crust. Red roll ham fresh
-                        lovers pan lot steak melted mushrooms.
-                    </p>
-                </div>
+                        lovers pan lot steak melted mushrooms.'/>
                 <button className={styles.btn}>Get in touch</button>
             </div>
             <div className={styles.cards}>
                 {cards.map((card, index) => (
                     <Card key={card.id} title={card.title} details={card.details} isFirst={index === 0} />
                 ))}
+            </div>
             </div>
         </div>
     );

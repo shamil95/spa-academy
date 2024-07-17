@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Header from '@/components/Header/Header';
 import styles from './Home.module.scss';
 import Image from 'next/image';
@@ -10,17 +11,9 @@ import WhyWe from '@/components/WhyWe/WhyWe';
 import Benefits from '@/components/Benefits/Benefits';
 import BlogPosts from '@/components/BlogPosts/BlogPosts';
 import Questions from '../Questions/Questions';
-import OurBenefits from '../OurBenefits/OurBenefits';
 import Footer from '../Footer/Footer';
-import HeaderText from '../HeaderText/HeaderText';
 import Information from '../Information/Infromation';
 import ContactModal from '../ContactModal/ContactModal';
-import Login from '../Login/Login';
-import { PagesDropdown } from '../Dropdowns';
-import CareersPage from '../CareersPage/CareersPage';
-import TextComponent from '../Text/TextComponent';
-import Instructor from '../Instructor/Instructor';
-import WebinarsPage from '../WebinarsPage/WebinarsPage';
 
 const courses: string[] = [
     'IT Fundamentals',
@@ -32,18 +25,23 @@ const courses: string[] = [
 ];
 
 const Home: React.FC = () => {
+    const [openModal, setOpenModal] = useState<boolean>(false);
     return (
         <>
-            <Header />
+            {/* <Header />
             <div className={styles.container}>
+                {openModal && <ContactModal closeModal={setOpenModal} />}
                 <div className={styles.banner}>
                     <Information
+                        className={styles.informationComponent}
                         intro='Yourtech career starts here'
                         title='Take the next step toward your personal and professional goals with us'
                         description='  We’re a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.'
                     >
                         <div className={styles.buttons}>
-                            <button className={styles.apply}>Apply now</button>
+                            <button className={styles.apply} onClick={() => setOpenModal(true)}>
+                                Apply now
+                            </button>
                             <button className={styles.learnMore}>Learn More</button>
                         </div>
                     </Information>
@@ -67,8 +65,7 @@ const Home: React.FC = () => {
             <Benefits />
             <BlogPosts />
             <Questions />
-            <Footer />
-            {/* <Instructor/> */}
+            <Footer /> */}
         </>
     );
 };

@@ -18,6 +18,7 @@
     width: 114rem;
     display: flex;
     gap: 6rem;
+    position: relative;
 }
 .webinarInfo {
     width: 61.2rem;
@@ -80,6 +81,16 @@
     text-align: left;
     color: #7b7b7b;
 }
-.webinar:hover .image{
+.webinar:hover .image {
     filter: grayscale(30%);
+}
+.content {
+    position: absolute;
+    width: 458px;
+    height: 290px;
+    border-radius: 1rem;
+}
+.webinar:hover .content {
+    background-color: rgba(15, 15, 15, 0.4);
+    transition: background-color 0.5s ease;
 }

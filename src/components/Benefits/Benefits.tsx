@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Benefits.module.scss';
 import Benefit from './Benefit/Benefit';
 import { BenefitProps } from './Benefit/BenefitProps';
+import Title from '../Title/Title';
 
 const benefits: BenefitProps[] = [
     {
@@ -40,16 +41,19 @@ const Benefits: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.main}>
-                <div className={styles.header}>We promise our students a future beyond just educating them</div>
-                <div className={styles.headerExtra}>
-                    One of the main features of our course is that after training the students, we give them real
-                    projects and prepare them for the market
-                </div>
-            </div>
+                
+                <Title
+                className={styles.titleComponent}
+                    title='We promise our students a future beyond just educating them'
+                    description='One of the main features of our course is that after training the students, we give them real
+                    projects and prepare them for the market'
+                />
+           
             <div className={styles.benefits}>
                 {benefits.map((benefit, index) => (
                     <Benefit key={benefit.title} benefit={benefit} isFirst={index === 0} />
                 ))}
+            </div>
             </div>
         </div>
     );

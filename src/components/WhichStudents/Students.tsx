@@ -2,10 +2,9 @@ import React from 'react';
 import styles from './Students.module.scss';
 import Student from './Student/Student';
 import { StudentType } from './StudentType';
+import Title from '../Title/Title';
 
-
-
-const studentTypes:StudentType[] = [
+const studentTypes: StudentType[] = [
     {
         id: 1,
         title: 'To non-IT professionals',
@@ -26,23 +25,23 @@ const studentTypes:StudentType[] = [
     },
 ];
 
-const Students:React.FC = () => {
+const Students: React.FC = () => {
     return (
-        <div className={styles.main}>
-            <div className={styles.container}>
-                <div className={styles.text}>
-                    <h1 className={styles.header}>Who is the IT Fundamentals course for?</h1>
-                    <p className={styles.description}>
-                        It is a direction open to anyone with any professional background. It is not necessary to have
+        <div className={styles.container}>
+            <div className={styles.main}>
+                <Title
+                    className={styles.titleComponent}
+                    title='Who is the IT Fundamentals course for?'
+                    description=' It is a direction open to anyone with any professional background. It is not necessary to have
                         experience in the field of IT to become a front-end developer — it is enough to be goal-oriented
-                        and have enough time to learn and improve the acquired knowledge.
-                    </p>
+                        and have enough time to learn and improve the acquired knowledge.'
+                />
+
+                <div className={styles.students}>
+                    {studentTypes.map(student => (
+                        <Student key={student.id} student={student} />
+                    ))}
                 </div>
-            </div>
-            <div className={styles.students}>
-                {studentTypes.map(student => (
-                    <Student key={student.id} student={student} />
-                ))}
             </div>
         </div>
     );

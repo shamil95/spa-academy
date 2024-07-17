@@ -1,19 +1,31 @@
 .main {
-    padding: 10rem 15rem 12rem 18rem;
+  
     background: #0f0f0f;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
 
 }
+.bigContainer{
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
 .container {
-   // width: 90%;
+    width: 105.5rem;
     opacity: 0px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    
    
 }
+
 .title {
-   // width: 62rem;
+ 
     margin-top: 0;
     font-size: 2.6rem;
     font-weight: 700;
@@ -30,9 +42,10 @@
     color: #b7b7b7;
 }
 .boxes {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 24rem;
+    gap: 3rem;
     margin-top: 5rem;
 }
 @media screen and (max-width: 1700px) {

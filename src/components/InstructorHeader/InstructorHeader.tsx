@@ -42,7 +42,7 @@ const InstructorHeader: React.FC = () => {
                         <div className={styles.footer}>
                             {footerIcons.map((icon, index) => (
                                 <div key={index} className={styles.socialIcon}>
-                                    <Image src={icon.src} alt={icon.alt} width={20} height={20} />
+                                    <Image src={icon.src} alt={icon.alt} width={18} height={18} />
                                 </div>
                             ))}
                         </div>

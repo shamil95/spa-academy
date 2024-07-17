@@ -6,11 +6,13 @@ type InformationProps = {
     title: string;
     description: string;
     children: React.ReactNode;
+    className?: string;
+    
 };
 
-const Information: React.FC<InformationProps> = ({ intro, title, description, children }) => {
+const Information: React.FC<InformationProps> = ({ intro, title, description, children,className }) => {
     return (
-        <div className={styles.info}>
+        <div className={`${styles.info} ${className}`}>
             <div className={styles.intro}>{intro}</div>
             <div className={styles.title}>{title}</div>
             <div className={styles.description}>

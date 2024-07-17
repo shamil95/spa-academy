@@ -4,6 +4,7 @@ import MoneyPng from '../../assets/images/moneys.png';
 import Image from 'next/image';
 import Technology from './Technology/Technology';
 import { GneneralTypes } from './GeneralTypes';
+import Title from '../Title/Title';
 
 type BoxesType = {
     id: number;
@@ -136,13 +137,16 @@ const bootcamps: GneneralTypes[] = [
 
 const Training: React.FC = () => {
     return (
-        <div className={styles.main}>
-            <div className={styles.container}>
-                <h1>Training program - 6 months</h1>
-                <p className={styles.text}>
-                    To become a front-end developer, no technical education required. Anyone can master this profession
-                    and start their journey in IT. Here are the stories of our graduates - they did it, and you can too.
-                </p>
+        <div className={styles.container}>
+            <div className={styles.main}>
+                <div className={styles.smallContainer}>
+               
+                <Title
+                className={styles.titleComponent}
+                    title='Training program - 6 months'
+                    description='To become a front-end developer, no technical education required. Anyone can master this profession
+                    and start their journey in IT. Here are the stories of our graduates - they did it, and you can too.'
+                />
                 <div className={styles.boxes}>
                     {boxes.map(box => (
                         <div className={styles.box} key={box.id}>
@@ -151,10 +155,11 @@ const Training: React.FC = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+                </div>
+          
             <div className={styles.cards}>
                 <div className={styles.header}>
-                    <h1>Advanced Java</h1>
+                    <div className={styles.title}>Advanced Java</div>
                     <div className={styles.line}></div>
                 </div>
                 <div className={styles.lessons}>
@@ -166,7 +171,7 @@ const Training: React.FC = () => {
 
             <div className={styles.cards}>
                 <div className={styles.header}>
-                    <h1>Spring Boot</h1>
+                    <div className={styles.title}>Spring Boot</div>
                     <div className={styles.line}></div>
                 </div>
                 <div className={styles.lessons}>
@@ -174,6 +179,7 @@ const Training: React.FC = () => {
                         <Technology key={lesson.id} lesson={lesson} isFirst={index === 0} />
                     ))}
                 </div>
+            </div>
             </div>
         </div>
     );
