@@ -6,6 +6,7 @@ const InstructorAbout: React.FC = () => {
     return (
         <div className={styles.container}>
             <Title
+                className={styles.titleComponent}
                 title='About'
                 description='Lorem ipsum dolor sit amet, consectetur elit sed do eius mod tempor incidid labore dolore magna aliqua. enim ad minim eniam quis nostrud exercitation ullamco laboris nisi aliquip ex commodo consequat. duis aute irure dolor in repreed ut perspiciatis unde omnis iste natus error sit voluptat em acus antium.
 doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi arch itecto beatae vitae dicta sunt explicabo.'

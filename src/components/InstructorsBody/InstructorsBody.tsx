@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './InstructorsBody.module.scss';
 import Image from 'next/image';
 import { ICONS } from '@/assets/icons';
+import Link from 'next/link';
 
-
-const {instructorImg, faceBookImage, XImage, instaImage, linkedinImage } = ICONS;
+const { instructorImg, faceBookImage, XImage, instaImage, linkedinImage } = ICONS;
 const footerIcons = [faceBookImage, XImage, instaImage, linkedinImage];
 
 type InstructordDataType = {
@@ -107,26 +107,47 @@ const InstructorsBody: React.FC = () => {
         <div className={styles.container}>
             <div className={styles.main}>
                 <div className={styles.row}>
-                    {IntructorsData.map(instructor => (
-                        <div key={instructor.id} className={styles.instructor}>
-                            <div className={styles.imageContainer}>{instructor.image}</div>
-                            <div className={styles.textContainer}>
-                                <div className={styles.title}>
-                                    <div className={styles.name}>{instructor.name}</div>
-                                    <div className={styles.border}></div>
-                                    <div className={styles.profession}>{instructor.profession}</div>
+                    {IntructorsData.map((instructor, index) =>
+                        index === 0 ? (
+                            <Link href='/instructors/instructor' key={instructor.id} className={styles.instructor}>
+                                <div className={styles.imageContainer}>{instructor.image}</div>
+                                <div className={styles.textContainer}>
+                                    <div className={styles.title}>
+                                        <div className={styles.name}>{instructor.name}</div>
+                                        <div className={styles.border}></div>
+                                        <div className={styles.profession}>{instructor.profession}</div>
+                                    </div>
+                                    <div className={styles.text}>{instructor.text}</div>
+                                    <div className={styles.footer}>
+                                        {footerIcons.map((icon, index) => (
+                                            <div key={index} className={styles.socialIcon}>
+                                                <Image src={icon.src} alt={icon.alt} width={20} height={20} />
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
-                                <div className={styles.text}>{instructor.text}</div>
-                                <div className={styles.footer}>
-                                    {footerIcons.map((icon, index) => (
-                                        <div key={index} className={styles.socialIcon}>
-                                            <Image src={icon.src} alt={icon.alt} width={20} height={20} />
-                                        </div>
-                                    ))}
+                            </Link>
+                        ) : (
+                            <div key={instructor.id} className={styles.instructor}>
+                                <div className={styles.imageContainer}>{instructor.image}</div>
+                                <div className={styles.textContainer}>
+                                    <div className={styles.title}>
+                                        <div className={styles.name}>{instructor.name}</div>
+                                        <div className={styles.border}></div>
+                                        <div className={styles.profession}>{instructor.profession}</div>
+                                    </div>
+                                    <div className={styles.text}>{instructor.text}</div>
+                                    <div className={styles.footer}>
+                                        {footerIcons.map((icon, index) => (
+                                            <div key={index} className={styles.socialIcon}>
+                                                <Image src={icon.src} alt={icon.alt} width={20} height={20} />
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    )}
                 </div>
             </div>
         </div>
