@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './OurBenefits.module.scss';
 import Content from './Content/Content';
 import Image from 'next/image';
@@ -8,8 +8,9 @@ import Item2 from '../../assets/images/students/Item2.png';
 import Item3 from '../../assets/images/students/Item3.png';
 import Item4 from '../../assets/images/students/Item4.png';
 import Poster from '../../assets/images/Poster.png';
+import { ContentProps } from './ContentProps';
 
-const contents = [
+const contents: ContentProps[] = [
     {
         id: 1,
         title: 'Learn creative skills to achieve your personal and professional goals.',
@@ -26,7 +27,7 @@ const contents = [
 
 const images = [Item, Item1, Item2, Item3, Item4];
 
-const OurBenefits = () => {
+const OurBenefits: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.block}>

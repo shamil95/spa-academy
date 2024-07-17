@@ -3,17 +3,17 @@ import styles from './Account.module.scss';
 import { ICONS } from '@/assets/icons';
 import Image from 'next/image';
 
-const { LanguageIcon, AccountIcon } = ICONS;
+interface Props {}
 
-const Account = () => {
+const Account: React.FC<Props> = () => {
     return (
         <div className={styles.account}>
             <div className={styles.language}>
-                <Image src={LanguageIcon.src} alt={'language'} width={16} height={16} className={styles.lang} />
+                <Image src={ICONS.LanguageIcon.src} alt={'language'} width={16} height={16} className={styles.lang} />
                 <span>Eng</span>
             </div>
             <div className={styles.studentPortal}>
-                <Image src={AccountIcon.src} alt={'account'} width={16} height={16} />
+                <Image src={ICONS.AccountIcon.src} alt={'account'} width={16} height={16} />
                 <span>Student portal</span>
             </div>
         </div>

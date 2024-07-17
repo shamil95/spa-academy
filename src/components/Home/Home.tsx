@@ -13,12 +13,10 @@ import Questions from '../Questions/Questions';
 import OurBenefits from '../OurBenefits/OurBenefits';
 import Footer from '../Footer/Footer';
 import HeaderText from '../HeaderText/HeaderText';
-import Infromation from '../Information/Infromation';
-// import Slider, { Settings } from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
+import Information from '../Information/Infromation';
 
-const courses = [
+
+const courses:string[] = [
     'IT Fundamentals',
     'Programming',
     'Web Development',
@@ -27,20 +25,13 @@ const courses = [
     'Cloud Computing',
 ];
 
-const Home = () => {
-    // const settings: Settings = {
-    //     dots: false,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    // };
+const Home: React.FC = () => {
     return (
         <>
             <Header />
             <div className={styles.container}>
                 <div className={styles.banner}>
-                    <Infromation
+                    <Information
                         intro='Yourtech career starts here'
                         title='Take the next step toward your personal and professional goals with us'
                         description='  We’re a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.'
@@ -49,7 +40,7 @@ const Home = () => {
                             <button className={styles.apply}>Apply now</button>
                             <button className={styles.learnMore}>Learn More</button>
                         </div>
-                    </Infromation>
+                    </Information>
 
                     <Image className={styles.image} src={HomeImage.src} alt={'homeImage'} width={575} height={520} />
                 </div>

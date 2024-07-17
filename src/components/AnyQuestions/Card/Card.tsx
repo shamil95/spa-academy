@@ -3,9 +3,16 @@ import React, { useState } from 'react';
 import { ICONS } from '@/assets/icons';
 import styles from './Card.module.scss';
 import Image from 'next/image';
+import { CardType } from '../CardType';
+
+type CardComponentProps = {
+    title: string;
+    details: string;
+    isFirst: boolean;
+};
 
 const { plusIcon, minusIcon } = ICONS;
-const Card = ({ title, details, isFirst }) => {
+const Card: React.FC<CardComponentProps> = ({ title, details, isFirst }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () => {

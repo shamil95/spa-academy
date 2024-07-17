@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './Training.module.scss';
 import MoneyPng from '../../assets/images/moneys.png';
 import Image from 'next/image';
 import Technology from './Technology/Technology';
+import { GneneralTypes } from './GeneralTypes';
 
-const boxes = [
+type BoxesType = {
+    id: number;
+    image: ReactNode;
+    title: string;
+};
+
+const boxes: BoxesType[] = [
     {
         id: 1,
         image: <Image src={MoneyPng.src} alt='Money png' width={24} height={24} />,
@@ -21,7 +28,7 @@ const boxes = [
         title: '1 individual and 1 team project',
     },
 ];
-const lessons = [
+const lessons: GneneralTypes[] = [
     {
         id: 1,
         name: 'Java Basic Syntax',
@@ -74,7 +81,7 @@ const lessons = [
     },
 ];
 
-const bootcamps = [
+const bootcamps: GneneralTypes[] = [
     {
         id: 1,
         name: 'Introduction to Spring Boot',
@@ -127,7 +134,7 @@ const bootcamps = [
     },
 ];
 
-const Training = () => {
+const Training: React.FC = () => {
     return (
         <div className={styles.main}>
             <div className={styles.container}>
@@ -164,7 +171,7 @@ const Training = () => {
                 </div>
                 <div className={styles.lessons}>
                     {lessons.map((lesson, index) => (
-                        <Technology key={lesson.id} lesson={lesson} />
+                        <Technology key={lesson.id} lesson={lesson} isFirst={index === 0} />
                     ))}
                 </div>
             </div>

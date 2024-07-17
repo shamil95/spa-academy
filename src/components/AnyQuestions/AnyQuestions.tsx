@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './AnyQuestions.module.scss';
 import Card from './Card/Card';
+import { CardType } from './CardType';
 
-const cards = [
+const cards: CardType[] = [
     {
         id: 1,
         title: 'How are classes going?',
@@ -47,7 +48,7 @@ const cards = [
     },
 ];
 
-const AnyQuestions = () => {
+const AnyQuestions: React.FC = () => {
     return (
         <div className={styles.main}>
             <div className={styles.container}>

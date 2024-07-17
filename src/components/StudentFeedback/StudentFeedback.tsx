@@ -6,8 +6,9 @@ import upComma from '../../assets/icons/upComma.svg';
 import Image from 'next/image';
 import styles from './StudentFeedback.module.scss';
 import FeedBack from './Feedback/FeedBack';
+import { FeedbackProps } from './Feedback/FeedbackProps';
 
-const feedBacks = [
+const feedBacks :FeedbackProps[] = [
     {
         fullName: 'Maria Philips',
         profession: 'Web developer',
@@ -31,7 +32,7 @@ const feedBacks = [
     },
 ];
 
-const StudentFeedback = () => {
+const StudentFeedback: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.header}>Student Feedback</div>

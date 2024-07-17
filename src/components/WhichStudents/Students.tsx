@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './Students.module.scss';
-import Student from './Student/Student';
+import Student from './Student';
+import { StudentType } from './StudentType';
 
-const studentTypes = [
+
+
+const studentTypes:StudentType[] = [
     {
         id: 1,
         title: 'To non-IT professionals',
@@ -23,7 +26,7 @@ const studentTypes = [
     },
 ];
 
-const Students = () => {
+const Students:React.FC = () => {
     return (
         <div className={styles.main}>
             <div className={styles.container}>

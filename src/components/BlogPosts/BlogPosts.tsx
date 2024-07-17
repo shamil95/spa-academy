@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './BlogPosts.module.scss';
 import Image from 'next/image';
 import blog1 from '../../assets/images/blog1.png';
 
-const blogPosts = [
+type BlogPost = {
+    image: ReactNode;
+    date: string;
+    category: string;
+    title: string;
+    body: string;
+};
+
+const blogPosts: BlogPost[] = [
     {
         image: <Image className={styles.image} src={blog1.src} alt={'blog'} width={360} height={220} />,
         date: '08-01-2024',
@@ -48,7 +56,7 @@ const blogPosts = [
     },
 ];
 
-const BlogPosts = () => {
+const BlogPosts: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.header}>

@@ -1,8 +1,9 @@
 import React from 'react';
 import Card from '../Card/Card';
 import styles from './Cards.module.scss';
+import { CardProps } from '../Card/CardProps';
 
-const cards = [
+const cards: CardProps[] = [
     {
         id: 1,
         title: 'How this work?',
@@ -47,7 +48,7 @@ const cards = [
     },
 ];
 
-const Cards = () => {
+const Cards: React.FC = () => {
     return (
         <div className={styles.cards}>
             {cards.map((card, index) => (

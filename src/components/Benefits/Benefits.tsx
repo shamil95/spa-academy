@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Benefits.module.scss';
 import Benefit from './Benefit/Benefit';
+import { BenefitProps } from './Benefit/BenefitProps';
 
-const benefits = [
+const benefits: BenefitProps[] = [
     {
         title: 'Mentor support',
         active: true,
@@ -35,7 +36,7 @@ const benefits = [
     },
 ];
 
-const Benefits = () => {
+const Benefits: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.main}>

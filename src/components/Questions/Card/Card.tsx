@@ -1,12 +1,19 @@
 'use client';
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { ICONS } from '@/assets/icons';
 import styles from './Card.module.scss';
 import Image from 'next/image';
+import { CardProps } from './CardProps';
+
+type CardComponentProps = {
+    title: string;
+    details: string;
+    isFirst: boolean;
+};
 
 const { plusIcon, minusIcon } = ICONS;
-const Card = ({ title, details, isFirst }) => {
-    const [isOpen, setIsOpen] = useState(false);
+const Card: React.FC<CardComponentProps> = ({ title, details, isFirst }) => {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const handleClick = () => {
         setIsOpen(!isOpen);

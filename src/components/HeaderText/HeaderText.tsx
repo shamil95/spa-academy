@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './HeaderText.module.scss';
 
-const HeaderText = ({ title, text, children }) => {
+type HeaderTextProps = {
+    title: string;
+    text: string;
+    children: ReactNode;
+};
+
+const HeaderText: React.FC<HeaderTextProps> = ({ title, text, children }) => {
     return (
         <div className={styles.container}>
             <div className={styles.title}>{title}</div>

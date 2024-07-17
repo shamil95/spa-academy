@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { ReactHTMLElement, ReactNode } from 'react';
 import styles from './WhyFundamentals.module.scss';
-
 import MoneyPng from '../../assets/images/money.png';
 import GlobalPng from '../../assets/images/global.png';
 import MedalPng from '../../assets/images/medal-star.png';
 import Image from 'next/image';
 
-const boxes = [
+type BoxesType = {
+    id: number;
+    image: ReactNode;
+    content: string;
+};
+
+const boxes: BoxesType[] = [
     {
         id: 1,
         image: <Image src={MoneyPng} alt='money' width={40} height={40} />,
@@ -24,7 +29,7 @@ const boxes = [
     },
 ];
 
-const WhyFundamentals = () => {
+const WhyFundamentals: React.FC = () => {
     return (
         <div className={styles.main}>
             <div className={styles.container}>
