@@ -14,6 +14,7 @@ import Questions from '../Questions/Questions';
 import Footer from '../Footer/Footer';
 import Information from '../Information/Infromation';
 import ContactModal from '../ContactModal/ContactModal';
+import SingleEvent from '../SingleEventPage/SingleEvent';
 
 const courses: string[] = [
     'IT Fundamentals',
@@ -66,6 +67,7 @@ const Home: React.FC = () => {
             <BlogPosts />
             <Questions />
             <Footer /> */}
+            <SingleEvent/>
         </>
     );
 };

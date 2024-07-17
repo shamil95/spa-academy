@@ -51,9 +51,12 @@ import usingLaptop from './usingLaptop.svg';
 import youngInstrcutor from './youngInstructor.svg';
 import womenInstructor from './womenInstructor.svg';
 import commaIcon from './commaIcon.svg';
-import personImage from "./personImage.svg"
-import vectorLeft from "./vectorLeft.svg"
-import vectorRight from "./vectorRight.svg"
+import personImage from './personImage.svg';
+import vectorLeft from './vectorLeft.svg';
+import vectorRight from './vectorRight.svg';
+import blackFbIcon from './blackFb.svg';
+import blackXIcon from './blackX.svg';
+import blackLnIcon from './blackLn.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -109,7 +112,10 @@ export const ICONS = {
     youngInstrcutor: youngInstrcutor,
     womenInstructor: womenInstructor,
     commaIcon: commaIcon,
-    personImage:personImage,
-    vectorLeft:vectorLeft,
-    vectorRight:vectorRight
+    personImage: personImage,
+    vectorLeft: vectorLeft,
+    vectorRight: vectorRight,
+    blackFbIcon: blackFbIcon,
+    blackXIcon: blackXIcon,
+    blackLnIcon: blackLnIcon,
 };
