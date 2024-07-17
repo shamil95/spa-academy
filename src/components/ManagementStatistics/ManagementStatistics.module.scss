@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+    height: 47.8rem;
+    display: flex;
+    justify-content: center;
+    background-color: #efeeeb;
+    padding-top: 5rem;
+}
+.main {
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.title {
+    width: 45.5rem;
+    height: 7.2rem;
+    line-height: 3.6rem;
+    font-weight: bold;
+    font-size: 2.6rem;
+    text-align: left;
+    color: #0f0f0f;
+}
+.boxes {
+    width: 100%;
+    height: 19.6rem;
+    display: flex;
+    gap: 3rem;
+}
+.box {
+    width: 36rem;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #e3e2df;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: 5rem;
+}
+.statistic {
+    height: 2.7rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.number {
+    font-weight: 700;
+    color: #0f0f0f;
+    font-size: 3rem;
+    line-height: 2.7rem;
+}
+.info {
+    line-height: 2.1rem;
+    font-size: 1.4rem;
+    color: #b59850;
+}
+.text {
+    color: #4b4b4b;
+    line-height: 2.1rem;
+    font-size: 1.4rem;
+    width: 31rem;
+    height: 6.3rem;
+}

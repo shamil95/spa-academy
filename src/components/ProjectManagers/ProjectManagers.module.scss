@@ -1,0 +1,73 @@
+.container {
+    width: 100%;
+    height: 51.9rem;
+    background-color: #efeeeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+.mainTitle{
+    font-weight: bold;
+    line-height: 3.6rem;
+    font-size: 2.6rem;
+    color:#0F0F0F;
+}
+.boxes{
+    width: 114rem;
+    height: 31.3rem;
+    display: flex;
+    gap: 3rem;
+}
+.box{
+    width: 36rem;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #F9F9F9;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.boxBlack{
+    width: 36rem;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: #0F0F0F;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.boxBlack >.title{
+    color: #F9F9F9;
+}
+.title{
+    font-weight: 700;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #0F0F0F;
+    width: 29rem;
+}
+
+.text{
+    text-align: left;
+    color: #7B7B7B;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+}
+.number{
+    color: #0F0F0F;
+    line-height: normal;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.boxBlack>.number{
+    color: #F9F9F9;
+}

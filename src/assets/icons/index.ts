@@ -48,6 +48,12 @@ import alarmOclock from './alarmOclock.svg';
 import loactionIcon from './loaction.svg';
 import blogImage from './blogImage.svg';
 import usingLaptop from './usingLaptop.svg';
+import youngInstrcutor from './youngInstructor.svg';
+import womenInstructor from './womenInstructor.svg';
+import commaIcon from './commaIcon.svg';
+import personImage from "./personImage.svg"
+import vectorLeft from "./vectorLeft.svg"
+import vectorRight from "./vectorRight.svg"
 
 export const ICONS = {
     AccountIcon: account,
@@ -100,4 +106,10 @@ export const ICONS = {
     loactionIcon: loactionIcon,
     blogImage: blogImage,
     usingLaptop: usingLaptop,
+    youngInstrcutor: youngInstrcutor,
+    womenInstructor: womenInstructor,
+    commaIcon: commaIcon,
+    personImage:personImage,
+    vectorLeft:vectorLeft,
+    vectorRight:vectorRight
 };

@@ -1,0 +1,142 @@
+.container {
+    width: 100%;
+    height: 58.2rem;
+    background-color: #efeeeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    width: 114rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.text {
+    width: 36rem;
+    height: 22.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.textContainer {
+    width: 100%;
+    height: 14.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card {
+    width: 75rem;
+    height: 38.2rem;
+    border-radius: 2.4rem;
+    background-color: rgba(249, 249, 249, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 5rem;
+}
+.imageContainer {
+    width: 6.6rem;
+    height: 4.8rem;
+}
+.title {
+    font-weight: bold;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    text-align: left;
+    color: #0f0f0f;
+}
+.text {
+    line-height: 2.7rem;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #4b4b4b;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+.cardTitle {
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #ffc32c;
+}
+.points {
+    width: 4.7rem;
+    height: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row2 {
+    line-height: 3.6rem;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 600;
+    width: 61.6rem;
+    height: 10.8rem;
+}
+.row3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.person {
+    width: 32rem;
+    height: 6rem;
+   
+    display: flex;
+    gap: 1.5rem;
+}
+.directions {
+    width: 9rem;
+    height: 4rem;
+    display: flex;
+    gap: 1rem;
+   
+}
+.personImage {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.image {
+    filter: grayscale(100%);
+}
+.name {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #0f0f0f;
+    line-height: normal;
+}
+.profession {
+    line-height: normal;
+    font-size: 1.6rem;
+    color: #7b7b7b;
+    margin-top: 1rem;
+}
+.left{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    border: 1px solid #7B7B7B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    border: 1px solid #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

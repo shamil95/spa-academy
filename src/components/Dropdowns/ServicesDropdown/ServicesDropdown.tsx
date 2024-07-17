@@ -30,13 +30,15 @@ const servicesData: ServicesesDataType[] = [
     },
 ];
 
+const servicesHref: string[] = ['ITstrategy', 'events', 'webinars', 'about', 'contact'];
+
 const ServicesDropdown: React.FC = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.links}>
-                {servicesData.map(data => (
+                {servicesData.map((data, index) => (
                     <li className={styles.link} key={data.id}>
-                        <Link href=''>{data.title}</Link>
+                        <Link href={`/${servicesHref[index]}`}>{data.title}</Link>
                     </li>
                 ))}
             </ul>
