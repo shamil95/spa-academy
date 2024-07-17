@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    background-color: #EFEEEB;
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+    height: 135rem;
+}
+.main{
+    width: 75rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border: px solid black;
+   color:  #4B4B4B;
+   line-height: 2.7rem;
+   font-size: 1.6rem;
+   font-weight: 400;
+}
+.text2{
+    width: 75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.text2 > ul{
+    margin-left: 1.5rem;
+}
+.textTitle{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.6rem;
+    color: #0F0F0F;
+}
+.titleComponent{
+    line-height: 3.6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0F0F0F;
+}

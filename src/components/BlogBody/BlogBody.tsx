@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './BlogBody.module.scss';
 import Image from 'next/image';
 import { ICONS } from '@/assets/icons';
+import Link from 'next/link';
 
 const blogsTitle: string[] = [
     'All Articles',
@@ -125,19 +126,37 @@ const BlogBody: React.FC = () => {
                 </div>
 
                 <div className={styles.blogs}>
-                    {blogsData.map(blog => (
+                    {blogsData.map((blog, index) => (
                         <div key={blog.id} className={styles.blog}>
-                        
-                            <div className={styles.imageContainer}>{blog.image}</div>
-                            <div className={styles.content}></div>
-                            <div className={styles.text}>
-                                <div className={styles.smallInfo}>
-                                    <div className={styles.date}>{blog.date} &#x2022;</div>
-                                    <div className={styles.info}>{blog.info}</div>
+                            {index === 0 ? (
+                                <Link href="/singleblog" passHref className={styles.blog}>
+                                 
+                                        <div className={styles.imageContainer}>{blog.image}</div>
+                                        <div className={styles.content}></div>
+                                        <div className={styles.text}>
+                                            <div className={styles.smallInfo}>
+                                                <div className={styles.date}>{blog.date} &#x2022;</div>
+                                                <div className={styles.info}>{blog.info}</div>
+                                            </div>
+                                            <div className={styles.title}>{blog.title}</div>
+                                            <div className={styles.description}>{blog.description}</div>
+                                        </div>
+                                   
+                                </Link>
+                            ) : (
+                                <div className={styles.blog}>
+                                    <div className={styles.imageContainer}>{blog.image}</div>
+                                    <div className={styles.content}></div>
+                                    <div className={styles.text}>
+                                        <div className={styles.smallInfo}>
+                                            <div className={styles.date}>{blog.date} &#x2022;</div>
+                                            <div className={styles.info}>{blog.info}</div>
+                                        </div>
+                                        <div className={styles.title}>{blog.title}</div>
+                                        <div className={styles.description}>{blog.description}</div>
+                                    </div>
                                 </div>
-                                <div className={styles.title}>{blog.title}</div>
-                                <div className={styles.description}>{blog.description}</div>
-                            </div>
+                            )}
                         </div>
                     ))}
                 </div>
