@@ -14,9 +14,9 @@ import OurBenefits from '../OurBenefits/OurBenefits';
 import Footer from '../Footer/Footer';
 import HeaderText from '../HeaderText/HeaderText';
 import Information from '../Information/Infromation';
+import ContactModal from '../ContactModal/ContactModal';
 
-
-const courses:string[] = [
+const courses: string[] = [
     'IT Fundamentals',
     'Programming',
     'Web Development',
@@ -62,7 +62,6 @@ const Home: React.FC = () => {
             <Benefits />
             <BlogPosts />
             <Questions />
-            <OurBenefits />
             <Footer />
         </>
     );

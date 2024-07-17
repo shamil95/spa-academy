@@ -14,35 +14,40 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 15rem 2rem 15rem;
+
 }
 .buttons {
-    width: 33rem;
+    width: 40rem;
     height: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .btn1 {
-    width: 10rem;
+    width: 17rem;
     height: 4rem;
     border-radius: 5rem;
     border: none;
     opacity: 0px;
     background: #f9f9f91a;
-    color: white;
+    color: #f9f9f9;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.4rem;
     letter-spacing: -0.02em;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
 }
 .btn2 {
     width: 21rem;
     height: 4rem;
     border: none;
     background: #ffc32c;
-    color: black;
+    color: #0f0f0f;
     border-radius: 5rem;
     opacity: 0px;
     font-size: 1.4rem;

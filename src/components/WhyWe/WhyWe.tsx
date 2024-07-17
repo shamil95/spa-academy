@@ -1,8 +1,10 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import styles from './WhyWe.module.scss';
 import Statistic from './Statistic/Statistic';
 import HeaderText from '../HeaderText/HeaderText';
 import { StaticProps } from './Statistic/StaticProps';
+import ContactModal from '../ContactModal/ContactModal';
 
 const statistics: StaticProps[] = [
     {
@@ -24,8 +26,10 @@ const statistics: StaticProps[] = [
 ];
 
 const WhyWe: React.FC = () => {
+    const [openModal, setOpenModal] = useState<boolean>(false);
     return (
         <div className={styles.container}>
+            {openModal && <ContactModal closeModal={setOpenModal} />}
             <div className={styles.statistics}>
                 {statistics.map(stat => (
                     <Statistic key={stat.label} statistic={stat} />
@@ -37,7 +41,9 @@ const WhyWe: React.FC = () => {
                 text='In our academy, you can choose your desired field of IT and form the necessary knowledge and skills
                 for your future career development'
             >
-                <button className={styles.apply}>Apply now</button>
+                <button className={styles.apply} onClick={() => setOpenModal(true)}>
+                    Apply now
+                </button>
                 <button className={styles.learnMore}>Contact us</button>
             </HeaderText>
         </div>
@@ -45,4 +51,3 @@ const WhyWe: React.FC = () => {
 };
 
 export default WhyWe;
-
