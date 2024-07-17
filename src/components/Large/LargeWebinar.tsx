@@ -1,7 +1,9 @@
+'use client';
 import React from 'react';
 import styles from './LargeWebinar.module.scss';
 import { ICONS } from '@/assets/icons';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const { calendarStar, alarmOclock, loactionIcon } = ICONS;
 
@@ -10,6 +12,7 @@ type LargeWebinarComponentProps = {
     webinarTitle: string;
     webinarDescription: string;
     className?: string;
+    href?: any;
 };
 
 type LargeWebinarDataType = {
@@ -56,13 +59,13 @@ const LargeWebinar: React.FC<LargeWebinarComponentProps> = ({
                             </div>
                         ))}
                     </div>
+                    <button className={styles.apply}>Apply Now</button>
                     <div className={styles.text}>
                         <div className={styles.webinarTitle}>{webinarTitle}</div>
                         <div className={styles.description}>{webinarDescription}</div>
                     </div>
                 </div>
             </div>
-            <div className={styles.border}></div>
         </div>
     );
 };

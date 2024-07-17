@@ -1,8 +1,10 @@
+'use client';
 import LargeWebinar from '../Large/LargeWebinar';
 import styles from './UpcomingEvents.module.scss';
 import React from 'react';
 import Image from 'next/image';
 import { ICONS } from '@/assets/icons';
+import Link from 'next/link';
 
 const { usingLaptop } = ICONS;
 
@@ -36,13 +38,36 @@ const UpcomingEvents: React.FC = () => {
             <div className={styles.main}>
                 <div className={styles.title}>Upcoming Events</div>
                 <div className={styles.webinarContainer}>
-                    {webinarsData.map(webinar => (
-                        <LargeWebinar
-                            webinarDescription={webinar.webinarDescription}
-                            webinarTitle={webinar.webinarTitle}
-                            key={webinar.id}
-                            webinarImage={webinar.webinarImage}
-                        />
+                    {webinarsData.map((webinar, index) => (
+                        <React.Fragment key={webinar.id}>
+                            {index === 0 ? (
+                                <Link href='/event'>
+                                    <LargeWebinar
+                                        href='event'
+                                        webinarDescription={webinar.webinarDescription}
+                                        webinarTitle={webinar.webinarTitle}
+                                        key={webinar.id}
+                                        webinarImage={webinar.webinarImage}
+                                    />
+                                </Link>
+                            ) : (
+                                <LargeWebinar
+                                    href='event'
+                                    webinarDescription={webinar.webinarDescription}
+                                    webinarTitle={webinar.webinarTitle}
+                                    key={webinar.id}
+                                    webinarImage={webinar.webinarImage}
+                                />
+                            )}
+                        </React.Fragment>
+
+                        // <LargeWebinar
+                        //     href='event'
+                        //     webinarDescription={webinar.webinarDescription}
+                        //     webinarTitle={webinar.webinarTitle}
+                        //     key={webinar.id}
+                        //     webinarImage={webinar.webinarImage}
+                        // />
                     ))}
                 </div>
             </div>

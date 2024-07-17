@@ -29,7 +29,7 @@ const Home: React.FC = () => {
     const [openModal, setOpenModal] = useState<boolean>(false);
     return (
         <>
-            {/* <Header />
+            <Header />
             <div className={styles.container}>
                 {openModal && <ContactModal closeModal={setOpenModal} />}
                 <div className={styles.banner}>
@@ -66,8 +66,8 @@ const Home: React.FC = () => {
             <Benefits />
             <BlogPosts />
             <Questions />
-            <Footer /> */}
-            <SingleEvent/>
+            <Footer />
+            {/* <SingleEvent/> */}
         </>
     );
 };
