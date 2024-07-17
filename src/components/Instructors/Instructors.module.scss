@@ -1,0 +1,24 @@
+.topButton {
+    background-color: rgba(255, 195, 44, 0.1);
+    height: 3rem;
+    border-radius: 4rem;
+    color: #ffc32c;
+    border: none;
+    padding: 0.6rem 1.7rem;
+}
+.upButton{
+    width: 15.8rem;
+    height: 4.4rem;
+    background-color: #ffc32c;
+    color:#0F0F0F;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}

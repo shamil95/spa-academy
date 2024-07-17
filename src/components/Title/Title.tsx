@@ -4,11 +4,12 @@ import styles from './Title.module.scss';
 type TitleComponentProps = {
     title: string;
     description: string;
+    className?: string;
 };
 
-const Title: React.FC<TitleComponentProps> = ({ title, description }) => {
+const Title: React.FC<TitleComponentProps> = ({ title, description, className }) => {
     return (
-        <div className={styles.text}>
+        <div className={`${styles.text} ${className}`}>
             <div className={styles.title}>{title}</div>
             <div className={styles.description}>{description}</div>
         </div>
