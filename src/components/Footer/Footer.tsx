@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import styles from './Footer.module.scss';
 import Image from 'next/image';
-import Logo from '../../assets/images/Logo.svg';
 import { ICONS } from '@/assets/icons';
 import FooterColumn from './Column/FooterColumn';
 import ContactModal from '../ContactModal/ContactModal';
@@ -56,7 +55,7 @@ const Footer: React.FC = () => {
 
     return (
         <div className={styles.footer}>
-             {openModal && <ContactModal closeModal={setOpenModal}/>}
+            {openModal && <ContactModal closeModal={setOpenModal} />}
             <div className={styles.footerHeader}>
                 <Image src={LogoIcon.src} alt={'logo'} width={162} height={40} />
                 <div className={styles.buttons}>
@@ -69,7 +68,6 @@ const Footer: React.FC = () => {
                         <Image src={arrowIcon.src} alt='Arrow' width={16} height={16} />
                     </button>
                 </div>
-               
             </div>
             <div className={styles.body}>
                 <div className={styles.row}>
