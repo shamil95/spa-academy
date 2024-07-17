@@ -1,7 +1,7 @@
 .main {
     width: 100%;
-    top: 85rem;
-    padding: 15rem 15rem 12rem 20rem;
+    height: 62.3rem;
+    padding: 11rem 15rem 9rem 15rem;
     opacity: 0px;
     background: #efeeeb;
     display: flex;
@@ -11,10 +11,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    width: 89.5rem;
+    height: 13.7rem;
 }
 
 .header {
+    margin: 0;
     font-size: 2.6rem;
     font-weight: 700;
     line-height: 3.6rem;
@@ -29,6 +31,8 @@
     color: #4b4b4b;
 }
 .students {
+    width: 114rem;
+    height: 21.6rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

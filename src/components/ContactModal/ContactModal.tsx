@@ -14,9 +14,9 @@ const ContactModal: React.FC<ContactModalProps> = ({ closeModal }) => {
     const modalContent = (
         <div className={styles.background}>
             <div className={styles.container}>
-                <button className={styles.closeBtn} onClick={() => closeModal(false)}>
-                    <Image src={closeIcon} alt='Close button' />
-                </button>
+                    <button className={styles.closeBtn} onClick={() => closeModal(false)}>
+                        <Image src={closeIcon} alt='Close button' />
+                    </button>
                 <div className={styles.contact}>
                     <div className={styles.text}>
                         <div className={styles.header}>We will contact you</div>

@@ -20,6 +20,7 @@ import downArrow from './down.svg';
 import upArrow from './up.svg';
 import incomingCall from './incoming-call.svg';
 import closeIcon from './Xicon.svg';
+import vectoriIcon from './Vector.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -44,4 +45,5 @@ export const ICONS = {
     upArrowIcon: upArrow,
     callIcon: incomingCall,
     closeIcon: closeIcon,
+    vectorIcon: vectoriIcon,
 };

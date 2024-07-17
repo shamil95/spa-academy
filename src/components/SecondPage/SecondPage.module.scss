@@ -1,55 +1,37 @@
 .container {
-//     background-color: rgba(13, 7, 7, 0.8);
-//     background-color: red;
-//   //  backdrop-filter: blur(5px);
-    opacity: 80;
+    background-image: url(../../assets/images/CourseImage.png);
     color: #fff;
     background-size: cover;
-    background-image: url('../../assets/images/CourseImage.png');
     width: 100%;
     height: 85.2rem;
+    padding: 18.3rem 15.2rem 5.6rem 15rem;
     overflow: hidden;
     gap: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10rem;
-    padding-top: 10rem;
-    padding: 0;
+    gap: 4rem;
     box-sizing: border-box;
+    position: relative;
 }
-
-// .rectangle {
-//     width: 47.2rem;
-//     height: 47.2rem;
-//     background-color: #ffc32c;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     border: 5rem;
-//     background: rgba(255, 195, 44, 0.4);
-//     filter: blur(100px);
-// }
-// .rectangle2 {
-//     width: 47.2rem;
-//     height: 47.2rem;
-//     background-color: #ffc32c;
-//     position: absolute;
-//     top: 30rem;
-//     left: -30rem;
-//     border: 5rem;
-//     background: rgba(255, 195, 44, 0.4);
-//     filter: blur(100px);
-// }
-
-.banner {
-    width: 80%;
+.overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0f0f0f; 
+    opacity: 0.8;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10rem;
+    flex-direction: column;
+    padding: 18.3rem 15.2rem 5.6rem 15rem;
+    gap: 4rem;
+    box-sizing: border-box;
+    z-index: 1; 
 }
+.overlay>*{
+    z-index: 3;
+}
+
 .start {
     width: 28rem;
     height: 4.4rem;
@@ -86,8 +68,7 @@
     color: #dbdbdb;
 }
 .info {
-    width: 80%;
-    height: 60rem;
+    height: 12.7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

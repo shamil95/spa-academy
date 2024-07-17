@@ -11,6 +11,8 @@ import OurPromise from '../OurPromises/OurPromise';
 import WhyFundamentals from '../WhyFundamentals/WhyFundamentals';
 import AnyQuestions from '../AnyQuestions/AnyQuestions';
 import Footer from '../Footer/Footer';
+import CourseForm from '../CourseForm/CourseForm';
+import InformationModal from '../InformationModal/InformationModal';
 
 type InformationType = {
     id: number;
@@ -51,14 +53,10 @@ const SecondPage: React.FC = () => {
         <>
             <Header />
             <div className={styles.container}>
-                <div className={styles.rectangle}></div>
-                <div className={styles.rectangle2}>
-                    <h1>Messi</h1>
-                </div>
-                <div className={styles.banner}>
+                <div className={styles.overlay}>
                     <Infromation
-                        intro='Beginner'
-                        title='IT Fundamentals'
+                        intro='For teenagers'
+                        title='Mathematics for'
                         description=' We will help you master an in-demand profession from scratch in 10 months and find a job in IT. The first week of training is free. We will help you master an in-demand profession from scratch in 10 months and find a job in IT. '
                     >
                         <div className={styles.buttons}>
@@ -67,22 +65,16 @@ const SecondPage: React.FC = () => {
                         </div>
                         <p className={styles.text}> The nearest start is January 25, February 8 and February 22 </p>
                     </Infromation>
-                    <Image
-                        className={styles.image}
-                        src={ITFundamentals.src}
-                        alt={'fundamentalsPng'}
-                        width={575}
-                        height={520}
-                    />
-                </div>
-                <div className={styles.info}>
-                    {informations.map(information => (
-                        <div className={styles.information} key={information.id}>
-                            <p className={styles.title}>{information.title}</p>
-                            <h3>{information.info}</h3>
-                            <p className={styles.title}>{information.count}</p>
-                        </div>
-                    ))}
+
+                    <div className={styles.info}>
+                        {informations.map(information => (
+                            <div className={styles.information} key={information.id}>
+                                <p className={styles.title}>{information.title}</p>
+                                <h3>{information.info}</h3>
+                                <p className={styles.title}>{information.count}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
             <Students />
@@ -90,7 +82,7 @@ const SecondPage: React.FC = () => {
             <OurPromise />
             <WhyFundamentals />
             <AnyQuestions />
-            <OurBenefits />
+            <CourseForm />
             <Footer />
         </>
     );

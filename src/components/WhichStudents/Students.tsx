@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Students.module.scss';
-import Student from './Student';
+import Student from './Student/Student';
 import { StudentType } from './StudentType';
 
 
