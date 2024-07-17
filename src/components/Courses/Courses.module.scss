@@ -47,13 +47,13 @@
     cursor: pointer;
     box-sizing: border-box;
 
-    &:nth-child(odd) {
-        margin-left: 0;
-    }
+    // &:nth-child(odd) {
+    //     margin-left: 0;
+    // }
 
-    &:nth-child(even) {
-        margin-right: 0;
-    }
+    // &:nth-child(even) {
+    //     margin-right: 0;
+    // }
 
     transition: background-color 1s, border 0.9s;
 }
@@ -70,7 +70,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: #e3e2df;
     min-width: 555px;
     margin: 30px;
     padding: 3rem 4rem 0 3rem;
