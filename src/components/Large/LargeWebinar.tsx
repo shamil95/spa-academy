@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './LargeWebinar.module.scss';
 import { ICONS } from '@/assets/icons';
 import Image from 'next/image';
-import Link from 'next/link';
+
 
 const { calendarStar, alarmOclock, loactionIcon } = ICONS;
 

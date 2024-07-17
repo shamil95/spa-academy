@@ -1,44 +1,39 @@
 import React from 'react';
-import styles from './SingleEvent.module.scss';
+import styles from './PastEvent.module.scss';
 import Header from '../Header/Header';
 import EventHeader from '../EventHeader/EventHeader';
-import EventBody from '../EventBody/EventBody';
-import EventRegister from '../EventRegister/EventRegister';
-import Footer from '../Footer/Footer';
 import Title from '../Title/Title';
-import Image from 'next/image';
-import { ICONS } from '@/assets/icons';
+import EventBody from '../EventBody/EventBody';
+import EventLinks from '../EventLinks/EventLinks';
+import Subscribe from '../Subscribe/Subscribe';
+import Footer from '../Footer/Footer';
 
-const { usingLaptop } = ICONS;
-
-const eventImage = (
-    <div className={styles.imageContainer}>
-        <Image src={usingLaptop} alt='Usinf laptop' width={360} height={230} className={styles.image} />
-    </div>
-);
-
-const SingleEvent: React.FC = () => {
+const PastEvent = () => {
     return (
         <>
             <Header />
             <EventHeader
+                className={styles.eventComponent}
                 link1='Home'
                 link2='Events'
-                link3='Tech Career'
-                image={eventImage}
+                link3='AI for Back-End developers'
                 content={
                     <Title
                         className={styles.componentTitle}
-                        title='Tech Career Compass: Find Your Path in QA Testing'
+                        title='AI for Back-End developers: a deep dive into AI tools for Python'
                         description='Making informed career choices is essential for being content in life, and we re here to guide you every step of the way. Join us for an exclusive webinar featuring Nadiia Perehinska, a designer with over six years of industry expertise who is set to lead our upcoming UX/UI group.'
                     />
                 }
             />
             <EventBody />
-            <EventRegister />
-            <Footer />
+            <EventLinks />
+            <Subscribe
+                title='Subscribe to our Events'
+                description='Stay in the know and don’t miss a beet. No spam, no junk, important updates only.'
+            />
+            <Footer/>
         </>
     );
 };
 
-export default SingleEvent;
+export default PastEvent;
