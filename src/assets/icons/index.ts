@@ -27,6 +27,13 @@ import appleIcon from './aple.svg';
 import googleIcon from './google.svg';
 import testIcon from './testIcon.svg';
 import arrowDown1 from './arrowDown1.svg';
+import beetrootIcon1 from './beetrootIcon1.svg';
+import beetrootIcon2 from './beetrootIcon2.svg';
+import beetrootIcon3 from './beetrootIcon3.svg';
+import beetrootIcon4 from './beetrootIcon4.svg';
+import beetrootIcon5 from './beetrootIcon5.svg';
+import beetrootIcon6 from './beetrootIcon6.svg';
+import buttonDownIcon from './buttonDownIcon.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -58,4 +65,11 @@ export const ICONS = {
     googleIcon: googleIcon,
     testIcon: testIcon,
     arrowDown1: arrowDown1,
+    beetrootIcon1: beetrootIcon1,
+    beetrootIcon2: beetrootIcon2,
+    beetrootIcon3: beetrootIcon3,
+    beetrootIcon4: beetrootIcon4,
+    beetrootIcon5: beetrootIcon5,
+    beetrootIcon6: beetrootIcon6,
+    buttonDownIcon: buttonDownIcon,
 };

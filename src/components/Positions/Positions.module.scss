@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    height: 81.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efeeeb;
+}
+.main {
+    width: 114rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.positions {
+    width: 114rem;
+    height: 43.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.position {
+    width: 100%;
+    height: 13.2rem;
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    padding: 3rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.position:hover {
+    background-color: #0f0f0f;
+}
+
+.position:hover .content {
+    color: #f9f9f9;
+}
+.position:hover .positionTitle {
+    color: #f9f9f9;
+}
+
+.position:hover .time {
+    background-color: #262626;
+    color: #3b8b1f;
+}
+
+.position:hover .positionText {
+    background-color: #262626;
+    color: #f9f9f9;
+}
+.position:hover .apply {
+    background-color: #ffc32c;
+}
+
+.content {
+    width: 50.9rem;
+    height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: color 0.3s;
+}
+
+.boxes {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.time {
+    color: #3b8b1f;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    padding: 0.6rem 1.7rem;
+    border-radius: 1rem;
+    background-color: rgba(59, 139, 31, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.positionText {
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    padding: 0.6rem 1.7rem;
+    border-radius: 1rem;
+    color: #4b4b4b;
+    background-color: rgba(123, 123, 123, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.positionTitle {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: left;
+    color: #0f0f0f;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply {
+    width: 13.4rem;
+    height: 4.4rem;
+    border-radius: 4rem;
+    line-height: 2.8rem;
+    color: #0f0f0f;
+    font-size: 1.5rem;
+    border: 0.1rem solid #ffc32c;
+    background-color: rgba(249, 249, 249, 0.5);
+    font-weight: 500;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}

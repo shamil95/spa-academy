@@ -1,0 +1,20 @@
+.text {
+    width: 65.2rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.title {
+    font-weight: bold;
+    line-height: 3.6rem;
+    font-size: 2.6rem;
+    text-align: left;
+    color: #0f0f0f;
+}
+.description {
+    line-height: 2.7rem;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #4b4b4b;
+}

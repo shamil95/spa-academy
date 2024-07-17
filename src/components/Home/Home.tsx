@@ -17,7 +17,7 @@ import Information from '../Information/Infromation';
 import ContactModal from '../ContactModal/ContactModal';
 import Login from '../Login/Login';
 import { PagesDropdown } from '../Dropdowns';
-import AboutPage from '../AboutPage/AboutPage';
+import CareersPage from '../CareersPage/CareersPage';
 import TextComponent from '../Text/TextComponent';
 
 const courses: string[] = [
