@@ -60,6 +60,9 @@ import blackLnIcon from './blackLn.svg';
 import designLayer from './designLayer.svg';
 import eyeVisible from './eyeVisible.svg';
 import userCircle from './userCircle.svg';
+import cloudArrow from './cloudArrow.svg';
+import cancelX from './cancelX.svg';
+import folderCopy from './folderCopy.svg';
 
 export const ICONS = {
     AccountIcon: account,
@@ -124,4 +127,7 @@ export const ICONS = {
     designLayer: designLayer,
     eyeVisible: eyeVisible,
     userCircle: userCircle,
+    cloudArrow: cloudArrow,
+    cancelX: cancelX,
+    folderCopy: folderCopy,
 };

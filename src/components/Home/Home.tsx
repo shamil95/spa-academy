@@ -14,11 +14,6 @@ import Questions from '../Questions/Questions';
 import Footer from '../Footer/Footer';
 import Information from '../Information/Infromation';
 import ContactModal from '../ContactModal/ContactModal';
-import SingleEvent from '../SingleEventPage/SingleEvent';
-import PastEvent from '../PastEvent/PastEvent';
-import SingleBlog from '../SingleBlog/SingleBlog';
-import SingleWebinar from '../SingleWebinar/SingleWebinar';
-import PastWebinar from '../PastWebinar/PastWebinar';
 
 const courses: string[] = [
     'IT Fundamentals',

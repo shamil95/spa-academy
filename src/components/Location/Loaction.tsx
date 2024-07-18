@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { FormEvent, useState } from 'react';
 import styles from './Loaction.module.scss';
 import Image from 'next/image';
 import mapImage from '../../assets/images/mapImg.png';
@@ -35,11 +35,15 @@ const formFields: FieldsType[] = [
         id: 'message',
         label: 'Message',
         placeholder: 'Enter message',
-        type: 'textarea', // Değişiklik burada
+        type: 'textarea',
     },
 ];
 
 const Loaction: React.FC = () => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    };
+
     const [openModal, setOpenModal] = useState<boolean>(false);
     return (
         <div className={styles.container}>
@@ -52,7 +56,7 @@ const Loaction: React.FC = () => {
                         meaningful company. Hammer looking functional
                     </div>
                 </div>
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={handleSubmit}>
                     {formFields.map((field, index) => (
                         <div key={index} className={styles.info}>
                             <label htmlFor={field.id}>{field.label}</label>
@@ -61,7 +65,7 @@ const Loaction: React.FC = () => {
                                     id={field.id}
                                     name={field.id}
                                     placeholder={field.placeholder}
-                                    className={styles.textarea} 
+                                    className={styles.textarea}
                                     required
                                 />
                             ) : (
@@ -70,7 +74,7 @@ const Loaction: React.FC = () => {
                                     id={field.id}
                                     name={field.id}
                                     placeholder={field.placeholder}
-                                    className={styles.input} 
+                                    className={styles.input}
                                     required
                                 />
                             )}

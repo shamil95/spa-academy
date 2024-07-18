@@ -1,0 +1,82 @@
+.container {
+    height: 36.8rem;
+    background-color: #efeeeb;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    padding: 16rem 0;
+}
+.main {
+    height: 13.8rem;
+    width: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left {
+    height: 100%;
+    width: 50.9rem;
+}
+.links {
+    height: 1.8rem;
+    display: flex;
+    gap: 0.8rem;
+}
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #0f0f0f;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+.link2 {
+    @extend .link;
+    color: #7b7b7b;
+}
+.title {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color: #0f0f0f;
+    margin-top: 3rem;
+}
+.boxes {
+    height: 3rem;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.box {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    border-radius: 1rem;
+    background-color: rgba(123, 123, 123, 0.1);
+    padding: 0.6rem 1rem 0.6rem 1.2rem;
+    color: #4b4b4b;
+    display: flex;
+    gap: 0.8rem;
+}
+.box2 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    border-radius: 1rem;
+    background-color: rgba(59, 139, 31, 0.1);
+    padding: 0.6rem 1rem 0.6rem 1.2rem;
+    color: #3b8b1f;
+    display: flex;
+    gap: 0.8rem;
+}
+.apply {
+    width: 18.9rem;
+    height: 4.4rem;
+    background-color: #ffc32c;
+    color: #0f0f0f;
+    border-radius: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    cursor: pointer;
+}

@@ -43,7 +43,7 @@
     width: 100%;
     height: 60.5rem;
     display: flex;
-    
+    flex-direction: column;
     gap: 2rem;
 }
 .info {
@@ -72,7 +72,7 @@
     resize: none;
 }
 .sendBtn {
-    width: 15.3rem;
+    width: 18.9rem;
     height: 4.4rem;
     background-color: #ffc32c;
     color: #0f0f0f;

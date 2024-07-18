@@ -61,13 +61,7 @@ const UpcomingEvents: React.FC = () => {
                             )}
                         </React.Fragment>
 
-                        // <LargeWebinar
-                        //     href='event'
-                        //     webinarDescription={webinar.webinarDescription}
-                        //     webinarTitle={webinar.webinarTitle}
-                        //     key={webinar.id}
-                        //     webinarImage={webinar.webinarImage}
-                        // />
+                    
                     ))}
                 </div>
             </div>
