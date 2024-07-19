@@ -28,7 +28,7 @@ const ServicesDropdown: React.FC = () => {
             <ul className={styles.links}>
                 {servicesData.map(data => (
                     <li className={styles.link} key={data.id}>
-                        <Link href=''>{data.title}</Link>
+                        {data.title}
                     </li>
                 ))}
             </ul>

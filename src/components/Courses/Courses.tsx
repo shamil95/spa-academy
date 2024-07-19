@@ -86,7 +86,7 @@ const Courses: React.FC = () => {
                     {courses.map((course, index) => (
                         <React.Fragment key={course.name}>
                             {index === 0 ? (
-                                <Link href='/fundamentals' className={styles.course}>
+                                <Link href='/mathematics' className={styles.course}>
                                     <div className={styles.content}>
                                         <div className={styles.info}>
                                             <div className={styles.courseType}>{course.courseType}</div>
