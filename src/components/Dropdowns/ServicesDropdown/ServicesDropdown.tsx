@@ -32,16 +32,14 @@ const servicesData: ServicesesDataType[] = [
     },
 ];
 
-
-
 const ServicesDropdown: React.FC = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.links}>
                 {servicesData.map((data, index) => (
-                    <li className={styles.link} key={data.id}>
-                        <Link href={`/${data.href}`}>{data.title}</Link>
-                    </li>
+                    <Link href={`/${data.href}`} key={data.id}>
+                        <li className={styles.link}>{data.title}</li>
+                    </Link>
                 ))}
             </ul>
         </div>

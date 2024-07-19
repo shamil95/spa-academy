@@ -4,6 +4,7 @@ import styles from './Loaction.module.scss';
 import Image from 'next/image';
 import mapImage from '../../assets/images/mapImg.png';
 import InformationModal from '../InformationModal/InformationModal';
+import MapComponent from '../MapComponent/MapComponent';
 
 type FieldsType = {
     id: string;
@@ -86,7 +87,8 @@ const Loaction: React.FC = () => {
                 </form>
             </div>
             <div className={styles.mapContainer}>
-                <Image src={mapImage.src} alt='Map' width={549} height={724} />
+                {/* <Image src={mapImage.src} alt='Map' width={549} height={724} /> */}
+                <MapComponent/>
             </div>
         </div>
     );

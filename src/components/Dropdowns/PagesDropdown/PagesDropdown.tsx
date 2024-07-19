@@ -31,18 +31,14 @@ const pagesData: PagesDataType[] = [
     },
 ];
 
-
-
 const PagesDropdown: React.FC = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.links}>
                 {pagesData.map((data, index) => (
-                    <li className={styles.link} key={data.id}>
-                        <Link href={`/${data.href}`} className={styles.link2}>
-                            {data.title}
-                        </Link>
-                    </li>
+                    <Link href={`/${data.href}`} key={data.id}>
+                        <li className={styles.link}>{data.title}</li>
+                    </Link>
                 ))}
             </ul>
         </div>

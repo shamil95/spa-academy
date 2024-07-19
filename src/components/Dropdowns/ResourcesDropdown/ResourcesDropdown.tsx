@@ -33,9 +33,9 @@ const ResourcesDropdown: React.FC = () => {
         <div className={styles.container}>
             <ul className={styles.links}>
                 {resourcesData.map((data, index) => (
-                    <li className={styles.link} key={data.id}>
-                        <Link href={`/${data.href}`}>{data.title}</Link>
-                    </li>
+                    <Link href={`/${data.href}`} key={data.id}>
+                        <li className={styles.link}>{data.title}</li>
+                    </Link>
                 ))}
             </ul>
         </div>

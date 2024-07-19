@@ -17,7 +17,8 @@ const ContactPage: React.FC = () => {
         <div className={styles.images}>
             {footerIcons.map((icon, index) => (
                 <div key={index} className={styles.image}>
-                    <Image src={icon.src} alt={icon.alt} width={20} height={20} />
+                     <div className={styles.effects}></div>
+                    <Image src={icon.src} alt={icon.alt} width={18} height={18} />
                 </div>
             ))}
         </div>
