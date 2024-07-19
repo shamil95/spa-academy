@@ -5,15 +5,12 @@ import Image from 'next/image';
 import { ICONS } from '@/assets/icons';
 import FooterColumn from './Column/FooterColumn';
 import ContactModal from '../ContactModal/ContactModal';
+import { FooterColumnProps, FooterLinksProps } from './FooterTypes';
+import Link from 'next/link';
 
 const { LogoIcon, arrowIcon, fbIcon, linkedinIcon, instaIcon, xIcon, callIcon } = ICONS;
 
-type FooterColumnsProps = {
-    title: string;
-    items: string | {}[];
-};
-
-const footerColumns: FooterColumnsProps[] = [
+const footerColumns: FooterColumnProps[] = [
     {
         title: 'Popular Courses',
         items: [
@@ -28,14 +25,17 @@ const footerColumns: FooterColumnsProps[] = [
     {
         title: 'Academy',
         items: ['About Us', 'Careers', 'Instructors', 'Contact Us'],
+        routing: ['about', 'careers', 'instructors', 'contact'],
     },
     {
         title: 'Consulting Services',
         items: ['IT Strategy', 'Data Analytics', 'IT Project Management', 'Custom Solutions', 'Case Studies'],
+        routing: ['ITstrategy', 'ITstrategy', 'ITstrategy', 'ITstrategy', 'ITstrategy'],
     },
     {
         title: 'Resources',
         items: ['Blog', 'Events', 'Webinars'],
+        routing: ['blog', 'events', 'webinars'],
     },
     {
         title: 'Contact',
@@ -47,7 +47,24 @@ const footerColumns: FooterColumnsProps[] = [
     },
 ];
 
-const footerLinks: string[] = ['Terms of Service', 'Privacy Policy', 'Cookie Notice'];
+const footerLinks: FooterLinksProps[] = [
+    {
+        id: 1,
+        name: 'Terms of Service',
+        href: 'termofservice',
+    },
+    {
+        id: 2,
+        name: 'Privacy policy',
+         href: 'policy',
+    },
+    {
+        id: 3,
+        name: 'Cookie Notice',
+         href: 'cookie',
+    },
+];
+
 const footerIcons = [fbIcon, xIcon, instaIcon, linkedinIcon];
 
 const Footer: React.FC = () => {
@@ -80,9 +97,11 @@ const Footer: React.FC = () => {
             </div>
             <div className={styles.footerF}>
                 <div className={styles.main}>
-                    <ul>
-                        {footerLinks.map((link, index) => (
-                            <li key={index}>{link}</li>
+                    <ul className={styles.linksUl}>
+                        {footerLinks.map(link => (
+                            <li key={link.id}>
+                                <Link href={`/${link.href}`}>{link.name}</Link>
+                            </li>
                         ))}
                     </ul>
                     <div className={styles.images}>

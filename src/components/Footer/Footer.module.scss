@@ -17,9 +17,9 @@
 }
 .main {
     width: 120rem;
-
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .buttons {
     width: 40rem;
@@ -75,7 +75,7 @@
     align-items: center;
 }
 .row {
-    //width: 144.4rem;
+  
     height: 26rem;
     display: flex;
     flex-direction: row;
@@ -135,4 +135,12 @@
     position: absolute;
     overflow: hidden;
     border-radius: 3rem;
+}
+
+.linksUl > li {
+    transition: color 0.5s ease, cursor 0.5s ease;
+}
+.linksUl > li:hover {
+    cursor: pointer;
+    color: #dbdbdb;
 }

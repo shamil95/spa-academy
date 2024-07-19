@@ -1,0 +1,25 @@
+.container {
+    background-color: #e3e2df;
+    height: 29.5rem;
+    display: flex;
+    justify-content: center ;
+    padding: 20rem 0 7rem 0;
+}
+.main{
+    width: 75rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.title{
+    color: #0F0F0F;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: bold;
+}
+.text{
+    color: #7B7B7B;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    font-weight: 400;
+}
