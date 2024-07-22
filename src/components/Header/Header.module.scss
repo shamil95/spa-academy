@@ -1,7 +1,9 @@
+@import '../../styles/utils/display.scss';
+@import '../../styles/utils/flex.scss';
 .container {
     color: #fff;
-    display: flex;
-    justify-content: space-between;
+    @extend .flex;
+    @extend .justify-between;
     align-items: center;
     padding: 2.7rem 6rem;
     font-weight: 500;
@@ -13,4 +15,5 @@
     top: 0;
     left: 0;
     z-index: 10000;
+
 }

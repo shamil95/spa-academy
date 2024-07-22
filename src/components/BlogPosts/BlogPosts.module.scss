@@ -1,32 +1,33 @@
+@import '../../styles/variables.module.scss';
+@import '../../styles/utils/display.scss';
+@import '../../styles/utils/flex.scss';
 .container {
     width: 100%;
     height: 87.5rem;
-    background: #0f0f0f;
-    color: #7b7b7b;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+    background: $black-color;
+    color: $gray-text-color2;
+    @extend .flex;
+    @extend .items-center;
+    @extend .justify-center;
 }
-.main{
-   
+.main {
     width: 114rem;
     height: 66.5rem;
-    display: flex;
-    flex-direction: column;
+    @extend .flex;
+    @extend .flex-col;
     gap: 7rem;
 }
-.upDiv{
+.upDiv {
     height: 11rem;
-   
 }
 .header {
     font-size: 2.6rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #dbdbdb;
+    @extend .flex;
+    @extend .justify-between;
+    @extend .items-center;
+    color: $white-text-color;
 }
 
 .headerExtra {
@@ -36,24 +37,21 @@
 }
 
 .seeAllButton {
-    
-    border: 1px solid #ffc32c;
-    color: #ffc32c;
+    border: 1px solid $button-color;
+    color: $button-color;
     padding: 0.8rem 3rem;
     border-radius: 4rem;
     font-size: 1.5rem;
     height: 4.6rem;
-    background: #f9f9f90d;
+    background: $button-background;
 }
 
 .blogPosts {
-    display: flex;
-    align-items: center;
+    @extend .flex;
+    @extend .items-center;
+    @extend .justify-between;
     gap: 3rem;
-    justify-content: space-between;
     height: 48.5rem;
-   
-   
 }
 @media screen and (max-width: 1440px) {
     .blogPosts {
@@ -65,11 +63,10 @@
 .blogPost {
     max-width: 36rem;
     height: 43.6rem;
-
 }
 
 .dateAndCategory {
-    display: flex;
+    @extend .flex;
     margin: 2.5rem 0 1rem 0;
 }
 
@@ -94,9 +91,9 @@
 .miniblogPost {
     width: 36rem;
     height: 11rem;
-    display: flex;
+    @extend .flex;
     border-radius: 1rem;
-    border: 1px solid #7b7b7b;
+    border: 1px solid $gray-text-color2;
     max-width: 36rem;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
@@ -112,7 +109,7 @@
 }
 
 .largeBody {
-    color: #b7b7b7;
+    color: $gray-text-color2;
     width: 33.6rem;
     height: 7.2rem;
     font-size: 1.4rem;
@@ -125,11 +122,11 @@
     font-weight: 600;
     line-height: 2.4rem;
     text-align: left;
-    color: #dbdbdb;
+    color: $white-text-color;
 }
 .leftContainer {
-    display: flex;
-    flex-direction: row;
+    @extend .flex;
+    @extend .flex-row;
     gap: 3rem;
 }
 @media screen and (max-width: 1440px) {
@@ -139,7 +136,7 @@
     }
 }
 .rightContainer {
-    display: flex;
-    flex-direction: column;
+    @extend .flex;
+    @extend .flex-col;
     height: 48.5rem;
 }

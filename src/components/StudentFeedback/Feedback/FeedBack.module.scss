@@ -1,8 +1,11 @@
+@import '../../../styles//variables.module.scss';
+@import '../../../styles//utils/display.scss';
+@import '../../../styles//utils/flex.scss';
 .feedback {
     width: 36rem;
     height: 27rem;
     padding: 3rem;
-    background-color: #ffffff;
+    background-color: $background5;
     border-radius: 1rem;
 
     // &:first-child {
@@ -15,16 +18,16 @@
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend .flex;
+    @extend .items-center;
+    @extend .justify-between;
     margin-bottom: 4rem;
 }
 
 .personalInfo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend .flex;
+    @extend .items-center;
+    @extend .justify-between;
 }
 
 .name {

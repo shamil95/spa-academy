@@ -1,14 +1,17 @@
+@import '../../styles/variables.module.scss';
+@import '../../styles/utils/display.scss';
+@import '../../styles/utils/flex.scss';
 .info {
-   width: 55rem;
+    width: 55rem;
     height: 39rem;
 }
 
 .intro {
     padding: 0.5rem 1.5rem;
-    background-color: #332f27;
-    color: #d4c095;
+    background-color: $backgorund1;
+    color: $text-color2;
     border-radius: 4rem;
-    display: inline-block;
+    @extend .inline-block;
     margin-bottom: 3rem;
 }
 
@@ -18,14 +21,12 @@
 }
 
 .description {
-    color: #b7b7b7;
+    color: $gray-text-color2;
     font-size: 1.8rem;
     margin-bottom: 4rem;
 }
 .children {
-    display: flex;
+    @extend .flex-col;
     gap: 1rem;
     width: 60rem;
-    flex-direction: column;
 }
-

@@ -26,7 +26,7 @@ const resourcesData: ResourcesDataType[] = [
     },
 ];
 
-// const resourcesHref: string[] = ['blog', 'events', 'webinars'];
+
 
 const ResourcesDropdown: React.FC = () => {
     return (
