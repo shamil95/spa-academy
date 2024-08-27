@@ -5,11 +5,13 @@ import Link from 'next/link';
 type CoursesType = {
     id: number;
     title: string;
+    href?: string;
 };
 const NavigationCourses: CoursesType[] = [
     {
         id: 1,
         title: 'Mathematics for Programming',
+        href: 'mathematics',
     },
     {
         id: 1,
@@ -125,7 +127,7 @@ const CoursesDropdown: React.FC = () => {
                 <ul className={styles.links}>
                     {NavigationCourses.map(data => (
                         <li className={styles.link} key={data.id}>
-                            <Link href=''>{data.title}</Link>
+                            <Link href={`/${data.href}`}>{data.title}</Link>
                         </li>
                     ))}
                 </ul>
@@ -200,7 +202,6 @@ const CoursesDropdown: React.FC = () => {
 
 export default CoursesDropdown;
 
-
 // import React from 'react';
 // import styles from './CoursesDropdpwn.module.scss';
 // import CourseSection from './CourseSection/CourseSection';
@@ -269,4 +270,3 @@ export default CoursesDropdown;
 // };
 
 // export default CoursesDropdown;
-

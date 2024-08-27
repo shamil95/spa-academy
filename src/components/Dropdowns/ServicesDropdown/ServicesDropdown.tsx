@@ -5,12 +5,14 @@ import Link from 'next/link';
 type ServicesesDataType = {
     id: number;
     title: string;
+    href?: string;
 };
 
 const servicesData: ServicesesDataType[] = [
     {
         id: 1,
         title: 'IT strategy',
+        href: 'ITstrategy',
     },
     {
         id: 2,
@@ -30,7 +32,7 @@ const servicesData: ServicesesDataType[] = [
     },
 ];
 
-const servicesHref: string[] = ['ITstrategy', 'events', 'webinars', 'about', 'contact'];
+
 
 const ServicesDropdown: React.FC = () => {
     return (
@@ -38,7 +40,7 @@ const ServicesDropdown: React.FC = () => {
             <ul className={styles.links}>
                 {servicesData.map((data, index) => (
                     <li className={styles.link} key={data.id}>
-                        <Link href={`/${servicesHref[index]}`}>{data.title}</Link>
+                        <Link href={`/${data.href}`}>{data.title}</Link>
                     </li>
                 ))}
             </ul>
