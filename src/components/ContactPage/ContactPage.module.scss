@@ -22,4 +22,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+.image:hover .effects {
+    background: rgba(255, 195, 44, 0.4);
+    filter: blur(10px);
+}
+
+.effects {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
