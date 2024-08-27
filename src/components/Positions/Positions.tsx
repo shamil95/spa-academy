@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Positions.module.scss';
 import Title from '../Title/Title';
+import Link from 'next/link';
 
 type PositionDataType = {
     id: number;
@@ -47,20 +48,37 @@ const Positions: React.FC = () => {
                     description='Open vacancies are displayed here. You can enter the vacancy that suits you, read the requirements and conditions and send your information.'
                 />
                 <div className={styles.positions}>
-                    {positionsData.map(position => (
-                        <div key={position.id} className={styles.position}>
-                            <div className={styles.content}>
-                                <div className={styles.positionTitle}>{position.positionTitle}</div>
-                                <div className={styles.boxes}>
-                                    <div className={styles.time}>{position.time}</div>
-                                    <div className={styles.positionText}>{position.office}</div>
-                                    <div className={styles.positionText}>{position.deadline}</div>
+                    {positionsData.map((position, index) => (
+                        <React.Fragment key={position.id}>
+                            {index === 0 ? (
+                                <Link href='/vacancy' className={styles.position}>
+                                    <div className={styles.content}>
+                                        <div className={styles.positionTitle}>{position.positionTitle}</div>
+                                        <div className={styles.boxes}>
+                                            <div className={styles.time}>{position.time}</div>
+                                            <div className={styles.positionText}>{position.office}</div>
+                                            <div className={styles.positionText}>{position.deadline}</div>
+                                        </div>
+                                    </div>
+                                    {position.applyButton}
+                                </Link>
+                            ) : (
+                                <div className={styles.position} key={position.id}>
+                                    <div className={styles.content}>
+                                        <div className={styles.positionTitle}>{position.positionTitle}</div>
+                                        <div className={styles.boxes}>
+                                            <div className={styles.time}>{position.time}</div>
+                                            <div className={styles.positionText}>{position.office}</div>
+                                            <div className={styles.positionText}>{position.deadline}</div>
+                                        </div>
+                                    </div>
+                                    {position.applyButton}
                                 </div>
-                            </div>
-                            {position.applyButton}
-                        </div>
+                            )}
+                        </React.Fragment>
                     ))}
                 </div>
+                ;
             </div>
         </div>
     );

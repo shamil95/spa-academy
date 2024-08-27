@@ -20,7 +20,7 @@ const InstructorHeader: React.FC = () => {
                         <Link href='/instructors'>Instructors</Link>
                         <Image src={arrowRight} alt='Arrow right'/>
                     </div>
-                    <div className={styles.link}>
+                    <div className={styles.link2}>
                         <Link href='/'>Carthen Siphron</Link>
                     </div>
                 </div>
