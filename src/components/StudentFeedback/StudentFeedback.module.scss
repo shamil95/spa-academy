@@ -1,29 +1,30 @@
+@import "../../styles//variables.module.scss";
+@import "../../styles/utils/display.scss";
+@import "../../styles/utils/flex.scss";
 .container {
-    background-color: #efeeeb;
-    color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: $backgorund2;
+    color: $black-color2;
+    @extend .flex;
+    @extend .justify-center;
+    @extend .items-center;
     height: 68.4rem;
    
 }
 .main{
     width: 114rem;
-  
-    display: flex;
-    flex-direction: column;
+    @extend .flex;
+    @extend .flex-col;
     gap: 5rem;
 }
 .titleComponent{
-   
     width: 57rem;
 }
 
 
 
 .feedbacks {
-    display: flex;
-    align-items: center;
+    @extend .flex;
+    @extend .items-center;
     gap: 3rem;
     width: 100%;
   

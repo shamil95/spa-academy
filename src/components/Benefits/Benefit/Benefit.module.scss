@@ -1,3 +1,4 @@
+@import "../../../styles/variables.module.scss";
 .benefit {
     max-width: 36rem;
     padding: 4rem;
@@ -7,12 +8,12 @@
 }
 
 .benefit:hover {
-    background-color: #0f0f0f;
-    color: #b7b7b7;
+    background-color: $black-color;
+    color: $gray-text-color2;
 }
 .active {
-    background-color: #0f0f0f;
-    color: #b7b7b7;
+    background-color: $black-color;
+    color: $gray-text-color2;
 }
 
 .title {

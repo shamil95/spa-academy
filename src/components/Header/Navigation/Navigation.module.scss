@@ -1,25 +1,29 @@
+@import '../../../styles/variables.module.scss';
+@import '../../../styles/utils/display.scss';
+@import '../../../styles/utils/flex.scss';
+
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend .flex;
+    @extend .justify-between;
+    @extend .items-center;
 }
 
 .allCourses {
+    @extend .flex;
+    @extend .justify-center;
+    @extend .items-center;
     padding: 0;
     margin: 0 3.5rem 0 5rem;
     border: 1px solid white;
     width: 14rem;
     height: 4.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 4rem;
     color: white;
     gap: 1rem;
 }
 .allCourses:hover {
-    border: 1px solid #ffc32c;
-    color: #ffc32c;
+    border: 1px solid $button-color;
+    color: $button-color;
 }
 
 .allCourses:hover + .icon {
@@ -27,15 +31,15 @@
 }
 
 .navigationLinks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend .flex;
+    @extend .justify-between;
+    @extend .items-center;
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend .flex;
+    @extend .justify-between;
+    @extend .items-center;
     gap: 2rem;
     list-style: none;
     cursor: pointer;
@@ -43,10 +47,10 @@
 
 .link {
     margin-right: 0.5rem;
-    color: #e3e2df;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: $text-color1;
+    @extend .flex;
+    @extend .justify-center;
+    @extend .items-center;
     gap: 0.6rem;
 
     &:last-child {

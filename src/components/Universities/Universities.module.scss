@@ -1,27 +1,28 @@
-.container {
-    background-color: #000000;
-    color: #ffffff;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   height: 65.8rem;
+@import '../../styles//variables.module.scss';
+@import '../../styles/utils/display.scss';
+@import '../../styles/utils/flex.scss';
 
+.container {
+    background-color: $black-color2;
+    color: $background5;
+    @extend .flex;
+    @extend .items-center;
+    @extend .justify-center;
+    width: 100%;
+    height: 65.8rem;
 }
-.main{
-   
+.main {
     width: 114rem;
     height: 43.8rem;
-    display: flex;
-    flex-direction: column;
+    @extend .flex;
+    @extend .flex-col;
     gap: 10rem;
 }
 
-.headerContainer{
-  
+.headerContainer {
     width: 61.3rem;
-    display: flex;
-    flex-direction: column;
+    @extend .flex;
+    @extend .flex-col;
     gap: 2rem;
 }
 .header {
@@ -29,12 +30,10 @@
     font-weight: 700;
     max-width: 54.3rem;
     width: 45rem;
-  
-  
 }
 
 .rating {
-    color: #ffc32c;
+    color: $button-color;
 }
 
 .headerExtra {
@@ -47,11 +46,11 @@
 }
 
 .universities {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
+  
+    @extend .flex;
+    @extend .flex-row;
+    @extend .flex-wrap;
+    @extend .justify-between;
     width: 114rem;
     height: 16.5rem;
     gap: 5rem;
@@ -59,10 +58,9 @@
 .imgContainer {
     width: 18rem;
     height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
+    @extend .flex;
+    @extend .items-center;
+    @extend .justify-center;
 }
 
 .image {

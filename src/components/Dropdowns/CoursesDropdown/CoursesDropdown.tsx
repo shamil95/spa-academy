@@ -126,9 +126,9 @@ const CoursesDropdown: React.FC = () => {
                 <div className={styles.title}>For Teenagers</div>
                 <ul className={styles.links}>
                     {NavigationCourses.map(data => (
-                        <li className={styles.link} key={data.id}>
-                            <Link href={`/${data.href}`}>{data.title}</Link>
-                        </li>
+                        <Link href={`/${data.href}`} key={data.id}>
+                            <li className={styles.link}>{data.title}</li>
+                        </Link>
                     ))}
                 </ul>
             </div>
@@ -137,9 +137,9 @@ const CoursesDropdown: React.FC = () => {
                     <div className={styles.title}>Mathematics</div>
                     <ul className={styles.links}>
                         {MathCourses.map(data => (
-                            <li className={styles.link} key={data.id}>
-                                <Link href=''>{data.title}</Link>
-                            </li>
+                            <Link href={`/${data.href}`} key={data.id}>
+                                <li className={styles.link}>{data.title}</li>
+                            </Link>
                         ))}
                     </ul>
                 </div>
@@ -147,9 +147,9 @@ const CoursesDropdown: React.FC = () => {
                     <div className={styles.title}>Data Science</div>
                     <ul className={styles.links}>
                         {DataScienceCourses.map(data => (
-                            <li className={styles.link} key={data.id}>
-                                <Link href=''>{data.title}</Link>
-                            </li>
+                            <Link href={`/${data.href}`} key={data.id}>
+                                <li className={styles.link}>{data.title}</li>
+                            </Link>
                         ))}
                     </ul>
                 </div>
@@ -159,9 +159,9 @@ const CoursesDropdown: React.FC = () => {
                     <div className={styles.title}>Digital Marketing</div>
                     <ul className={styles.links}>
                         {MarketingCourses.map(data => (
-                            <li className={styles.link} key={data.id}>
-                                <Link href=''>{data.title}</Link>
-                            </li>
+                            <Link href={`/${data.href}`} key={data.id}>
+                                <li className={styles.link}>{data.title}</li>
+                            </Link>
                         ))}
                     </ul>
                 </div>
@@ -169,9 +169,9 @@ const CoursesDropdown: React.FC = () => {
                     <div className={styles.title}>Design</div>
                     <ul className={styles.links}>
                         {DesignCourses.map(data => (
-                            <li className={styles.link} key={data.id}>
-                                <Link href=''>{data.title}</Link>
-                            </li>
+                            <Link href={`/${data.href}`} key={data.id}>
+                                <li className={styles.link}>{data.title}</li>
+                            </Link>
                         ))}
                     </ul>
                 </div>
@@ -180,9 +180,9 @@ const CoursesDropdown: React.FC = () => {
                 <div className={styles.title2}>Software Development</div>
                 <ul className={styles.links}>
                     {DevelopmentCourses.map(data => (
-                        <li className={styles.link} key={data.id}>
-                            <Link href=''>{data.title}</Link>
-                        </li>
+                        <Link href={`/${data.href}`} key={data.id}>
+                            <li className={styles.link}>{data.title}</li>
+                        </Link>
                     ))}
                 </ul>
             </div>
@@ -190,9 +190,9 @@ const CoursesDropdown: React.FC = () => {
                 <div className={styles.title}>BootCamps</div>
                 <ul className={styles.links}>
                     {BootCamps.map(data => (
-                        <li className={styles.link} key={data.id}>
-                            <Link href=''>{data.title}</Link>
-                        </li>
+                        <Link href={`/${data.href}`} key={data.id}>
+                            <li className={styles.link}>{data.title}</li>
+                        </Link>
                     ))}
                 </ul>
             </div>

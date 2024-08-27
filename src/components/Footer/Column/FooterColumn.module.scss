@@ -1,25 +1,29 @@
+@import '../../../styles/variables.module.scss';
+@import '../../../styles/utils/display.scss';
+@import '../../../styles/utils/flex.scss';
+
 .col {
     width: 20rem;
     gap: 1.5rem;
-    display: flex;
-    flex-direction: column;
+    @extend .flex;
+    @extend .flex-col;
 }
 .col h2 {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
     text-align: left;
-    color: #dbdbdb;
+    color: $white-text-color;
 }
 
 .col ul {
-    display: flex;
-    flex-direction: column;
+    @extend .flex;
+    @extend .flex-col;
     list-style: none;
     gap: 1.9rem;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.7rem;
     text-align: left;
-    color: #b7b7b7;
+    color: $gray-text-color2;
 }
